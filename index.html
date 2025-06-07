@@ -65,6 +65,57 @@
           </p>
           <p><strong>Ejemplo básico:</strong></p>
           <code>x² + 5x + 6 = (x + 2)(x + 3)</code>
+
+          <ol>
+            <li>
+              <strong>Identificar el trinomio:</strong>
+              <p>La expresión es <code>x² + 5x + 6</code>, que tiene la forma general <code>x² + bx + c</code>.</p>
+              <ul>
+                <li><strong>b = 5</strong></li>
+                <li><strong>c = 6</strong></li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Buscar dos números que:</strong>
+              <ul>
+                <li>Se sumen para dar <strong>5</strong></li>
+                <li>Se multipliquen para dar <strong>6</strong></li>
+              </ul>
+              <p>Los números que cumplen son: <strong>2 y 3</strong></p>
+              <table border="1" cellpadding="5">
+                <tr>
+                  <th>Números</th>
+                  <th>Suma</th>
+                  <th>Producto</th>
+                </tr>
+                <tr>
+                  <td>2 y 3</td>
+                  <td>2 + 3 = 5 ✅</td>
+                  <td>2 × 3 = 6 ✅</td>
+                </tr>
+              </table>
+            </li>
+
+            <li>
+              <strong>Escribir la factorización:</strong>
+              <p>Con los números hallados, el trinomio se factoriza como:</p>
+              <code>(x + 2)(x + 3)</code>
+            </li>
+
+            <li>
+              <strong>Verificar multiplicando:</strong>
+              <pre>
+                  (x + 2)(x + 3) =
+                  x² + 3x + 2x + 6 =
+                  x² + 5x + 6 ✅
+                </pre>
+            </li>
+          </ol>
+
+          <p><strong>Resultado final:</strong></p>
+          <code>x² + 5x + 6 = (x + 2)(x + 3)</code>
+
           <p><strong>Importancia de la factorización:</strong></p>
           <ul>
             <li>Resolver ecuaciones algebraicas</li>
@@ -105,8 +156,52 @@
               </li>
             </ul>
             <p><strong>Ejemplo avanzado:</strong></p>
-            <code>2x³ + 6x² - 8x - 24 = 2x²(x + 3) - 8(x + 3) = (2x² - 8)(x + 3)
-                = 2(x² - 4)(x + 3) = 2(x - 2)(x + 2)(x + 3)</code>
+            <code>2x³ + 6x² - 8x - 24 = 2x²(x + 3) - 8(x + 3) = (2x² - 8)(x + 3) = 2(x² - 4)(x + 3) = 2(x - 2)(x + 2)(x + 3)</code>
+
+            <ol>
+              <li>
+                <strong>Agrupar términos:</strong>
+                <p>Se agrupa el polinomio en dos partes:</p>
+                <code>(2x³ + 6x²) + (-8x - 24)</code>
+              </li>
+
+              <li>
+                <strong>Sacar factor común en cada grupo:</strong>
+                <ul>
+                  <li>Del primer grupo: <code>2x²(x + 3)</code></li>
+                  <li>Del segundo grupo: <code>-8(x + 3)</code></li>
+                </ul>
+                <p>Entonces tenemos:</p>
+                <code>2x²(x + 3) - 8(x + 3)</code>
+              </li>
+
+              <li>
+                <strong>Sacar el factor común global:</strong>
+                <p>Ambos términos tienen el factor <code>(x + 3)</code>, así que factorizamos:</p>
+                <code>(2x² - 8)(x + 3)</code>
+              </li>
+
+              <li>
+                <strong>Seguir factorizando:</strong>
+                <p>Factor común en <code>2x² - 8</code>:</p>
+                <code>2(x² - 4)</code>
+              </li>
+
+              <li>
+                <strong>Reconocer una diferencia de cuadrados:</strong>
+                <p><code>x² - 4</code> es una diferencia de cuadrados:</p>
+                <code>x² - 4 = (x - 2)(x + 2)</code>
+              </li>
+
+              <li>
+                <strong>Resultado final:</strong>
+                <code>2(x - 2)(x + 2)(x + 3)</code>
+              </li>
+            </ol>
+
+            <p><strong>Factorización completa:</strong></p>
+            <code>2x³ + 6x² - 8x - 24 = 2(x - 2)(x + 2)(x + 3)</code>
+
             <p>
               La factorización es también un paso clave en la resolución de
               problemas en álgebra abstracta, optimización matemática y
@@ -151,28 +246,115 @@
 
           <div class="teorema-ejemplo">
             <h3>📌 Ejemplo con raíces complejas:</h3>
-            <p>
-              El polinomio <code>x² + 1</code> no tiene raíces reales, pero sí
-              raíces complejas:
-            </p>
-            <code>x² + 1 = (x + i)(x - i)</code>
+
+            <p>El polinomio <code>x² + 1</code> no tiene raíces reales, pero sí tiene raíces complejas.</p>
+
+            <ol>
+              <li>
+                <strong>Identificar el polinomio:</strong>
+                <p>Se tiene el trinomio:</p>
+                <code>x² + 1</code>
+              </li>
+
+              <li>
+                <strong>Intentar resolver igualando a cero:</strong>
+                <p>
+                  Igualamos a cero para encontrar las raíces:
+                  <br><code>x² + 1 = 0</code>
+                </p>
+              </li>
+
+              <li>
+                <strong>Restar 1 a ambos lados:</strong>
+                <code>x² = -1</code>
+              </li>
+
+              <li>
+                <strong>Sacar raíz cuadrada a ambos lados:</strong>
+                <code>x = √(-1)</code>
+                <p>Como no hay raíz real de un número negativo, usamos la unidad imaginaria.</p>
+              </li>
+
+              <li>
+                <strong>Definición de la unidad imaginaria:</strong>
+                <p>Se define <code>i</code> como:</p>
+                <code>i² = -1</code><br>
+                <code>√(-1) = i</code>
+              </li>
+
+              <li>
+                <strong>Obtener las raíces complejas:</strong>
+                <code>x = i</code> y <code>x = -i</code>
+              </li>
+
+              <li>
+                <strong>Escribir el polinomio factorizado:</strong>
+                <code>x² + 1 = (x + i)(x - i)</code>
+              </li>
+            </ol>
+
             <p>
               Aquí, <strong>i</strong> representa la unidad imaginaria tal que
               <em>i² = -1</em>.
             </p>
           </div>
 
+
           <div class="teorema-ejemplo">
             <h3>📌 Ejemplo con raíces reales y complejas:</h3>
-            <p>
-              Para el polinomio <code>p(x) = x⁴ - 5x² + 6</code>, primero
-              factorizamos:
-            </p>
-            <code>p(x) = (x² - 2)(x² - 3)</code>
-            <p>Ahora se puede descomponer completamente:</p>
-            <code>p(x) = (x - √2)(x + √2)(x - √3)(x + √3)</code>
-            <p>Todas las raíces son reales en este caso.</p>
+
+            <p>Para el polinomio:</p>
+            <code>p(x) = x⁴ - 5x² + 6</code>
+
+            <ol>
+              <li>
+                <strong>Identificar la estructura:</strong>
+                <p>El polinomio tiene esta forma:</p>
+                <code>x⁴ - 5x² + 6</code>
+                <p>Observamos que se trata de un <strong>trinomio cuadrado en x²</strong>:</p>
+                <code>(x²)² - 5(x²) + 6</code>
+              </li>
+
+              <li>
+                <strong>Hacer un cambio de variable:</strong>
+                <p>Sea <code>y = x²</code>, entonces el polinomio se convierte en:</p>
+                <code>y² - 5y + 6</code>
+              </li>
+
+              <li>
+                <strong>Factorizar el trinomio en y:</strong>
+                <p>Buscamos dos números que se sumen 5 y se multipliquen 6:</p>
+                <ul>
+                  <li>2 y 3 cumplen: 2 + 3 = 5, 2 × 3 = 6</li>
+                </ul>
+                <code>y² - 5y + 6 = (y - 2)(y - 3)</code>
+              </li>
+
+              <li>
+                <strong>Volver a la variable original:</strong>
+                <p>Recordamos que <code>y = x²</code>, entonces:</p>
+                <code>p(x) = (x² - 2)(x² - 3)</code>
+              </li>
+
+              <li>
+                <strong>Factorizar cada término usando raíces cuadradas:</strong>
+                <p>Ambos factores son diferencias de cuadrados:</p>
+                <ul>
+                  <li><code>x² - 2 = (x - √2)(x + √2)</code></li>
+                  <li><code>x² - 3 = (x - √3)(x + √3)</code></li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Factorización completa:</strong>
+                <code>p(x) = (x - √2)(x + √2)(x - √3)(x + √3)</code>
+              </li>
+            </ol>
+
+            <p><strong>Conclusión:</strong> Todas las raíces son <strong>reales</strong>, aunque incluyen radicales
+              (raíces cuadradas).</p>
           </div>
+
 
           <div class="teorema-ejemplo">
             <h3>📌 Ejemplo mixto:</h3>
