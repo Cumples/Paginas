@@ -358,20 +358,64 @@
 
           <div class="teorema-ejemplo">
             <h3>📌 Ejemplo mixto:</h3>
-            <p>
-              Para el polinomio <code>q(x) = x³ - 1</code>, sus raíces
-              incluyen:
-            </p>
-            <ul>
-              <li>Una raíz real: <code>x = 1</code></li>
+
+            <p>Analizamos el polinomio:</p>
+            <code>q(x) = x³ - 1</code>
+
+            <ol>
               <li>
-                Dos raíces complejas:
-                <code>x = e<sup>2πi/3</sup>, x = e<sup>4πi/3</sup></code>
+                <strong>Reconocer la forma de una diferencia de cubos:</strong>
+                <p>La expresión es de la forma:</p>
+                <code>a³ - b³ = (a - b)(a² + ab + b²)</code>
+                <p>En este caso:</p>
+                <code>a = x</code>, <code>b = 1</code>
               </li>
+
+              <li>
+                <strong>Aplicar la fórmula de factorización:</strong>
+                <p>Usamos la identidad:</p>
+                <code>x³ - 1 = (x - 1)(x² + x + 1)</code>
+              </li>
+
+              <li>
+                <strong>Identificar las raíces:</strong>
+                <ul>
+                  <li>Del factor <code>(x - 1)</code> obtenemos la raíz real:</li>
+                  <code>x = 1</code>
+                  <li>Del factor <code>x² + x + 1</code> buscamos raíces complejas:</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Resolver <code>x² + x + 1 = 0</code> usando fórmula general:</strong>
+                <p>Aplicamos:</p>
+                <code>x = [-1 ± √(1² - 4(1)(1))] / 2</code>
+                <p>Calculamos el discriminante:</p>
+                <code>Δ = 1 - 4 = -3</code>
+                <p>Como es negativo, las raíces son complejas:</p>
+                <code>x = [-1 ± √(-3)] / 2 = (-1 ± i√3)/2</code>
+              </li>
+
+              <li>
+                <strong>También pueden escribirse usando forma polar compleja:</strong>
+                <p>Estas raíces también se expresan como:</p>
+                <code>x = e<sup>2πi/3</sup>, x = e<sup>4πi/3</sup></code>
+                <p>Son las raíces cúbicas de la unidad, en forma exponencial compleja.</p>
+              </li>
+
+              <li>
+                <strong>Factorización final:</strong>
+                <code>q(x) = (x - 1)(x² + x + 1)</code>
+              </li>
+            </ol>
+
+            <p><strong>Conclusión:</strong></p>
+            <ul>
+              <li>Raíz real: <code>x = 1</code></li>
+              <li>Raíces complejas: <code>x = e<sup>2πi/3</sup></code>, <code>x = e<sup>4πi/3</sup></code></li>
             </ul>
-            <p>Factorización:</p>
-            <code>q(x) = (x - 1)(x² + x + 1)</code>
           </div>
+
 
           <div class="teorema-consecuencias">
             <h3>🧠 Consecuencias clave:</h3>
@@ -412,92 +456,413 @@
 
           <div class="caso">
             <h3>📌 1. Factor común</h3>
+
             <p>
-              Consiste en extraer el mayor factor que se repite en todos los
-              términos del polinomio.
+              Consiste en extraer el mayor factor que se repite en todos los términos del polinomio.
             </p>
-            <code>Ejemplo: 4x³ - 8x² = 4x²(x - 2)</code>
-            <p><strong>Fórmula:</strong> ab + ac = a(b + c)</p>
+
+            <p><strong>Fórmula general usada:</strong></p>
+            <code>ab + ac = a(b + c)</code>
+
+            <p><strong>Ejemplo:</strong></p>
+            <code>4x³ - 8x²</code>
+
+            <ol>
+              <li>
+                <strong>Analizar cada término:</strong>
+                <ul>
+                  <li>Primer término: <code>4x³ = 4 · x² · x</code></li>
+                  <li>Segundo término: <code>8x² = 4 · 2 · x²</code></li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Identificar el mayor factor común:</strong>
+                <p>Ambos términos tienen en común:</p>
+                <ul>
+                  <li>El número <code>4</code></li>
+                  <li>La variable <code>x²</code></li>
+                </ul>
+                <p>Entonces, el factor común es: <code>4x²</code></p>
+              </li>
+
+              <li>
+                <strong>Escribir el polinomio como producto:</strong>
+                <p>Dividimos cada término por <code>4x²</code>:</p>
+                <ul>
+                  <li><code>4x³ ÷ 4x² = x</code></li>
+                  <li><code>8x² ÷ 4x² = 2</code></li>
+                </ul>
+                <p>Entonces:</p>
+                <code>4x³ - 8x² = 4x²(x - 2)</code>
+              </li>
+
+              <li>
+                <strong>Resultado final:</strong>
+                <p>Hemos factorizado el polinomio usando el factor común:</p>
+                <code>4x³ - 8x² = 4x²(x - 2)</code>
+              </li>
+            </ol>
           </div>
+
 
           <div class="caso">
             <h3>📌 2. Diferencia de cuadrados</h3>
+
             <p>
-              Se aplica cuando se tienen dos términos cuadrados separados por
-              un signo negativo.
+              Se aplica cuando se tienen dos términos cuadrados perfectos separados por un signo negativo.
             </p>
-            <code>Ejemplo: x² - 25 = (x - 5)(x + 5)</code>
-            <p><strong>Fórmula:</strong> a² - b² = (a - b)(a + b)</p>
+
+            <p><strong>Fórmula general:</strong></p>
+            <code>a² - b² = (a - b)(a + b)</code>
+
+            <p><strong>Ejemplo:</strong></p>
+            <code>x² - 25</code>
+
+            <ol>
+              <li>
+                <strong>Verificar si ambos términos son cuadrados perfectos:</strong>
+                <ul>
+                  <li><code>x²</code> es el cuadrado de <code>x</code></li>
+                  <li><code>25</code> es el cuadrado de <code>5</code> porque <code>5² = 25</code></li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Confirmar que hay un signo negativo entre los términos:</strong>
+                <p>Sí, es una resta: <code>x² - 25</code></p>
+              </li>
+
+              <li>
+                <strong>Aplicar la fórmula:</strong>
+                <p>Usamos la identidad:</p>
+                <code>a² - b² = (a - b)(a + b)</code>
+                <p>Donde:</p>
+                <ul>
+                  <li><code>a = x</code></li>
+                  <li><code>b = 5</code></li>
+                </ul>
+                <p>Entonces:</p>
+                <code>x² - 25 = (x - 5)(x + 5)</code>
+              </li>
+
+              <li>
+                <strong>Resultado final:</strong>
+                <code>x² - 25 = (x - 5)(x + 5)</code>
+              </li>
+            </ol>
           </div>
+
 
           <div class="caso">
             <h3>📌 3. Trinomio cuadrado perfecto</h3>
+
             <p>
-              Surge del cuadrado de un binomio. El primer y el último término
-              son cuadrados perfectos, y el término central es el doble
-              producto de sus raíces cuadradas.
+              Este caso surge del cuadrado de un binomio. El primer y el último término son cuadrados perfectos,
+              y el término central es el doble producto de sus raíces cuadradas.
             </p>
-            <code>Ejemplo: x² + 6x + 9 = (x + 3)²</code>
-            <p><strong>Fórmula:</strong> a² ± 2ab + b² = (a ± b)²</p>
+
+            <p><strong>Fórmula general:</strong></p>
+            <code>a² ± 2ab + b² = (a ± b)²</code>
+
+            <p><strong>Ejemplo:</strong></p>
+            <code>x² + 6x + 9</code>
+
+            <ol>
+              <li>
+                <strong>Verificar si el primer y el último término son cuadrados perfectos:</strong>
+                <ul>
+                  <li><code>x²</code> es el cuadrado de <code>x</code></li>
+                  <li><code>9</code> es el cuadrado de <code>3</code> porque <code>3² = 9</code></li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Verificar si el término del medio es el doble producto de las raíces cuadradas:</strong>
+                <p>Multiplicamos:</p>
+                <code>2 · x · 3 = 6x</code>
+                <p>Esto coincide con el término del medio: <code>+6x</code></p>
+              </li>
+
+              <li>
+                <strong>Aplicar la fórmula del trinomio cuadrado perfecto:</strong>
+                <code>x² + 6x + 9 = (x + 3)²</code>
+              </li>
+
+              <li>
+                <strong>Resultado final:</strong>
+                <code>(x + 3)²</code>
+              </li>
+            </ol>
           </div>
+
 
           <div class="caso">
             <h3>📌 4. Trinomio cuadrado no perfecto (simple)</h3>
+
             <p>
-              Trinomio donde el coeficiente principal es 1. Se buscan dos
-              números que multiplicados den el tercer término y sumados den el
-              segundo.
+              Este caso se aplica cuando el coeficiente del término cuadrático es 1 (<code>x²</code>),
+              y se deben encontrar dos números que:
             </p>
-            <code>Ejemplo: x² + 7x + 10 = (x + 2)(x + 5)</code>
-            <p>
-              <strong>Fórmula:</strong> x² + (a + b)x + ab = (x + a)(x + b)
-            </p>
+            <ul>
+              <li>Multiplicados den el tercer término (término independiente).</li>
+              <li>Sumados den el segundo término (coeficiente de <code>x</code>).</li>
+            </ul>
+
+            <p><strong>Fórmula general:</strong></p>
+            <code>x² + (a + b)x + ab = (x + a)(x + b)</code>
+
+            <p><strong>Ejemplo:</strong></p>
+            <code>x² + 7x + 10</code>
+
+            <ol>
+              <li>
+                <strong>Identificar los términos del trinomio:</strong>
+                <ul>
+                  <li>Término cuadrático: <code>x²</code></li>
+                  <li>Término lineal: <code>+7x</code></li>
+                  <li>Término independiente: <code>+10</code></li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Buscar dos números que multiplicados den 10 y sumados den 7:</strong>
+                <ul>
+                  <li>Posibles pares: (1, 10), (2, 5)</li>
+                  <li><code>2 × 5 = 10</code> ✅</li>
+                  <li><code>2 + 5 = 7</code> ✅</li>
+                </ul>
+                <p>Entonces, los números buscados son: <code>2</code> y <code>5</code></p>
+              </li>
+
+              <li>
+                <strong>Reescribir como producto de binomios:</strong>
+                <code>x² + 7x + 10 = (x + 2)(x + 5)</code>
+              </li>
+
+              <li>
+                <strong>Resultado final:</strong>
+                <code>(x + 2)(x + 5)</code>
+              </li>
+            </ol>
           </div>
+
 
           <div class="caso">
             <h3>📌 5. Trinomio general (ax² + bx + c)</h3>
+
             <p>
-              Cuando el coeficiente principal es distinto de 1. Se usan
-              técnicas como el método de agrupación o el producto cruzado.
+              Se aplica cuando el coeficiente principal \(a\) es distinto de 1.
+              Para factorizar, se usan técnicas como el método de agrupación o el producto cruzado.
             </p>
-            <code>Ejemplo: 6x² + 11x + 4 = (3x + 4)(2x + 1)</code>
-            <p>
-              <strong>Procedimiento:</strong> multiplicar a·c, buscar factores
-              que sumen b, y agrupar.
-            </p>
+
+            <p><strong>Ejemplo:</strong></p>
+            <code>6x² + 11x + 4</code>
+
+            <p><strong>Procedimiento paso a paso:</strong></p>
+            <ol>
+              <li>
+                <strong>Multiplicar el coeficiente del término cuadrático (a) por el término independiente (c):</strong>
+                <p>\(6 \times 4 = 24\)</p>
+              </li>
+
+              <li>
+                <strong>Buscar dos números que multiplicados den 24 y sumados den el coeficiente del término lineal (b =
+                  11):</strong>
+                <ul>
+                  <li>Posibles pares: (3, 8), (4, 6), (2, 12), etc.</li>
+                  <li>3 × 8 = 24 y 3 + 8 = 11 ✅</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Reescribir el término del medio usando esos dos números:</strong>
+                <p>\(6x^2 + 3x + 8x + 4\)</p>
+              </li>
+
+              <li>
+                <strong>Agrupar términos para factorizar por separado:</strong>
+                <p>\((6x^2 + 3x) + (8x + 4)\)</p>
+              </li>
+
+              <li>
+                <strong>Factorizar cada grupo:</strong>
+                <ul>
+                  <li>Primer grupo: \(3x(2x + 1)\)</li>
+                  <li>Segundo grupo: \(4(2x + 1)\)</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Extraer el factor común de los dos términos agrupados:</strong>
+                <p>\((3x + 4)(2x + 1)\)</p>
+              </li>
+
+              <li>
+                <strong>Resultado final:</strong>
+                <code>6x² + 11x + 4 = (3x + 4)(2x + 1)</code>
+              </li>
+            </ol>
           </div>
+
 
           <div class="caso">
             <h3>📌 6. Diferencia de cubos</h3>
+
             <p>
-              Se factorizan expresiones con dos términos cúbicos separados por
-              signo negativo.
+              Se aplica para factorizar expresiones con dos términos cúbicos separados por un signo negativo.
             </p>
-            <code>Ejemplo: x³ - 8 = (x - 2)(x² + 2x + 4)</code>
-            <p><strong>Fórmula:</strong> a³ - b³ = (a - b)(a² + ab + b²)</p>
+
+            <p><strong>Fórmula general:</strong></p>
+            <code>a³ - b³ = (a - b)(a² + ab + b²)</code>
+
+            <p><strong>Ejemplo:</strong></p>
+            <code>x³ - 8</code>
+
+            <ol>
+              <li>
+                <strong>Identificar los términos cúbicos:</strong>
+                <ul>
+                  <li><code>x³</code> es el cubo de <code>x</code></li>
+                  <li><code>8</code> es el cubo de <code>2</code> porque <code>2³ = 8</code></li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Confirmar que están separados por signo menos:</strong>
+                <p>Sí, tenemos <code>x³ - 8</code></p>
+              </li>
+
+              <li>
+                <strong>Aplicar la fórmula de diferencia de cubos:</strong>
+                <p>Donde:</p>
+                <ul>
+                  <li><code>a = x</code></li>
+                  <li><code>b = 2</code></li>
+                </ul>
+                <p>Entonces:</p>
+                <code>x³ - 8 = (x - 2)(x² + 2x + 4)</code>
+              </li>
+
+              <li>
+                <strong>Explicación del segundo factor:</strong>
+                <ul>
+                  <li><code>x²</code> es el cuadrado de <code>a</code></li>
+                  <li><code>2x</code> es el producto de <code>a</code> y <code>b</code></li>
+                  <li><code>4</code> es el cuadrado de <code>b</code></li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Resultado final:</strong>
+                <code>x³ - 8 = (x - 2)(x² + 2x + 4)</code>
+              </li>
+            </ol>
           </div>
+
 
           <div class="caso">
             <h3>📌 7. Suma de cubos</h3>
+
             <p>
-              Se aplican fórmulas especiales para binomios con cubos
-              positivos.
+              Se aplican fórmulas especiales para factorizar binomios con términos cúbicos positivos sumados.
             </p>
-            <code>Ejemplo: x³ + 27 = (x + 3)(x² - 3x + 9)</code>
-            <p><strong>Fórmula:</strong> a³ + b³ = (a + b)(a² - ab + b²)</p>
+
+            <p><strong>Fórmula general:</strong></p>
+            <code>a³ + b³ = (a + b)(a² - ab + b²)</code>
+
+            <p><strong>Ejemplo:</strong></p>
+            <code>x³ + 27</code>
+
+            <ol>
+              <li>
+                <strong>Identificar los términos cúbicos:</strong>
+                <ul>
+                  <li><code>x³</code> es el cubo de <code>x</code></li>
+                  <li><code>27</code> es el cubo de <code>3</code> porque <code>3³ = 27</code></li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Confirmar que están sumados:</strong>
+                <p>Tenemos <code>x³ + 27</code>, con signo positivo.</p>
+              </li>
+
+              <li>
+                <strong>Aplicar la fórmula de suma de cubos:</strong>
+                <p>Donde:</p>
+                <ul>
+                  <li><code>a = x</code></li>
+                  <li><code>b = 3</code></li>
+                </ul>
+                <p>Entonces:</p>
+                <code>x³ + 27 = (x + 3)(x² - 3x + 9)</code>
+              </li>
+
+              <li>
+                <strong>Explicación del segundo factor:</strong>
+                <ul>
+                  <li><code>x²</code> es el cuadrado de <code>a</code></li>
+                  <li><code>-3x</code> es el negativo del producto de <code>a</code> y <code>b</code></li>
+                  <li><code>9</code> es el cuadrado de <code>b</code></li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Resultado final:</strong>
+                <code>x³ + 27 = (x + 3)(x² - 3x + 9)</code>
+              </li>
+            </ol>
           </div>
+
 
           <div class="caso">
             <h3>📌 8. Agrupación de términos</h3>
+
             <p>
-              Consiste en organizar el polinomio en grupos, factorizando por
-              separado y luego extrayendo un factor común.
+              Este método consiste en organizar el polinomio en grupos, factorizar cada grupo por separado y luego
+              extraer un factor común de ambos grupos.
             </p>
-            <code>Ejemplo: x³ + 3x² + 2x + 6 = (x² + 2)(x + 3)</code>
-            <p>
-              <strong>Ideal para:</strong> polinomios con 4 o más términos.
-            </p>
+
+            <p><strong>Ejemplo:</strong></p>
+            <code>x³ + 3x² + 2x + 6</code>
+
+            <p><strong>Procedimiento paso a paso:</strong></p>
+            <ol>
+              <li>
+                <strong>Separar el polinomio en dos grupos:</strong>
+                <p>\((x³ + 3x²) + (2x + 6)\)</p>
+              </li>
+
+              <li>
+                <strong>Factorizar cada grupo por separado:</strong>
+                <ul>
+                  <li>Primer grupo: \(x³ + 3x²\)</li>
+                  <li>El factor común es \(x²\), así que: \(x²(x + 3)\)</li>
+                  <li>Segundo grupo: \(2x + 6\)</li>
+                  <li>El factor común es \(2\), así que: \(2(x + 3)\)</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Observar que ambos grupos tienen el mismo binomio común:</strong>
+                <p>\(x + 3\)</p>
+              </li>
+
+              <li>
+                <strong>Extraer el factor común \(x + 3\):</strong>
+                <p>\(x²(x + 3) + 2(x + 3) = (x + 3)(x² + 2)\)</p>
+              </li>
+
+              <li>
+                <strong>Resultado final:</strong>
+                <code>x³ + 3x² + 2x + 6 = (x + 3)(x² + 2)</code>
+              </li>
+            </ol>
+
+            <p><strong>Ideal para:</strong> polinomios con 4 o más términos.</p>
           </div>
+
 
           <div class="caso resumen">
             <h3>📌 9. Resumen visual de formas comunes</h3>
