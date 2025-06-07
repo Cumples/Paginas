@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Factorización y Trinomios - Explicación Completa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1 class="animate-title">Factorización Fácil y Profunda</h1>
+    </div>
+  </header>
+
+  <button class="nav-toggle" onclick="toggleMobileMenu()">☰ Menú</button>
+
+  <nav class="group-tabs mobile-hidden" id="groupTabs">
+    <div class="menu-group">
+      <span class="menu-category">📘 Factorización</span>
+      <button class="group-button" data-group="grupo1">
+        Fundamentos Básicos
+      </button>
+      <button class="group-button" data-group="grupo2">
+        Aplicaciones y Práctica
+      </button>
+      <button class="group-button" data-group="grupo3">
+        Errores y Recomendaciones
+      </button>
+      <button class="group-button" data-group="grupo4">
+        Recursos fractorizacion
+      </button>
+    </div>
+
+    <div class="menu-group">
+      <span class="menu-category">📗 Trinomios</span>
+      <button class="group-button" data-group="grupo5">
+        Teoría de Trinomios
+      </button>
+      <button class="group-button" data-group="grupo6">Casos Clásicos</button>
+      <button class="group-button" data-group="grupo7">
+        Variantes Complejas
+      </button>
+      <button class="group-button" data-group="grupo8">
+        Recirsos Trinomios
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="group-content active" id="grupo1">
+        <section class="card fade-in">
+          <h2>🔷 ¿Qué es la Factorización?</h2>
+          <p>
+            La factorización es un proceso fundamental en álgebra que consiste
+            en descomponer una expresión algebraica, como un polinomio, en el
+            producto de expresiones más simples conocidas como factores. Es
+            decir, factorizar implica transformar una expresión compleja en un
+            conjunto de términos más sencillos que, al multiplicarse entre sí,
+            restituyen la expresión original. Esta técnica es análoga a la
+            descomposición de un número en sus factores primos en aritmética.
+          </p>
+          <p><strong>Ejemplo básico:</strong></p>
+          <code>x² + 5x + 6 = (x + 2)(x + 3)</code>
+          <p><strong>Importancia de la factorización:</strong></p>
+          <ul>
+            <li>Resolver ecuaciones algebraicas</li>
+            <li>Encontrar raíces de polinomios</li>
+            <li>Simplificar expresiones algebraicas</li>
+            <li>Estudiar funciones polinómicas</li>
+            <li>Aplicaciones en física, ingeniería, economía, etc.</li>
+          </ul>
+          <div class="factorizacion-avanzada">
+            <p>
+              Además, la factorización no solo se limita a expresiones
+              polinómicas, sino que se extiende a otras ramas del álgebra,
+              como la factorización de matrices en álgebra lineal, la
+              factorización de números en teoría de números y la
+              descomposición en productos en otros sistemas algebraicos.
+            </p>
+            <p>Técnicas avanzadas incluyen:</p>
+            <ul>
+              <li>
+                <strong>Factorización por agrupación:</strong> útil cuando el
+                polinomio tiene cuatro o más términos, separando en grupos que
+                comparten un factor común.
+              </li>
+              <li>
+                <strong>Uso de identidades notables:</strong> tales como la
+                diferencia de cuadrados, suma y diferencia de cubos, y
+                trinomios cuadrados perfectos.
+              </li>
+              <li>
+                <strong>Factorización por sustitución:</strong> cuando se
+                cambia una expresión compleja por una variable temporal para
+                simplificar la factorización.
+              </li>
+              <li>
+                <strong>Teorema del resto y del factor:</strong> permiten
+                verificar si un binomio es factor de un polinomio mediante el
+                cálculo de restos.
+              </li>
+            </ul>
+            <p><strong>Ejemplo avanzado:</strong></p>
+            <code>2x³ + 6x² - 8x - 24 = 2x²(x + 3) - 8(x + 3) = (2x² - 8)(x + 3)
+                = 2(x² - 4)(x + 3) = 2(x - 2)(x + 2)(x + 3)</code>
+            <p>
+              La factorización es también un paso clave en la resolución de
+              problemas en álgebra abstracta, optimización matemática y
+              análisis numérico, facilitando la simplificación y solución de
+              expresiones y ecuaciones complejas.
+            </p>
+            <p>
+              Históricamente, la factorización ha sido una herramienta clave
+              desde la antigüedad, con raíces en la matemática babilónica y
+              egipcia, y desarrollos formales a partir del álgebra de los
+              matemáticos islámicos y europeos durante la Edad Media y el
+              Renacimiento.
+            </p>
+            <p>
+              <em>Nota:</em> Dominar la factorización no solo mejora la
+              habilidad para resolver ejercicios, sino que fortalece la
+              comprensión conceptual del comportamiento de funciones y
+              polinomios.
+            </p>
+          </div>
+        </section>
+
+        <section class="card fade-in teorema-factorizacion">
+          <h2>🔷 Teorema de Factorización</h2>
+
+          <p>
+            El <strong>Teorema de Factorización</strong> es una consecuencia
+            del <em>Teorema Fundamental del Álgebra</em>. Afirma que cualquier
+            polinomio no constante de grado <em>n</em>, con coeficientes
+            complejos, puede descomponerse como el producto de
+            <strong>n factores lineales</strong>, teniendo en cuenta todas sus
+            raíces (reales o complejas) y sus multiplicidades.
+          </p>
+
+          <p>
+            <strong>Teorema Fundamental del Álgebra:</strong><br />
+            <em>"Todo polinomio de grado n ≥ 1 con coeficientes complejos tiene
+              al menos una raíz compleja."</em>
+            Esto implica que cualquier polinomio puede factorizarse
+            completamente en el campo de los números complejos.
+          </p>
+
+          <div class="teorema-ejemplo">
+            <h3>📌 Ejemplo con raíces complejas:</h3>
+            <p>
+              El polinomio <code>x² + 1</code> no tiene raíces reales, pero sí
+              raíces complejas:
+            </p>
+            <code>x² + 1 = (x + i)(x - i)</code>
+            <p>
+              Aquí, <strong>i</strong> representa la unidad imaginaria tal que
+              <em>i² = -1</em>.
+            </p>
+          </div>
+
+          <div class="teorema-ejemplo">
+            <h3>📌 Ejemplo con raíces reales y complejas:</h3>
+            <p>
+              Para el polinomio <code>p(x) = x⁴ - 5x² + 6</code>, primero
+              factorizamos:
+            </p>
+            <code>p(x) = (x² - 2)(x² - 3)</code>
+            <p>Ahora se puede descomponer completamente:</p>
+            <code>p(x) = (x - √2)(x + √2)(x - √3)(x + √3)</code>
+            <p>Todas las raíces son reales en este caso.</p>
+          </div>
+
+          <div class="teorema-ejemplo">
+            <h3>📌 Ejemplo mixto:</h3>
+            <p>
+              Para el polinomio <code>q(x) = x³ - 1</code>, sus raíces
+              incluyen:
+            </p>
+            <ul>
+              <li>Una raíz real: <code>x = 1</code></li>
+              <li>
+                Dos raíces complejas:
+                <code>x = e<sup>2πi/3</sup>, x = e<sup>4πi/3</sup></code>
+              </li>
+            </ul>
+            <p>Factorización:</p>
+            <code>q(x) = (x - 1)(x² + x + 1)</code>
+          </div>
+
+          <div class="teorema-consecuencias">
+            <h3>🧠 Consecuencias clave:</h3>
+            <ul>
+              <li>
+                Cualquier polinomio de grado n tiene exactamente n raíces
+                complejas (contando multiplicidad).
+              </li>
+              <li>
+                Si los coeficientes son reales, las raíces complejas
+                aparecerán en pares conjugados.
+              </li>
+              <li>
+                La factorización completa permite analizar el comportamiento
+                del polinomio, como sus interceptos y simetrías.
+              </li>
+            </ul>
+          </div>
+
+          <div class="alerta-tip">
+            <p>
+              🎯 <strong>Consejo:</strong> Si el polinomio tiene coeficientes
+              reales y una raíz compleja <code>a + bi</code>, entonces
+              <code>a - bi</code> también es raíz. Esto permite escribir
+              factores cuadráticos irreducibles en ℝ.
+            </p>
+          </div>
+        </section>
+
+        <section class="card fade-in casos-factorizacion">
+          <h2>✅ Casos de Factorización</h2>
+          <p>
+            La factorización algebraica se puede clasificar en varios casos
+            que permiten simplificar expresiones polinómicas. A continuación,
+            se presenta un resumen de los casos más comunes, con fórmulas,
+            ejemplos y aplicaciones.
+          </p>
+
+          <div class="caso">
+            <h3>📌 1. Factor común</h3>
+            <p>
+              Consiste en extraer el mayor factor que se repite en todos los
+              términos del polinomio.
+            </p>
+            <code>Ejemplo: 4x³ - 8x² = 4x²(x - 2)</code>
+            <p><strong>Fórmula:</strong> ab + ac = a(b + c)</p>
+          </div>
+
+          <div class="caso">
+            <h3>📌 2. Diferencia de cuadrados</h3>
+            <p>
+              Se aplica cuando se tienen dos términos cuadrados separados por
+              un signo negativo.
+            </p>
+            <code>Ejemplo: x² - 25 = (x - 5)(x + 5)</code>
+            <p><strong>Fórmula:</strong> a² - b² = (a - b)(a + b)</p>
+          </div>
+
+          <div class="caso">
+            <h3>📌 3. Trinomio cuadrado perfecto</h3>
+            <p>
+              Surge del cuadrado de un binomio. El primer y el último término
+              son cuadrados perfectos, y el término central es el doble
+              producto de sus raíces cuadradas.
+            </p>
+            <code>Ejemplo: x² + 6x + 9 = (x + 3)²</code>
+            <p><strong>Fórmula:</strong> a² ± 2ab + b² = (a ± b)²</p>
+          </div>
+
+          <div class="caso">
+            <h3>📌 4. Trinomio cuadrado no perfecto (simple)</h3>
+            <p>
+              Trinomio donde el coeficiente principal es 1. Se buscan dos
+              números que multiplicados den el tercer término y sumados den el
+              segundo.
+            </p>
+            <code>Ejemplo: x² + 7x + 10 = (x + 2)(x + 5)</code>
+            <p>
+              <strong>Fórmula:</strong> x² + (a + b)x + ab = (x + a)(x + b)
+            </p>
+          </div>
+
+          <div class="caso">
+            <h3>📌 5. Trinomio general (ax² + bx + c)</h3>
+            <p>
+              Cuando el coeficiente principal es distinto de 1. Se usan
+              técnicas como el método de agrupación o el producto cruzado.
+            </p>
+            <code>Ejemplo: 6x² + 11x + 4 = (3x + 4)(2x + 1)</code>
+            <p>
+              <strong>Procedimiento:</strong> multiplicar a·c, buscar factores
+              que sumen b, y agrupar.
+            </p>
+          </div>
+
+          <div class="caso">
+            <h3>📌 6. Diferencia de cubos</h3>
+            <p>
+              Se factorizan expresiones con dos términos cúbicos separados por
+              signo negativo.
+            </p>
+            <code>Ejemplo: x³ - 8 = (x - 2)(x² + 2x + 4)</code>
+            <p><strong>Fórmula:</strong> a³ - b³ = (a - b)(a² + ab + b²)</p>
+          </div>
+
+          <div class="caso">
+            <h3>📌 7. Suma de cubos</h3>
+            <p>
+              Se aplican fórmulas especiales para binomios con cubos
+              positivos.
+            </p>
+            <code>Ejemplo: x³ + 27 = (x + 3)(x² - 3x + 9)</code>
+            <p><strong>Fórmula:</strong> a³ + b³ = (a + b)(a² - ab + b²)</p>
+          </div>
+
+          <div class="caso">
+            <h3>📌 8. Agrupación de términos</h3>
+            <p>
+              Consiste en organizar el polinomio en grupos, factorizando por
+              separado y luego extrayendo un factor común.
+            </p>
+            <code>Ejemplo: x³ + 3x² + 2x + 6 = (x² + 2)(x + 3)</code>
+            <p>
+              <strong>Ideal para:</strong> polinomios con 4 o más términos.
+            </p>
+          </div>
+
+          <div class="caso resumen">
+            <h3>📌 9. Resumen visual de formas comunes</h3>
+            <ul>
+              <li>
+                <strong>Trinomio cuadrado perfecto:</strong> a² ± 2ab + b² =
+                (a ± b)²
+              </li>
+              <li>
+                <strong>Trinomio simple:</strong> x² + (m + n)x + mn = (x +
+                m)(x + n)
+              </li>
+              <li>
+                <strong>Trinomio general:</strong> ax² + bx + c = (mx + p)(nx
+                + q)
+              </li>
+              <li>
+                <strong>Diferencia de cuadrados:</strong> a² - b² = (a - b)(a
+                + b)
+              </li>
+              <li>
+                <strong>Suma de cubos:</strong> a³ + b³ = (a + b)(a² - ab +
+                b²)
+              </li>
+              <li>
+                <strong>Diferencia de cubos:</strong> a³ - b³ = (a - b)(a² +
+                ab + b²)
+              </li>
+              <li>
+                <strong>Agrupación:</strong> (a + b)(c + d) si se repite algún
+                factor
+              </li>
+            </ul>
+          </div>
+
+          <div class="alerta-tip">
+            <p>
+              <strong>🎯 Consejo:</strong> Memoriza las fórmulas clave y
+              practica muchos ejercicios. Identificar el tipo de caso
+              correctamente te permite resolver problemas más rápido y con
+              mayor precisión.
+            </p>
+          </div>
+        </section>
+      </div>
+      <div class="group-content" id="grupo2">
+        <section class="card fade-in">
+          <h2>🔷 Métodos Avanzados</h2>
+          <p>
+            Los métodos avanzados de factorización permiten descomponer
+            expresiones algebraicas complejas cuando los métodos básicos no
+            son suficientes. Estos métodos combinan teoría algebraica,
+            técnicas sistemáticas y herramientas computacionales en casos más
+            elaborados.
+          </p>
+
+          <ul>
+            <li>
+              <strong>➤ Método de Ruffini:</strong>
+              Utilizado para dividir un polinomio entre binomios de la forma
+              (x - r), siempre que r sea una raíz entera del polinomio. Es
+              rápido y evita la división larga.
+              <br /><code>Ejemplo: (x³ - 6x² + 11x - 6) ÷ (x - 1)</code>
+            </li>
+
+            <li>
+              <strong>➤ Método de Horner:</strong>
+              Técnica eficiente para evaluar un polinomio y realizar
+              divisiones sintéticas, ideal para programación o cálculos
+              computacionales.
+              <br /><code>Ejemplo: Evaluar P(x) = 3x³ - 2x² + x - 5 en x = 2</code>
+            </li>
+
+            <li>
+              <strong>➤ Identidades notables:</strong>
+              Permiten factorizar rápidamente expresiones mediante fórmulas
+              reconocidas:
+              <ul>
+                <li>(a + b)² = a² + 2ab + b²</li>
+                <li>(a - b)² = a² - 2ab + b²</li>
+                <li>(a + b)(a - b) = a² - b²</li>
+                <li>a³ + b³ = (a + b)(a² - ab + b²)</li>
+                <li>a³ - b³ = (a - b)(a² + ab + b²)</li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>➤ Factorización por el Teorema del Resto:</strong>
+              Permite verificar si un número es raíz de un polinomio: si al
+              evaluarlo da cero, es un factor.
+              <br /><code>Ejemplo: ¿x - 3 es factor de P(x) = x² - 2x - 3?</code>
+            </li>
+
+            <li>
+              <strong>➤ Factorización de expresiones racionales:</strong>
+              Se factorizan numeradores y denominadores para simplificar
+              fracciones algebraicas.
+              <br /><code>Ejemplo: (x² - 9)/(x² - x - 6) = [(x - 3)(x + 3)] / [(x -
+                  3)(x + 2)]</code>
+            </li>
+
+            <li>
+              <strong>➤ Factorización de polinomios con coeficientes fraccionarios
+                o irracionales:</strong>
+              Requiere eliminar fracciones o racionalizar antes de aplicar
+              métodos tradicionales.
+              <br /><code>Ejemplo: Factorizar (1/2)x² + x + (1/2)</code>
+            </li>
+
+            <li>
+              <strong>➤ Factorización de polinomios por sustitución:</strong>
+              Se usa un cambio de variable para reducir un polinomio complejo
+              a uno más simple.
+              <br /><code>Ejemplo: Factorizar x⁴ + 2x² + 1 usando y = x² → y² + 2y +
+                  1</code>
+            </li>
+
+            <li>
+              <strong>➤ Factorización en ℚ[x], ℝ[x] y ℂ[x]:</strong>
+              - ℚ[x]: Polinomios con coeficientes racionales<br />
+              - ℝ[x]: Se permite factorizar usando raíces reales<br />
+              - ℂ[x]: Factorización total con raíces complejas (por el Teorema
+              Fundamental del Álgebra)
+            </li>
+
+            <li>
+              <strong>➤ Método de factorización de Eisenstein (criterio
+                irreductibilidad):</strong>
+              Técnica teórica para determinar si un polinomio no se puede
+              factorizar en ℤ[x] (entero).
+            </li>
+
+            <li>
+              <strong>➤ Factorización de polinomios homogéneos:</strong>
+              Todos los términos tienen el mismo grado. Se pueden factorizar
+              con cambios de variable o factorización por agrupación especial.
+            </li>
+          </ul>
+
+          <p>
+            <strong>Consejo:</strong> A menudo se combinan múltiples técnicas
+            avanzadas para factorizar polinomios de alto grado o expresiones
+            que mezclan varias estructuras.
+          </p>
+        </section>
+
+        <section class="card fade-in aplicaciones">
+          <h2>🔷 Aplicaciones de la Factorización</h2>
+          <p>
+            La factorización no solo es útil en matemáticas puras, sino que
+            tiene aplicaciones prácticas en muchas ramas del conocimiento. A
+            continuación, se detallan los principales usos de esta herramienta
+            fundamental:
+          </p>
+
+          <div class="aplicacion-grid">
+            <div class="aplicacion-item">
+              <h3>📘 Resolver ecuaciones cuadráticas</h3>
+              <p>
+                Factorizar permite transformar ecuaciones cuadráticas en
+                productos que igualan a cero, lo cual facilita encontrar las
+                soluciones.
+              </p>
+              <code>x² - 5x + 6 = 0 ⇒ (x - 2)(x - 3) = 0 ⇒ x = 2, 3</code>
+              <p>
+                <strong>Aplicación:</strong> resolver trayectorias parabólicas
+                en física o proyectar beneficios en economía.
+              </p>
+            </div>
+
+            <div class="aplicacion-item">
+              <h3>📊 Analizar gráficas de funciones</h3>
+              <p>
+                La factorización ayuda a encontrar las raíces de una función
+                polinómica, permitiendo graficar con precisión puntos de corte
+                con el eje X.
+              </p>
+              <code>f(x) = x² - 4 ⇒ (x - 2)(x + 2) ⇒ Raíces: x = -2, 2</code>
+              <p>
+                <strong>Aplicación:</strong> modelar comportamientos de
+                crecimiento o caída en distintas ciencias.
+              </p>
+            </div>
+
+            <div class="aplicacion-item">
+              <h3>⚛️ Problemas en física y economía</h3>
+              <p>
+                Muchos modelos físicos y económicos conducen a ecuaciones
+                algebraicas que deben resolverse mediante factorización.
+              </p>
+              <ul>
+                <li>Física: trayectorias, fuerzas, energía cinética.</li>
+                <li>
+                  Economía: maximización de ganancias, análisis de costos.
+                </li>
+              </ul>
+              <code>Ejemplo: v² - 2gh = 0 ⇒ v = √(2gh)</code>
+            </div>
+
+            <div class="aplicacion-item">
+              <h3>📐 En cálculo</h3>
+              <p>
+                La factorización es clave para simplificar expresiones antes
+                de aplicar límites, derivadas o integrales.
+              </p>
+              <ul>
+                <li>
+                  <strong>Límites:</strong> Cancelar términos que generan
+                  indeterminaciones.
+                </li>
+                <li>
+                  <strong>Derivadas:</strong> Factorizar el numerador para
+                  simplificar funciones racionales.
+                </li>
+                <li>
+                  <strong>Fracciones parciales:</strong> Descomponer
+                  expresiones racionales para integrar fácilmente.
+                </li>
+              </ul>
+              <code>lim(x→2) [(x² - 4)/(x - 2)] = lim(x→2) [(x - 2)(x + 2)/(x -
+                  2)] = 4</code>
+            </div>
+
+            <div class="aplicacion-item">
+              <h3>🧠 Lógica matemática y computación</h3>
+              <p>
+                En álgebra booleana, la factorización permite simplificar
+                expresiones lógicas y optimizar circuitos electrónicos.
+              </p>
+              <code>AB + AB' = A(B + B') = A</code>
+              <p>
+                <strong>Aplicación:</strong> reducción de compuertas lógicas y
+                eficiencia de algoritmos.
+              </p>
+            </div>
+
+            <div class="aplicacion-item">
+              <h3>🧮 Geometría algebraica</h3>
+              <p>
+                En geometría, la factorización ayuda a expresar áreas o
+                volúmenes en términos algebraicos y facilita su manipulación.
+              </p>
+              <code>Área = x² + 6x + 9 = (x + 3)²</code>
+              <p>Permite relacionar figuras con ecuaciones cuadráticas.</p>
+            </div>
+          </div>
+
+          <div class="alerta-tip">
+            <p>
+              <strong>🔎 Tip:</strong> Estudiar las aplicaciones reales de la
+              factorización te permite entender por qué es tan importante
+              dominar este tema. Relaciona los problemas con contextos
+              prácticos: física, negocios, arquitectura o tecnología.
+            </p>
+          </div>
+        </section>
+
+        <section class="card fade-in interactive">
+          <h2>🔷 Ejercicios Resueltos</h2>
+          <p><strong>Ejercicio 1:</strong> x² - 5x + 6</p>
+          <input type="text" placeholder="Escribe la factorización" id="respuesta1" />
+          <button onclick="verificar(1)">Verificar</button>
+          <p id="solucion1" class="respuesta"></p>
+
+          <p><strong>Ejercicio 2:</strong> 3x² + 14x + 8</p>
+          <input type="text" placeholder="Escribe la factorización" id="respuesta2" />
+          <button onclick="verificar(2)">Verificar</button>
+          <p id="solucion2" class="respuesta"></p>
+        </section>
+      </div>
+      <div class="group-content" id="grupo3">
+        <section class="card fade-in errores-comunes">
+          <h2>🔷 Errores Comunes en la Factorización</h2>
+          <p>
+            Al factorizar expresiones algebraicas, muchos estudiantes cometen
+            errores que pueden llevar a resultados incorrectos o incompletos.
+            Conocer estos errores es clave para evitarlos.
+          </p>
+
+          <div class="error-grid">
+            <div class="error-item">
+              <h3>❌ No identificar el factor común</h3>
+              <p>
+                Es común omitir factores comunes, especialmente cuando hay
+                variables y coeficientes. Siempre revisa si todos los términos
+                tienen algo en común.
+              </p>
+              <code>Ejemplo incorrecto: 4x³ - 8x² → (x³ - 2x²)</code><br />
+              <code>Corrección: 4x²(x - 2)</code>
+            </div>
+
+            <div class="error-item">
+              <h3>❌ Errores de signo</h3>
+              <p>
+                Un signo mal puesto puede cambiar completamente el resultado.
+                Esto suele ocurrir al aplicar identidades notables o al
+                multiplicar binomios.
+              </p>
+              <code>Ejemplo incorrecto: x² - 9 = (x + 3)(x + 3)</code><br />
+              <code>Corrección: (x + 3)(x - 3)</code>
+            </div>
+
+            <div class="error-item">
+              <h3>❌ Mal uso de identidades</h3>
+              <p>
+                Usar fórmulas como <code>(a + b)²</code> o
+                <code>a² - b²</code> sin verificar que se apliquen
+                correctamente a la expresión puede llevar a errores.
+              </p>
+              <code>Identidad correcta: a² - b² = (a - b)(a + b)</code>
+            </div>
+
+            <div class="error-item">
+              <h3>❌ No comprobar con multiplicación</h3>
+              <p>
+                Es importante verificar el resultado multiplicando los
+                factores obtenidos. Esto permite confirmar que se ha
+                factorizado correctamente.
+              </p>
+              <code>Consejo: Siempre multiplica tus factores para confirmar que
+                  el producto coincide con la expresión original.</code>
+            </div>
+
+            <div class="error-item">
+              <h3>❌ Agrupar mal los términos</h3>
+              <p>
+                En el método por agrupación, una agrupación incorrecta puede
+                hacer que la factorización no funcione o sea más difícil de
+                visualizar.
+              </p>
+              <code>Ejemplo incorrecto: x³ + x² + 3x + 3 → no es factorizable
+                  directamente</code><br />
+              <code>Corrección: (x³ + x²) + (3x + 3) = x²(x + 1) + 3(x + 1) = (x²
+                  + 3)(x + 1)</code>
+            </div>
+
+            <div class="error-item">
+              <h3>❌ Confundir trinomios</h3>
+              <p>
+                Un error común es tratar un trinomio general como si fuera un
+                trinomio cuadrado perfecto sin verificar los coeficientes.
+              </p>
+              <code>Ejemplo incorrecto: x² + 4x + 5 = (x + 2)²</code><br />
+              <code>Corrección: No es cuadrado perfecto, verificar con
+                  discriminante o prueba directa.</code>
+            </div>
+          </div>
+
+          <div class="alerta-tip">
+            <p>
+              <strong>🔎 Tip:</strong> Revisa tus resultados paso a paso, y si
+              puedes, utiliza una calculadora algebraica o software como
+              GeoGebra para comprobar visualmente tus factorizaciones.
+            </p>
+          </div>
+        </section>
+
+        <section class="card fade-in">
+          <h2>🔷 Recomendaciones</h2>
+          <ul>
+            <li>Practica mucho</li>
+            <li>Identifica patrones</li>
+            <li>Verifica tus resultados</li>
+            <li>Usa software visual como GeoGebra</li>
+          </ul>
+        </section>
+
+        <section class="card fade-in">
+          <h2>🔷 Recursos Sugeridos</h2>
+          <ul>
+            <li>
+              <strong>Libros:</strong> Álgebra de Baldor, Pre-Calculus de
+              Stewart
+            </li>
+            <li><strong>Videos:</strong> Khan Academy, JulioProfe</li>
+            <li><strong>Software:</strong> GeoGebra, WolframAlpha, Desmos</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="group-content" id="grupo4">
+        <section class="card fade-in">
+          <h2>📚 Recursos de Factorización</h2>
+
+          <div class="resource-frame">
+            <h3>Documentos PDF para descargar / consultar</h3>
+            <ul class="resource-list">
+              <li><a
+                  href="https://paulaandreamatematicas.wordpress.com/wp-content/uploads/2013/02/guia-factorizacion.pdf"
+                  target="_blank" rel="noopener noreferrer">Guía básica de factorización</a></li>
+              <li><a
+                  href="https://merida.salesianos.edu/colegio/wp-content/uploads/sites/2/2019/02/4eso-MAT-FACTORIZACION_POLINOMIOS.pdf"
+                  target="_blank" rel="noopener noreferrer">Factorización de Polinomios</a></li>
+              <li><a href="https://www.uaeh.edu.mx/docencia/P_Presentaciones/prepa_ixtlahuaco/2017/algebra.pdf"
+                  target="_blank" rel="noopener noreferrer">Técnicas de factorización</a></li>
+            </ul>
+          </div>
+
+          <div class="resource-frame">
+            <h3>🎬 Videos explicativos</h3>
+
+            <div class="video-buttons">
+              <button data-url="y_mkvBoYz-Y">Factorización por agrupación</button>
+              <button data-url="YAENVrFtO6E">Trinomio cuadrado perfecto</button>
+              <button data-url="a8CUEopWCN0">Factorización general</button>
+            </div>
+
+            <div class="video-container">
+              <iframe id="videoFrame" width="100%" height="400" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen title="Video explicativo"></iframe>
+            </div>
+          </div>
+          <div class="resource-frame">
+            <h3>🧮 Páginas web interactivas</h3>
+            <div class="page-buttons">
+              <button onclick="window.open('https://es.symbolab.com/solver/factor-calculator', '_blank')">
+                Symbolab Factorization Calculator
+              </button>
+              <button onclick="window.open('https://www.calculatorsoup.com/calculators/math/factors.php', '_blank')">
+                CalculatorSoup Factorization
+              </button>
+              <button onclick="window.open('https://www.wolframalpha.com/input/?i=factor+polynomial', '_blank')">
+                WolframAlpha Factor
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+      <div class="group-content" id="grupo5">
+        <section class="card fade-in">
+          <h2>📘 Teoría de Trinomios</h2>
+          <p>
+            Los trinomios son expresiones algebraicas que contienen tres términos. Generalmente se presentan en la forma
+            estándar:
+          </p>
+          <code>ax² + bx + c</code>
+          <p>Donde:</p>
+          <ul>
+            <li><strong>a:</strong> coeficiente principal (puede ser distinto de 1)</li>
+            <li><strong>b:</strong> coeficiente lineal</li>
+            <li><strong>c:</strong> término independiente</li>
+          </ul>
+
+          <h3>📌 Clasificación de Trinomios</h3>
+          <ul>
+            <li><strong>Trinomio cuadrado perfecto:</strong> surge del cuadrado de un binomio, es decir, de la forma (mx
+              + n)²</li>
+            <li><strong>Trinomio simple:</strong> donde el coeficiente principal <code>a = 1</code></li>
+            <li><strong>Trinomio general:</strong> donde el coeficiente principal <code>a ≠ 1</code></li>
+            <li><strong>Trinomio con raíces imaginarias:</strong> raíces que involucran números complejos cuando el
+              discriminante es negativo</li>
+          </ul>
+
+          <h3>🔎 Propiedades importantes</h3>
+          <ul>
+            <li>Un trinomio cuadrático puede tener dos, una o ninguna raíz real, dependiendo del discriminante.</li>
+            <li>Se puede representar como el producto de dos binomios cuando es factorizable.</li>
+            <li>Los signos y valores de los coeficientes determinan el tipo de factorización posible.</li>
+            <li>El discriminante <code>Δ = b² - 4ac</code> es clave para determinar el número y tipo de raíces.</li>
+          </ul>
+
+          <h3>📈 Representación gráfica</h3>
+          <p>
+            Todo trinomio cuadrático representa una parábola en el plano cartesiano. La forma y orientación de esta
+            parábola dependen de sus coeficientes:
+          </p>
+          <ul>
+            <li>Si <code>a &gt; 0</code>, la parábola abre hacia arriba, con un mínimo local.</li>
+            <li>Si <code>a &lt; 0</code>, la parábola abre hacia abajo, con un máximo local.</li>
+            <li>El vértice de la parábola está en el punto <code>(-b/2a, f(-b/2a))</code>, que es el punto de máximo o
+              mínimo.</li>
+            <li>Las raíces o ceros de la función corresponden a las intersecciones con el eje x.</li>
+          </ul>
+
+          <h3>🧮 Fórmula general y resolución</h3>
+          <p>Para resolver el trinomio cuadrático <code>ax² + bx + c = 0</code>, se usa la fórmula cuadrática:</p>
+          <code>x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</code>
+          <p>Esta fórmula proporciona las raíces reales o complejas según el valor del discriminante.</p>
+
+          <h3>📊 Discriminante</h3>
+          <p>El discriminante <code>Δ = b^2 - 4ac</code> determina la naturaleza de las raíces:</p>
+          <ul>
+            <li>Si <code>Δ > 0</code>, hay dos raíces reales y distintas.</li>
+            <li>Si <code>Δ = 0</code>, hay una raíz real doble (raíz repetida).</li>
+            <li>Si <code>Δ < 0</code>, las raíces son complejas conjugadas.</li>
+          </ul>
+
+          <h3>📜 Historia y contexto</h3>
+          <p>
+            El estudio de los trinomios se remonta a las civilizaciones antiguas, como las de Babilonia y Grecia, que
+            resolvían ecuaciones cuadráticas usando métodos geométricos. El desarrollo del álgebra en la Edad Media y el
+            Renacimiento permitió generalizar métodos algebraicos para factorizar y resolver trinomios, vital para la
+            evolución del cálculo y otras ramas de las matemáticas.
+          </p>
+
+          <h3>🔧 Métodos para factorizar trinomios</h3>
+          <ul>
+            <li><strong>Descomposición del término medio:</strong> Se busca dos números que multiplicados den
+              <code>a × c</code> y sumados den <code>b</code>, para reescribir el trinomio y agrupar.
+            </li>
+            <li><strong>Método de agrupación:</strong> Utilizado tras la descomposición, se agrupan términos para
+              extraer factores comunes.</li>
+            <li><strong>Uso de identidades notables:</strong> Para reconocer patrones como cuadrados perfectos y
+              diferencia de cuadrados.</li>
+            <li><strong>Fórmula general:</strong> Para hallar raíces cuando la factorización no es sencilla, usando la
+              fórmula cuadrática.</li>
+          </ul>
+
+          <h3>📚 Aplicaciones prácticas</h3>
+          <p>
+            Los trinomios cuadráticos se aplican en múltiples campos, tales como:
+          </p>
+          <ul>
+            <li><strong>Física:</strong> para modelar movimientos parabólicos y trayectorias.</li>
+            <li><strong>Economía:</strong> análisis de funciones de costo y beneficio con curvas cuadráticas.</li>
+            <li><strong>Ingeniería:</strong> diseño estructural y análisis de fuerzas.</li>
+            <li><strong>Informática:</strong> algoritmos que requieren análisis polinómico.</li>
+            <li><strong>Estadística:</strong> ajuste de curvas y modelos predictivos.</li>
+          </ul>
+
+          <h3>🧠 Consejos para el estudio</h3>
+          <ul>
+            <li>Practica la factorización con distintos tipos de trinomios para identificar patrones.</li>
+            <li>Domina el uso de la fórmula cuadrática y discriminante.</li>
+            <li>Visualiza la gráfica para comprender mejor el comportamiento del polinomio.</li>
+            <li>Estudia ejemplos con raíces reales y complejas para reforzar el concepto.</li>
+          </ul>
+
+          <h3>🔍 Ejemplo práctico</h3>
+          <p>Factoriza el trinomio <code>6x² + 11x + 4</code>:</p>
+          <ol>
+            <li>Multiplicamos <code>a × c = 6 × 4 = 24</code></li>
+            <li>Buscamos dos números que multiplicados den 24 y sumados 11: <code>8 y 3</code></li>
+            <li>Reescribimos: <code>6x² + 8x + 3x + 4</code></li>
+            <li>Agrupamos: <code>(6x² + 8x) + (3x + 4)</code></li>
+            <li>Factor común en cada grupo: <code>2x(3x + 4) + 1(3x + 4)</code></li>
+            <li>Factor común final: <code>(2x + 1)(3x + 4)</code></li>
+          </ol>
+          <p>Así, <code>6x² + 11x + 4 = (2x + 1)(3x + 4)</code>.</p>
+
+          <h3>🌐 Recursos adicionales</h3>
+          <p>Para profundizar en los trinomios, se recomienda consultar libros de álgebra avanzada, videos interactivos
+            y plataformas educativas que ofrecen ejercicios y simuladores gráficos.</p>
+
+        </section>
+      </div>
+
+
+      <div class="group-content" id="grupo6">
+        <section class="card fade-in">
+          <h2>📘 Casos Clásicos de Trinomios</h2>
+
+          <div class="container-section">
+            <h3>✅ Trinomio Cuadrado Perfecto</h3>
+            <p>
+              Un trinomio cuadrado perfecto es aquel que proviene del cuadrado de un binomio. Se expresa con la fórmula
+              general:
+            </p>
+            <code>a² ± 2ab + b² = (a ± b)²</code>
+            <p>
+              Esta identidad permite factorizar rápidamente ciertos trinomios reconociendo patrones.
+            </p>
+            <p><strong>Ejemplo:</strong></p>
+            <code>x² + 6x + 9 = (x + 3)²</code>
+            <p>
+              Aquí, <code>x²</code> es el cuadrado de <code>x</code>, <code>9</code> es el cuadrado de <code>3</code> y
+              el término del medio <code>6x</code> es igual a <code>2·x·3</code>, cumpliendo la fórmula.
+            </p>
+
+            <h4>Características:</h4>
+            <ul>
+              <li>Los términos primero y último son cuadrados perfectos.</li>
+              <li>El término del medio es el doble del producto de las raíces cuadradas de los términos extremos.</li>
+              <li>La factorización es única y no se pueden descomponer más.</li>
+            </ul>
+          </div>
+
+          <div class="container-section">
+            <h3>✅ Trinomio Simple</h3>
+            <p>
+              El trinomio simple es aquel en que el coeficiente del término cuadrático es 1, o sea:
+            </p>
+            <code>x² + bx + c</code>
+            <p>
+              Para factorizarlo, se buscan dos números que multiplicados den <code>c</code> y sumados den
+              <code>b</code>.
+            </p>
+            <p><strong>Ejemplo:</strong></p>
+            <code>x² + 5x + 6 = (x + 2)(x + 3)</code>
+            <p>
+              Los números 2 y 3 cumplen porque 2 × 3 = 6 y 2 + 3 = 5.
+            </p>
+
+            <h4>Método paso a paso:</h4>
+            <ol>
+              <li>Encuentra dos números que multiplicados den el término independiente <code>c</code>.</li>
+              <li>Estos números deben sumar el coeficiente lineal <code>b</code>.</li>
+              <li>Escribe la factorización como el producto de dos binomios con esos números.</li>
+            </ol>
+            <p>
+              Este método es rápido y efectivo para trinomios simples sin coeficiente principal diferente de 1.
+            </p>
+          </div>
+
+          <div class="container-section">
+            <h3>✅ Trinomio General</h3>
+            <p>
+              Cuando el coeficiente principal es diferente de 1, el trinomio tiene la forma:
+            </p>
+            <code>ax² + bx + c</code>
+            <p>
+              La factorización no es inmediata y requiere métodos específicos como la descomposición del término medio o
+              la fórmula cuadrática para encontrar sus raíces.
+            </p>
+            <p><strong>Ejemplo:</strong></p>
+            <code>6x² + 11x + 4 = (3x + 4)(2x + 1)</code>
+
+            <h4>Métodos comunes para factorizar:</h4>
+            <ul>
+              <li><strong>Descomposición del término medio:</strong> Multiplicar <code>a</code> y <code>c</code>, buscar
+                dos números que al multiplicar den ese producto y que al sumar den <code>b</code>.</li>
+              <li><strong>Fórmula general:</strong> Utilizar la fórmula cuadrática para encontrar raíces y expresarlas
+                como factores lineales.</li>
+            </ul>
+          </div>
+
+          <div class="container-section">
+            <h3>🔢 Método de descomposición del término medio</h3>
+            <p>
+              Este método consiste en descomponer el término lineal <code>bx</code> en dos términos cuya suma sea igual
+              a <code>bx</code> y cuyo producto sea igual al producto <code>a × c</code>. Después se agrupan y
+              factorizan por partes.
+            </p>
+            <p><strong>Ejemplo:</strong> Factorizar <code>6x² + 7x + 2</code></p>
+            <ol>
+              <li>Multiplicamos <code>6 × 2 = 12</code>.</li>
+              <li>Buscamos dos números que multiplicados den 12 y sumados 7: 3 y 4.</li>
+              <li>Reescribimos el trinomio: <code>6x² + 3x + 4x + 2</code>.</li>
+              <li>Agrupamos: <code>(6x² + 3x) + (4x + 2)</code>.</li>
+              <li>Factor común en cada grupo: <code>3x(2x + 1) + 2(2x + 1)</code>.</li>
+              <li>Factor común total: <code>(3x + 2)(2x + 1)</code>.</li>
+            </ol>
+            <p>
+              Así, el trinomio queda factorizado en dos binomios.
+            </p>
+          </div>
+
+          <div class="container-section">
+            <h3>📊 Aplicaciones de los casos clásicos</h3>
+            <p>
+              Conocer estos casos es fundamental para:
+            </p>
+            <ul>
+              <li>Resolver ecuaciones cuadráticas rápidamente.</li>
+              <li>Analizar funciones cuadráticas en geometría y física.</li>
+              <li>Optimizar cálculos en ingeniería y economía.</li>
+              <li>Facilitar la integración en cálculo y análisis matemático.</li>
+            </ul>
+            <p>
+              Los casos clásicos forman la base para avanzar hacia polinomios de mayor grado y análisis más complejos.
+            </p>
+          </div>
+
+          <div class="container-section">
+            <h3>💡 Recomendaciones para el estudio</h3>
+            <ul>
+              <li>Practicar la identificación de cada tipo de trinomio en ejercicios variados.</li>
+              <li>Utilizar diagramas y gráficos para visualizar el comportamiento de cada caso.</li>
+              <li>Estudiar ejemplos resueltos para entender la lógica detrás de cada método.</li>
+              <li>Familiarizarse con la fórmula cuadrática para verificar resultados.</li>
+            </ul>
+          </div>
+
+          <div class="container-section">
+            <h3>📚 Recursos adicionales</h3>
+            <p>
+              Para profundizar en los casos clásicos de trinomios, se recomiendan libros de álgebra, tutoriales en
+              línea, y aplicaciones interactivas que permiten experimentar con diferentes coeficientes y observar la
+              factorización y gráficos en tiempo real.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="group-content" id="grupo7">
+        <section class="card fade-in">
+          <h2>📘 Variantes Complejas de Trinomios</h2>
+
+          <div class="container-section">
+            <h3>🧠 Trinomios con coeficientes fraccionarios</h3>
+            <p>
+              Cuando uno o más coeficientes son fracciones, la factorización puede complicarse. Una técnica efectiva es
+              multiplicar toda la expresión por el mínimo común denominador (MCD) para eliminar los denominadores y
+              simplificar el trinomio.
+            </p>
+            <p><strong>Ejemplo:</strong></p>
+            <code>(1/2)x² + (3/2)x + 1 → Multiplicamos todo por 2 → x² + 3x + 2 = (x + 1)(x + 2)</code>
+            <p>
+              Así, eliminamos fracciones y procedemos como un trinomio simple para factorizar.
+            </p>
+            <p><strong>Nota:</strong> Al final, si fuera necesario, podemos dividir por el factor común para regresar a
+              la expresión original.</p>
+          </div>
+
+          <div class="container-section">
+            <h3>🧠 Trinomios con raíces irracionales</h3>
+            <p>
+              Algunos trinomios pueden factorizarse usando números irracionales, como raíces cuadradas. Estos aparecen
+              en factores cuando el discriminante es un número irracional positivo.
+            </p>
+            <p><strong>Ejemplo:</strong></p>
+            <code>x² - 2 = (x + √2)(x - √2)</code>
+            <p>
+              Este tipo de factorización es común en álgebra avanzada y en análisis matemático donde las raíces no
+              racionales forman parte de la solución.
+            </p>
+          </div>
+
+          <div class="container-section">
+            <h3>🧠 Trinomios con coeficientes negativos</h3>
+            <p>
+              Cuando el coeficiente principal es negativo, es recomendable factorizar extrayendo el signo negativo para
+              facilitar la factorización del trinomio.
+            </p>
+            <p><strong>Ejemplo:</strong></p>
+            <code>-x² + 5x - 6 = -(x² - 5x + 6) = -(x - 2)(x - 3)</code>
+            <p>
+              Esta técnica transforma el trinomio en uno con coeficiente principal positivo, facilitando su
+              factorización.
+            </p>
+          </div>
+
+          <div class="container-section">
+            <h3>🧠 Trinomios incompletos</h3>
+            <p>
+              Los trinomios incompletos son aquellos que carecen del término lineal o del término independiente. Estos
+              requieren técnicas específicas para su factorización.
+            </p>
+            <ul>
+              <li><code>x² - 9 = (x - 3)(x + 3)</code> (Ausencia de término lineal)</li>
+              <li><code>x² + 7x = x(x + 7)</code> (Ausencia de término independiente)</li>
+            </ul>
+            <p>
+              En el primer caso, aplicamos la diferencia de cuadrados. En el segundo, factorizamos el término común.
+            </p>
+          </div>
+
+          <div class="container-section">
+            <h3>🧠 Trinomios con variables múltiples</h3>
+            <p>
+              Cuando los trinomios involucran más de una variable, es crucial identificar factores comunes y aplicar
+              técnicas de factorización adecuadas.
+            </p>
+            <p><strong>Ejemplo:</strong></p>
+            <code>4x²y + 8xy + 4y = 4y(x² + 2x + 1) = 4y(x + 1)²</code>
+            <p>
+              Primero se extrae el factor común <code>4y</code>, luego se factoriza el trinomio restante.
+            </p>
+          </div>
+
+          <div class="container-section">
+            <h3>🧠 Trinomios con raíces complejas</h3>
+            <p>
+              Si el discriminante <code>b² - 4ac</code> es negativo, las raíces no son reales sino complejas,
+              involucrando números imaginarios.
+            </p>
+            <p><strong>Ejemplo:</strong></p>
+            <code>x² + x + 1 = (x + ½ + (√3/2)i)(x + ½ - (√3/2)i)</code>
+            <p>
+              Aquí, las raíces complejas conjugadas permiten expresar el trinomio como producto de binomios con
+              coeficientes complejos.
+            </p>
+          </div>
+
+          <hr />
+
+          <div class="container-section">
+            <h3>🔎 Ejemplos prácticos y ejercicios interactivos</h3>
+
+            <div class="exercise">
+              <p><strong>Ejercicio 1:</strong> Factoriza el siguiente trinomio con coeficientes fraccionarios:</p>
+              <code>(3/4)x² + (5/2)x + 1</code>
+              <p>Ingresa tu respuesta en la forma de productos de binomios, por ejemplo: (x+1)(x+2)</p>
+              <input type="text" id="respuestaEj1" placeholder="Tu respuesta aquí" />
+              <button onclick="verificarEj1()">Verificar</button>
+              <p id="solucionEj1"></p>
+            </div>
+
+            <div class="exercise">
+              <p><strong>Ejercicio 2:</strong> Factoriza el siguiente trinomio incompleto:</p>
+              <code>x² + 6x</code>
+              <p>Ingresa tu respuesta, por ejemplo: x(x+n)</p>
+              <input type="text" id="respuestaEj2" placeholder="Tu respuesta aquí" />
+              <button onclick="verificarEj2()">Verificar</button>
+              <p id="solucionEj2"></p>
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <div class="group-content" id="grupo8">
+        <section class="card fade-in">
+          <h2>📚 Recursos para Trinomios</h2>
+
+          <div class="resource-frame">
+            <h3>📄 Documentos PDF para descargar / consultar</h3>
+            <ul class="resource-list">
+              <li>
+                <a href="https://www.webcolegios.com/file/994982.pdf" target="_blank" rel="noopener noreferrer">
+                  Guía básica de trinomios
+                </a>
+              </li>
+              <li>
+                <a href="https://www.webcolegios.com/file/b06ba1.pdf" target="_blank" rel="noopener noreferrer">
+                  TRINOMIO CUADRADO PERFECTO POR ADICION Y SUSTRACCION
+                </a>
+              </li>
+              <li>
+                <a href="https://julioprofe.net/material-de-apoyo/algebra/Resumen-de-los-principales-casos-de-factorizacion,-con%20teoria-y-ejemplos.pdf"
+                  target="_blank" rel="noopener noreferrer">
+                  Casos de factorización
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- VIDEOS -->
+          <div class="resource-frame">
+            <h3>🎬 Videos explicativos</h3>
+            <div class="video-buttons">
+              <button data-url="y_mkvBoYz-Y">Factorización por agrupación</button>
+              <button data-url="YAENVrFtO6E">Trinomio cuadrado perfecto</button>
+              <button data-url="a8CUEopWCN0">Factorización general</button>
+            </div>
+            <div class="video-container">
+              <iframe id="videoFrameTrinomios" width="100%" height="400" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen title="Video explicativo"></iframe>
+            </div>
+          </div>
+
+          <div class="resource-frame">
+            <h3>🧮 Páginas web interactivas</h3>
+            <div class="page-buttons">
+              <button onclick="window.open('https://www.mathway.com/Algebra', '_blank')">
+                Calculator de Trinomios
+              </button>
+              <button onclick="window.open('https://es.planetcalc.com/8321/', '_blank')">
+                Calculator de Trinomios
+              </button>
+              <button onclick="window.open('https://es.symbolab.com/solver/factor-trinomials-calculator', '_blank')">
+                Symbolab - Ecuaciones cuadráticas
+              </button>
+            </div>
+          </div>
+
+        </section>
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger intent="WELCOME" chat-title="FactorizaciónTrinomios" agent-id="5c72ad3a-b23e-4ebb-a645-c433151941ce"
+    language-code="es"></df-messenger>
+
+
+
+
+
+
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const videoFrame = document.getElementById("videoFrame");
+      const videoFrameTrinomios = document.getElementById("videoFrameTrinomios");
+      const pageFrameTrinomios = document.getElementById("pageFrameTrinomios");
+
+      const videoButtons = document.querySelectorAll(".video-buttons button");
+      videoButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const videoId = button.getAttribute("data-url");
+          const start = button.getAttribute("data-start");
+          let embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+          if (start) embedUrl += `&start=${start}`;
+
+          if (videoFrame) {
+            videoFrame.setAttribute("src", embedUrl);
+          }
+
+          if (videoFrameTrinomios) {
+            videoFrameTrinomios.setAttribute("src", embedUrl);
+          }
+        });
+      });
+
+      const pageButtons = document.querySelectorAll(".page-buttons button");
+      pageButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const pageUrl = button.getAttribute("data-url");
+          if (pageFrameTrinomios) {
+            pageFrameTrinomios.setAttribute("src", pageUrl);
+          }
+        });
+      });
+
+
+      const toggleButton = document.getElementById("toggleSidebar");
+      const sidebar = document.getElementById("sidebar");
+      const sendBtn = document.getElementById("sendBtn");
+
+      // Abrir/cerrar chatbot
+      toggleButton.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+      });
+
+      // Enviar mensaje al presionar botón
+      sendBtn.addEventListener("click", sendQuestion);
+
+      // También enviar con Enter
+      document.getElementById("chat-input").addEventListener("keydown", (e) => {
+        if (e.key === "Enter") sendQuestion();
+      });
+
+
+    });
+
+    function verificar(ejercicio) {
+      const respuestas = {
+        1: "(x - 2)(x - 3)",
+        2: "(3x + 2)(x + 4)",
+      };
+
+      const entrada = document.getElementById("respuesta" + ejercicio).value.trim();
+      const solucion = document.getElementById("solucion" + ejercicio);
+
+      if (
+        entrada.replace(/\s+/g, "") === respuestas[ejercicio].replace(/\s+/g, "")
+      ) {
+        solucion.textContent = "✅ ¡Correcto!";
+        solucion.style.color = "green";
+      } else {
+        solucion.textContent =
+          "❌ Intenta nuevamente. Solución: " + respuestas[ejercicio];
+        solucion.style.color = "red";
+      }
+    }
+    const groupButtons = document.querySelectorAll(".group-button");
+    const groupContents = document.querySelectorAll(".group-content");
+
+    groupButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const target = btn.dataset.group;
+
+        groupButtons.forEach((b) => b.classList.remove("active"));
+        groupContents.forEach((gc) => gc.classList.remove("active"));
+
+        btn.classList.add("active");
+        document.getElementById(target).classList.add("active");
+      });
+    });
+    const navToggle = document.getElementById("navToggle");
+    const groupTabs = document.getElementById("groupTabs");
+
+    navToggle.addEventListener("click", () => {
+      groupTabs.classList.toggle("show");
+    });
+
+    function toggleMobileMenu() {
+      const nav = document.getElementById("groupTabs");
+      nav.classList.toggle("mobile-visible");
+    }
+
+    function verificarEj1() {
+      const correcta1 = "(4x+2)(3x+2)";
+      const correcta2 = "(3x+2)(4x+2)";
+      const respuesta1 = document
+        .getElementById("respuestaEj1")
+        .value.trim()
+        .replace(/\s+/g, "");
+      const solucion1 = document.getElementById("solucionEj1");
+
+      if (
+        respuesta1 === correcta1.replace(/\s+/g, "") ||
+        respuesta1 === correcta2.replace(/\s+/g, "")
+      ) {
+        solucion1.textContent =
+          "✅ ¡Correcto! La factorización es (4x + 2)(3x + 2).";
+        solucion1.style.color = "green";
+      } else {
+        solucion1.textContent =
+          "❌ Intenta nuevamente. Pista: Multiplica todo por 4 para eliminar fracciones y luego factoriza.";
+        solucion1.style.color = "red";
+      }
+    }
+
+    function verificarEj2() {
+      const correcta = "x(x+6)";
+      const respuesta2 = document
+        .getElementById("respuestaEj2")
+        .value.trim()
+        .replace(/\s+/g, "");
+      const solucion2 = document.getElementById("solucionEj2");
+
+      if (respuesta2 === correcta.replace(/\s+/g, "")) {
+        solucion2.textContent = "✅ ¡Correcto! La factorización es x(x + 6).";
+        solucion2.style.color = "green";
+      } else {
+        solucion2.textContent =
+          "❌ Intenta nuevamente. Recuerda que es un trinomio incompleto sin término independiente.";
+        solucion2.style.color = "red";
+      }
+    }
+
+    const videoButtons = document.querySelectorAll("#grupo4 .video-buttons button");
+    const videoFrame = document.getElementById("videoFrame");
+    videoButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        videoFrame.src = btn.getAttribute("data-url");
+      });
+    });
+
+    const pageButtons = document.querySelectorAll("#grupo4 .page-buttons button");
+    const pageFrame = document.getElementById("pageFrame");
+    pageButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        pageFrame.src = btn.getAttribute("data-url");
+      });
+    });
+
+    const videoButtonsTrinomios = document.querySelectorAll(
+      "#grupo8 .video-buttons button"
+    );
+    const videoFrameTrinomios = document.getElementById("videoFrameTrinomios");
+    videoButtonsTrinomios.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        videoFrameTrinomios.src = btn.getAttribute("data-url");
+      });
+    });
+
+    const pageButtonsTrinomios = document.querySelectorAll(
+      "#grupo8 .page-buttons button"
+    );
+    const pageFrameTrinomios = document.getElementById("pageFrameTrinomios");
+    pageButtonsTrinomios.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        pageFrameTrinomios.src = btn.getAttribute("data-url");
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
