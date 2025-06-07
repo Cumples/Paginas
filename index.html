@@ -50,18 +50,22 @@
   </nav>
 
   <main>
-    <div class="container">
+    <div class="container2">
       <div class="group-content active" id="grupo1">
         <section class="card fade-in">
           <h2>🔷 ¿Qué es la Factorización?</h2>
-          <p>
-            La factorización es un proceso fundamental en álgebra que consiste
-            en descomponer una expresión algebraica, como un polinomio, en el
-            producto de expresiones más simples conocidas como factores. Es
-            decir, factorizar implica transformar una expresión compleja en un
-            conjunto de términos más sencillos que, al multiplicarse entre sí,
-            restituyen la expresión original. Esta técnica es análoga a la
-            descomposición de un número en sus factores primos en aritmética.
+          <p> La <strong>factorización</strong> es una técnica esencial en álgebra que permite <strong>simplificar
+              expresiones algebraicas</strong> complejas, como los polinomios, descomponiéndolos en <strong>productos de
+              expresiones más simples</strong>, llamadas <em>factores</em>. Esta descomposición facilita la comprensión
+            y resolución de operaciones matemáticas, especialmente cuando se busca resolver ecuaciones.
+            En términos sencillos, factorizar un polinomio consiste en encontrar otras expresiones algebraicas más
+            pequeñas —como binomios o monomios— que al multiplicarse entre sí den como resultado la expresión original.
+            Es similar a descomponer un número en sus factores primos en aritmética, pero aplicado a variables y
+            términos algebraicos.
+
+            Este proceso utiliza principios básicos del álgebra, como la <strong>agrupación de términos
+              semejantes</strong>, la aplicación de la <strong>distributiva</strong> y el reconocimiento de
+            <strong>formas notables</strong> (como el trinomio cuadrado perfecto o la diferencia de cuadrados).
           </p>
           <p><strong>Ejemplo básico:</strong></p>
           <code>x² + 5x + 6 = (x + 2)(x + 3)</code>
@@ -224,7 +228,7 @@
           </div>
         </section>
 
-        <section class="card fade-in teorema-factorizacion">
+        <section class="card fade-in">
           <h2>🔷 Teorema de Factorización</h2>
 
           <p>
@@ -244,178 +248,183 @@
             completamente en el campo de los números complejos.
           </p>
 
-          <div class="teorema-ejemplo">
-            <h3>📌 Ejemplo con raíces complejas:</h3>
-
-            <p>El polinomio <code>x² + 1</code> no tiene raíces reales, pero sí tiene raíces complejas.</p>
-
-            <ol>
-              <li>
-                <strong>Identificar el polinomio:</strong>
-                <p>Se tiene el trinomio:</p>
-                <code>x² + 1</code>
-              </li>
-
-              <li>
-                <strong>Intentar resolver igualando a cero:</strong>
-                <p>
-                  Igualamos a cero para encontrar las raíces:
-                  <br><code>x² + 1 = 0</code>
-                </p>
-              </li>
-
-              <li>
-                <strong>Restar 1 a ambos lados:</strong>
-                <code>x² = -1</code>
-              </li>
-
-              <li>
-                <strong>Sacar raíz cuadrada a ambos lados:</strong>
-                <code>x = √(-1)</code>
-                <p>Como no hay raíz real de un número negativo, usamos la unidad imaginaria.</p>
-              </li>
-
-              <li>
-                <strong>Definición de la unidad imaginaria:</strong>
-                <p>Se define <code>i</code> como:</p>
-                <code>i² = -1</code><br>
-                <code>√(-1) = i</code>
-              </li>
-
-              <li>
-                <strong>Obtener las raíces complejas:</strong>
-                <code>x = i</code> y <code>x = -i</code>
-              </li>
-
-              <li>
-                <strong>Escribir el polinomio factorizado:</strong>
-                <code>x² + 1 = (x + i)(x - i)</code>
-              </li>
-            </ol>
-
-            <p>
-              Aquí, <strong>i</strong> representa la unidad imaginaria tal que
-              <em>i² = -1</em>.
-            </p>
-          </div>
-
 
           <div class="teorema-ejemplo">
-            <h3>📌 Ejemplo con raíces reales y complejas:</h3>
+            <h3>📌 Ejemplo con raíces complejas:<span class="flecha" onclick="toggleEjemplo(this)">🔽</span></h3>
+            <div class="contenido-expandible">
+              <p>El polinomio <code>x² + 1</code> no tiene raíces reales, pero sí tiene raíces complejas.</p>
 
-            <p>Para el polinomio:</p>
-            <code>p(x) = x⁴ - 5x² + 6</code>
+              <ol>
+                <li>
+                  <strong>Identificar el polinomio:</strong>
+                  <p>Se tiene el trinomio:</p>
+                  <code>x² + 1</code>
+                </li>
 
-            <ol>
-              <li>
-                <strong>Identificar la estructura:</strong>
-                <p>El polinomio tiene esta forma:</p>
-                <code>x⁴ - 5x² + 6</code>
-                <p>Observamos que se trata de un <strong>trinomio cuadrado en x²</strong>:</p>
-                <code>(x²)² - 5(x²) + 6</code>
-              </li>
+                <li>
+                  <strong>Intentar resolver igualando a cero:</strong>
+                  <p>
+                    Igualamos a cero para encontrar las raíces:
+                    <br><code>x² + 1 = 0</code>
+                  </p>
+                </li>
 
-              <li>
-                <strong>Hacer un cambio de variable:</strong>
-                <p>Sea <code>y = x²</code>, entonces el polinomio se convierte en:</p>
-                <code>y² - 5y + 6</code>
-              </li>
+                <li>
+                  <strong>Restar 1 a ambos lados:</strong>
+                  <code>x² = -1</code>
+                </li>
 
-              <li>
-                <strong>Factorizar el trinomio en y:</strong>
-                <p>Buscamos dos números que se sumen 5 y se multipliquen 6:</p>
-                <ul>
-                  <li>2 y 3 cumplen: 2 + 3 = 5, 2 × 3 = 6</li>
-                </ul>
-                <code>y² - 5y + 6 = (y - 2)(y - 3)</code>
-              </li>
+                <li>
+                  <strong>Sacar raíz cuadrada a ambos lados:</strong>
+                  <code>x = √(-1)</code>
+                  <p>Como no hay raíz real de un número negativo, usamos la unidad imaginaria.</p>
+                </li>
 
-              <li>
-                <strong>Volver a la variable original:</strong>
-                <p>Recordamos que <code>y = x²</code>, entonces:</p>
-                <code>p(x) = (x² - 2)(x² - 3)</code>
-              </li>
+                <li>
+                  <strong>Definición de la unidad imaginaria:</strong>
+                  <p>Se define <code>i</code> como:</p>
+                  <code>i² = -1</code><br>
+                  <code>√(-1) = i</code>
+                </li>
 
-              <li>
-                <strong>Factorizar cada término usando raíces cuadradas:</strong>
-                <p>Ambos factores son diferencias de cuadrados:</p>
-                <ul>
-                  <li><code>x² - 2 = (x - √2)(x + √2)</code></li>
-                  <li><code>x² - 3 = (x - √3)(x + √3)</code></li>
-                </ul>
-              </li>
+                <li>
+                  <strong>Obtener las raíces complejas:</strong>
+                  <code>x = i</code> y <code>x = -i</code>
+                </li>
 
-              <li>
-                <strong>Factorización completa:</strong>
-                <code>p(x) = (x - √2)(x + √2)(x - √3)(x + √3)</code>
-              </li>
-            </ol>
+                <li>
+                  <strong>Escribir el polinomio factorizado:</strong>
+                  <code>x² + 1 = (x + i)(x - i)</code>
+                </li>
+              </ol>
 
-            <p><strong>Conclusión:</strong> Todas las raíces son <strong>reales</strong>, aunque incluyen radicales
-              (raíces cuadradas).</p>
+              <p>
+                Aquí, <strong>i</strong> representa la unidad imaginaria tal que
+                <em>i² = -1</em>.
+              </p>
+            </div>
           </div>
-
 
           <div class="teorema-ejemplo">
-            <h3>📌 Ejemplo mixto:</h3>
+            <h3>📌 Ejemplo con raíces reales y complejas:<span class="flecha" onclick="toggleEjemplo(this)">🔽</span>
+            </h3>
+            <div class="contenido-expandible">
+              <p>Para el polinomio:</p>
+              <code>p(x) = x⁴ - 5x² + 6</code>
 
-            <p>Analizamos el polinomio:</p>
-            <code>q(x) = x³ - 1</code>
+              <ol>
+                <li>
+                  <strong>Identificar la estructura:</strong>
+                  <p>El polinomio tiene esta forma:</p>
+                  <code>x⁴ - 5x² + 6</code>
+                  <p>Observamos que se trata de un <strong>trinomio cuadrado en x²</strong>:</p>
+                  <code>(x²)² - 5(x²) + 6</code>
+                </li>
 
-            <ol>
-              <li>
-                <strong>Reconocer la forma de una diferencia de cubos:</strong>
-                <p>La expresión es de la forma:</p>
-                <code>a³ - b³ = (a - b)(a² + ab + b²)</code>
-                <p>En este caso:</p>
-                <code>a = x</code>, <code>b = 1</code>
-              </li>
+                <li>
+                  <strong>Hacer un cambio de variable:</strong>
+                  <p>Sea <code>y = x²</code>, entonces el polinomio se convierte en:</p>
+                  <code>y² - 5y + 6</code>
+                </li>
 
-              <li>
-                <strong>Aplicar la fórmula de factorización:</strong>
-                <p>Usamos la identidad:</p>
-                <code>x³ - 1 = (x - 1)(x² + x + 1)</code>
-              </li>
+                <li>
+                  <strong>Factorizar el trinomio en y:</strong>
+                  <p>Buscamos dos números que se sumen 5 y se multipliquen 6:</p>
+                  <ul>
+                    <li>2 y 3 cumplen: 2 + 3 = 5, 2 × 3 = 6</li>
+                  </ul>
+                  <code>y² - 5y + 6 = (y - 2)(y - 3)</code>
+                </li>
 
-              <li>
-                <strong>Identificar las raíces:</strong>
-                <ul>
-                  <li>Del factor <code>(x - 1)</code> obtenemos la raíz real:</li>
-                  <code>x = 1</code>
-                  <li>Del factor <code>x² + x + 1</code> buscamos raíces complejas:</li>
-                </ul>
-              </li>
+                <li>
+                  <strong>Volver a la variable original:</strong>
+                  <p>Recordamos que <code>y = x²</code>, entonces:</p>
+                  <code>p(x) = (x² - 2)(x² - 3)</code>
+                </li>
 
-              <li>
-                <strong>Resolver <code>x² + x + 1 = 0</code> usando fórmula general:</strong>
-                <p>Aplicamos:</p>
-                <code>x = [-1 ± √(1² - 4(1)(1))] / 2</code>
-                <p>Calculamos el discriminante:</p>
-                <code>Δ = 1 - 4 = -3</code>
-                <p>Como es negativo, las raíces son complejas:</p>
-                <code>x = [-1 ± √(-3)] / 2 = (-1 ± i√3)/2</code>
-              </li>
+                <li>
+                  <strong>Factorizar cada término usando raíces cuadradas:</strong>
+                  <p>Ambos factores son diferencias de cuadrados:</p>
+                  <ul>
+                    <li><code>x² - 2 = (x - √2)(x + √2)</code></li>
+                    <li><code>x² - 3 = (x - √3)(x + √3)</code></li>
+                  </ul>
+                </li>
 
-              <li>
-                <strong>También pueden escribirse usando forma polar compleja:</strong>
-                <p>Estas raíces también se expresan como:</p>
-                <code>x = e<sup>2πi/3</sup>, x = e<sup>4πi/3</sup></code>
-                <p>Son las raíces cúbicas de la unidad, en forma exponencial compleja.</p>
-              </li>
+                <li>
+                  <strong>Factorización completa:</strong>
+                  <code>p(x) = (x - √2)(x + √2)(x - √3)(x + √3)</code>
+                </li>
+              </ol>
 
-              <li>
-                <strong>Factorización final:</strong>
-                <code>q(x) = (x - 1)(x² + x + 1)</code>
-              </li>
-            </ol>
-
-            <p><strong>Conclusión:</strong></p>
-            <ul>
-              <li>Raíz real: <code>x = 1</code></li>
-              <li>Raíces complejas: <code>x = e<sup>2πi/3</sup></code>, <code>x = e<sup>4πi/3</sup></code></li>
-            </ul>
+              <p><strong>Conclusión:</strong> Todas las raíces son <strong>reales</strong>, aunque incluyen radicales
+                (raíces cuadradas).</p>
+            </div>
           </div>
 
+          <div class="teorema-ejemplo">
+            <h3>
+              📌 Ejemplo mixto:
+              <span class="flecha" onclick="toggleEjemplo(this)">🔽</span>
+            </h3>
+            <div class="contenido-expandible">
+              <p>Analizamos el polinomio:</p>
+              <code>q(x) = x³ - 1</code>
+
+              <ol>
+                <li>
+                  <strong>Reconocer la forma de una diferencia de cubos:</strong>
+                  <p>La expresión es de la forma:</p>
+                  <code>a³ - b³ = (a - b)(a² + ab + b²)</code>
+                  <p>En este caso:</p>
+                  <code>a = x</code>, <code>b = 1</code>
+                </li>
+
+                <li>
+                  <strong>Aplicar la fórmula de factorización:</strong>
+                  <p>Usamos la identidad:</p>
+                  <code>x³ - 1 = (x - 1)(x² + x + 1)</code>
+                </li>
+
+                <li>
+                  <strong>Identificar las raíces:</strong>
+                  <ul>
+                    <li>Del factor <code>(x - 1)</code> obtenemos la raíz real:</li>
+                    <code>x = 1</code>
+                    <li>Del factor <code>x² + x + 1</code> buscamos raíces complejas:</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <strong>Resolver <code>x² + x + 1 = 0</code> usando fórmula general:</strong>
+                  <p>Aplicamos:</p>
+                  <code>x = [-1 ± √(1² - 4(1)(1))] / 2</code>
+                  <p>Calculamos el discriminante:</p>
+                  <code>Δ = 1 - 4 = -3</code>
+                  <p>Como es negativo, las raíces son complejas:</p>
+                  <code>x = [-1 ± √(-3)] / 2 = (-1 ± i√3)/2</code>
+                </li>
+
+                <li>
+                  <strong>También pueden escribirse usando forma polar compleja:</strong>
+                  <p>Estas raíces también se expresan como:</p>
+                  <code>x = e<sup>2πi/3</sup>, x = e<sup>4πi/3</sup></code>
+                  <p>Son las raíces cúbicas de la unidad, en forma exponencial compleja.</p>
+                </li>
+
+                <li>
+                  <strong>Factorización final:</strong>
+                  <code>q(x) = (x - 1)(x² + x + 1)</code>
+                </li>
+              </ol>
+
+              <p><strong>Conclusión:</strong></p>
+              <ul>
+                <li>Raíz real: <code>x = 1</code></li>
+                <li>Raíces complejas: <code>x = e<sup>2πi/3</sup></code>, <code>x = e<sup>4πi/3</sup></code></li>
+              </ul>
+            </div>
+          </div>
 
           <div class="teorema-consecuencias">
             <h3>🧠 Consecuencias clave:</h3>
@@ -445,7 +454,7 @@
           </div>
         </section>
 
-        <section class="card fade-in casos-factorizacion">
+        <section class="card fade-in">
           <h2>✅ Casos de Factorización</h2>
           <p>
             La factorización algebraica se puede clasificar en varios casos
@@ -455,8 +464,8 @@
           </p>
 
           <div class="caso">
-            <h3>📌 1. Factor común</h3>
-            <span class="flecha" onclick="toggleCaso(this)">🔽</span>
+            <h3>📌 1. Factor común <span class="flecha" onclick="toggleCaso(this)">🔽</span></h3>
+
             <div class="contenido-caso">
               <p>
                 Consiste en extraer el mayor factor que se repite en todos los términos del polinomio.
@@ -508,8 +517,8 @@
           </div>
 
           <div class="caso">
-            <h3>📌 2. Diferencia de cuadrados</h3>
-            <span class="flecha" onclick="toggleCaso(this)">🔽</span>
+            <h3>📌 2. Diferencia de cuadrados <span class="flecha" onclick="toggleCaso(this)">🔽</span></h3>
+
             <div class="contenido-caso">
               <p>
                 Se aplica cuando se tienen dos términos cuadrados perfectos separados por un signo negativo.
@@ -557,8 +566,7 @@
           </div>
 
           <div class="caso">
-            <h3>📌 3. Trinomio cuadrado perfecto</h3>
-            <span class="flecha" onclick="toggleCaso(this)">🔽</span>
+            <h3>📌 3. Trinomio cuadrado perfecto<span class="flecha" onclick="toggleCaso(this)">🔽</span></h3>
             <div class="contenido-caso">
               <p>
                 Este caso surge del cuadrado de un binomio. El primer y el último término son cuadrados perfectos,
@@ -601,8 +609,8 @@
           </div>
 
           <div class="caso">
-            <h3>📌 4. Trinomio cuadrado no perfecto (simple)</h3>
-            <span class="flecha" onclick="toggleCaso(this)">🔽</span>
+            <h3>📌 4. Trinomio cuadrado no perfecto (simple)<span class="flecha" onclick="toggleCaso(this)">🔽</span>
+            </h3>
             <div class="contenido-caso">
               <p>
                 Este caso se aplica cuando el coeficiente del término cuadrático es 1 (<code>x²</code>),
@@ -653,8 +661,7 @@
           </div>
 
           <div class="caso">
-            <h3>📌 5. Trinomio general (ax² + bx + c)</h3>
-            <span class="flecha" onclick="toggleCaso(this)">🔽</span>
+            <h3>📌 5. Trinomio general (ax² + bx + c) <span class="flecha" onclick="toggleCaso(this)">🔽</span></h3>
             <div class="contenido-caso">
               <p>
                 Se aplica cuando el coeficiente principal \(a\) es distinto de 1.
@@ -714,8 +721,7 @@
           </div>
 
           <div class="caso">
-            <h3>📌 6. Diferencia de cubos</h3>
-            <span class="flecha" onclick="toggleCaso(this)">🔽</span>
+            <h3>📌 6. Diferencia de cubos <span class="flecha" onclick="toggleCaso(this)">🔽</span></h3>
             <div class="contenido-caso">
               <p>
                 Se aplica para factorizar expresiones con dos términos cúbicos separados por un signo negativo.
@@ -770,8 +776,7 @@
           </div>
 
           <div class="caso">
-            <h3>📌 7. Suma de cubos</h3>
-            <span class="flecha" onclick="toggleCaso(this)">🔽</span>
+            <h3>📌 7. Suma de cubos<span class="flecha" onclick="toggleCaso(this)">🔽</span></h3>
             <div class="contenido-caso">
               <p>
                 Se aplican fórmulas especiales para factorizar binomios con términos cúbicos positivos sumados.
@@ -826,8 +831,7 @@
           </div>
 
           <div class="caso">
-            <span class="flecha" onclick="toggleCaso(this)">🔽</span>
-            <h3>📌 8. Agrupación de términos</h3>
+            <h3>📌 8. Agrupación de términos<span class="flecha" onclick="toggleCaso(this)">🔽</span></h3>
             <div class="contenido-caso">
               <p>
                 Este método consiste en organizar el polinomio en grupos, factorizar cada grupo por separado y luego
@@ -875,39 +879,40 @@
           </div>
 
           <div class="caso resumen">
-            <h3>📌 9. Resumen visual de formas comunes</h3>
-            <ul>
-              <li>
-                <strong>Trinomio cuadrado perfecto:</strong> a² ± 2ab + b² =
-                (a ± b)²
-              </li>
-              <li>
-                <strong>Trinomio simple:</strong> x² + (m + n)x + mn = (x +
-                m)(x + n)
-              </li>
-              <li>
-                <strong>Trinomio general:</strong> ax² + bx + c = (mx + p)(nx
-                + q)
-              </li>
-              <li>
-                <strong>Diferencia de cuadrados:</strong> a² - b² = (a - b)(a
-                + b)
-              </li>
-              <li>
-                <strong>Suma de cubos:</strong> a³ + b³ = (a + b)(a² - ab +
-                b²)
-              </li>
-              <li>
-                <strong>Diferencia de cubos:</strong> a³ - b³ = (a - b)(a² +
-                ab + b²)
-              </li>
-              <li>
-                <strong>Agrupación:</strong> (a + b)(c + d) si se repite algún
-                factor
-              </li>
-            </ul>
+            <h3>📌 9. Resumen visual de formas comunes<span class="flecha" onclick="toggleCaso(this)">🔽</span></h3>
+            <div class="contenido-caso">
+              <ul>
+                <li>
+                  <strong>Trinomio cuadrado perfecto:</strong> a² ± 2ab + b² =
+                  (a ± b)²
+                </li>
+                <li>
+                  <strong>Trinomio simple:</strong> x² + (m + n)x + mn = (x +
+                  m)(x + n)
+                </li>
+                <li>
+                  <strong>Trinomio general:</strong> ax² + bx + c = (mx + p)(nx
+                  + q)
+                </li>
+                <li>
+                  <strong>Diferencia de cuadrados:</strong> a² - b² = (a - b)(a
+                  + b)
+                </li>
+                <li>
+                  <strong>Suma de cubos:</strong> a³ + b³ = (a + b)(a² - ab +
+                  b²)
+                </li>
+                <li>
+                  <strong>Diferencia de cubos:</strong> a³ - b³ = (a - b)(a² +
+                  ab + b²)
+                </li>
+                <li>
+                  <strong>Agrupación:</strong> (a + b)(c + d) si se repite algún
+                  factor
+                </li>
+              </ul>
+            </div>
           </div>
-
           <div class="alerta-tip">
             <p>
               <strong>🎯 Consejo:</strong> Memoriza las fórmulas clave y
@@ -918,6 +923,7 @@
           </div>
         </section>
       </div>
+
       <div class="group-content" id="grupo2">
         <section class="card fade-in">
           <h2>🔷 Métodos Avanzados</h2>
@@ -930,93 +936,1224 @@
           </p>
 
           <ul>
-            <li>
-              <strong>➤ Método de Ruffini:</strong>
-              Utilizado para dividir un polinomio entre binomios de la forma
-              (x - r), siempre que r sea una raíz entera del polinomio. Es
-              rápido y evita la división larga.
-              <br /><code>Ejemplo: (x³ - 6x² + 11x - 6) ÷ (x - 1)</code>
-            </li>
+            <div class="metodo resumen">
+              <h3>➤ Método de Ruffini: <span class="flecha" onclick="toggleMetodo(this)">🔽</span></h3>
+              <div class="contenido-metodo">
 
-            <li>
-              <strong>➤ Método de Horner:</strong>
-              Técnica eficiente para evaluar un polinomio y realizar
-              divisiones sintéticas, ideal para programación o cálculos
-              computacionales.
-              <br /><code>Ejemplo: Evaluar P(x) = 3x³ - 2x² + x - 5 en x = 2</code>
-            </li>
+                <p>
+                  Utilizado para dividir un polinomio entre binomios de la forma <code>(x - r)</code>, donde
+                  <code>r</code> es una raíz entera del polinomio.
+                  Es un método rápido que evita la división larga.
+                </p>
 
-            <li>
-              <strong>➤ Identidades notables:</strong>
-              Permiten factorizar rápidamente expresiones mediante fórmulas
-              reconocidas:
-              <ul>
-                <li>(a + b)² = a² + 2ab + b²</li>
-                <li>(a - b)² = a² - 2ab + b²</li>
-                <li>(a + b)(a - b) = a² - b²</li>
-                <li>a³ + b³ = (a + b)(a² - ab + b²)</li>
-                <li>a³ - b³ = (a - b)(a² + ab + b²)</li>
-              </ul>
-            </li>
+                <p><strong>Ejemplo:</strong> <code>(x³ - 6x² + 11x - 6) ÷ (x - 1)</code></p>
 
-            <li>
-              <strong>➤ Factorización por el Teorema del Resto:</strong>
-              Permite verificar si un número es raíz de un polinomio: si al
-              evaluarlo da cero, es un factor.
-              <br /><code>Ejemplo: ¿x - 3 es factor de P(x) = x² - 2x - 3?</code>
-            </li>
+                <p><strong>Objetivo:</strong> Encontrar el cociente y saber si <code>x - 1</code> es un factor del
+                  polinomio.</p>
 
-            <li>
-              <strong>➤ Factorización de expresiones racionales:</strong>
-              Se factorizan numeradores y denominadores para simplificar
-              fracciones algebraicas.
-              <br /><code>Ejemplo: (x² - 9)/(x² - x - 6) = [(x - 3)(x + 3)] / [(x -
-                  3)(x + 2)]</code>
-            </li>
+                <ol>
+                  <li>
+                    <strong>Verificar la forma del divisor:</strong>
+                    <p>El divisor es <code>(x - 1)</code>, por lo tanto <code>r = 1</code> (el signo cambia).</p>
+                  </li>
 
-            <li>
-              <strong>➤ Factorización de polinomios con coeficientes fraccionarios
-                o irracionales:</strong>
-              Requiere eliminar fracciones o racionalizar antes de aplicar
-              métodos tradicionales.
-              <br /><code>Ejemplo: Factorizar (1/2)x² + x + (1/2)</code>
-            </li>
+                  <li>
+                    <strong>Escribir los coeficientes del polinomio:</strong>
+                    <p>El polinomio es <code>x³ - 6x² + 11x - 6</code>, sus coeficientes son:</p>
+                    <code>1  -6  11  -6</code>
+                  </li>
 
-            <li>
-              <strong>➤ Factorización de polinomios por sustitución:</strong>
-              Se usa un cambio de variable para reducir un polinomio complejo
-              a uno más simple.
-              <br /><code>Ejemplo: Factorizar x⁴ + 2x² + 1 usando y = x² → y² + 2y +
-                  1</code>
-            </li>
+                  <li>
+                    <strong>Aplicar el esquema de Ruffini:</strong>
+                    <p>Escribimos <code>r = 1</code> a la izquierda y comenzamos:</p>
+                    <pre>
+  1 |  1   -6   11   -6
+    |      1  -5    6
+    -------------------
+       1  -5    6    0
+        </pre>
 
-            <li>
-              <strong>➤ Factorización en ℚ[x], ℝ[x] y ℂ[x]:</strong>
-              - ℚ[x]: Polinomios con coeficientes racionales<br />
-              - ℝ[x]: Se permite factorizar usando raíces reales<br />
-              - ℂ[x]: Factorización total con raíces complejas (por el Teorema
-              Fundamental del Álgebra)
-            </li>
+                    <p><strong>Explicación paso a paso:</strong></p>
+                    <ul>
+                      <li>Bajamos el primer número: <code>1</code>.</li>
+                      <li>Multiplicamos por <code>r = 1</code>: <code>1 × 1 = 1</code>, se coloca debajo de -6.</li>
+                      <li>Sumamos: <code>-6 + 1 = -5</code>.</li>
+                      <li>Multiplicamos: <code>-5 × 1 = -5</code>, lo colocamos debajo de 11.</li>
+                      <li>Sumamos: <code>11 - 5 = 6</code>.</li>
+                      <li>Multiplicamos: <code>6 × 1 = 6</code>, debajo de -6.</li>
+                      <li>Sumamos: <code>-6 + 6 = 0</code> (esto indica que no hay residuo).</li>
+                    </ul>
+                  </li>
 
-            <li>
-              <strong>➤ Método de factorización de Eisenstein (criterio
-                irreductibilidad):</strong>
-              Técnica teórica para determinar si un polinomio no se puede
-              factorizar en ℤ[x] (entero).
-            </li>
+                  <li>
+                    <strong>Interpretar los resultados:</strong>
+                    <p>Los números de la fila final (excepto el último) son los coeficientes del cociente.</p>
+                    <p>Entonces:</p>
+                    <code>x³ - 6x² + 11x - 6 = (x - 1)(x² - 5x + 6)</code>
+                  </li>
 
-            <li>
-              <strong>➤ Factorización de polinomios homogéneos:</strong>
-              Todos los términos tienen el mismo grado. Se pueden factorizar
-              con cambios de variable o factorización por agrupación especial.
-            </li>
-          </ul>
+                  <li>
+                    <strong>Factorizar el trinomio restante:</strong>
+                    <p><code>x² - 5x + 6 = (x - 2)(x - 3)</code></p>
+                  </li>
 
-          <p>
-            <strong>Consejo:</strong> A menudo se combinan múltiples técnicas
-            avanzadas para factorizar polinomios de alto grado o expresiones
-            que mezclan varias estructuras.
-          </p>
+                  <li>
+                    <strong>Resultado final:</strong>
+                    <code>x³ - 6x² + 11x - 6 = (x - 1)(x - 2)(x - 3)</code>
+                  </li>
+                </ol>
+
+                <p><strong>Conclusión:</strong> El método de Ruffini permite dividir y factorizar polinomios rápidamente
+                  cuando el divisor es de la forma <code>(x - r)</code>.</p>
+
+              </div>
+            </div>
+
+
+
+            <div class="metodo resumen">
+              <h3>➤ Método de Horner: <span class="flecha" onclick="toggleMetodo(this)">🔽</span></h3>
+              <div class="contenido-metodo">
+
+                <p>
+                  El <strong>Método de Horner</strong> es una técnica eficiente para:
+                </p>
+                <ul>
+                  <li>Evaluar polinomios en un valor dado.</li>
+                  <li>Realizar divisiones sintéticas.</li>
+                  <li>Reducir el número de multiplicaciones.</li>
+                </ul>
+
+                <p><strong>Ejemplo:</strong> Evaluar <code>P(x) = 3x³ - 2x² + x - 5</code> en <code>x = 2</code></p>
+
+                <h4>Paso a paso:</h4>
+                <ol>
+                  <li>
+                    <strong>Escribir los coeficientes del polinomio:</strong>
+                    <p><code>3  -2  1  -5</code></p>
+                    <p>Corresponden a los términos <code>3x³, -2x², +1x, -5</code></p>
+                  </li>
+
+                  <li>
+                    <strong>Seleccionar el valor de x:</strong>
+                    <p>Vamos a evaluar el polinomio en <code>x = 2</code>.</p>
+                  </li>
+
+                  <li>
+                    <strong>Aplicar el método de Horner:</strong>
+                    <p>Empezamos bajando el primer coeficiente y luego seguimos estos pasos:</p>
+
+                    <pre>
+  2 |  3   -2    1    -5
+    |       6    8    18
+    ---------------------
+        3    4    9    13
+        </pre>
+
+                    <p><strong>Explicación paso a paso:</strong></p>
+                    <ul>
+                      <li>Bajamos el primer número: <code>3</code></li>
+                      <li>Multiplicamos por <code>2</code>: <code>3 × 2 = 6</code></li>
+                      <li>Sumamos con el siguiente coeficiente: <code>-2 + 6 = 4</code></li>
+                      <li>Multiplicamos <code>4 × 2 = 8</code></li>
+                      <li>Sumamos con el siguiente coeficiente: <code>1 + 8 = 9</code></li>
+                      <li>Multiplicamos <code>9 × 2 = 18</code></li>
+                      <li>Sumamos con el último término: <code>-5 + 18 = 13</code></li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Resultado:</strong>
+                    <p>El valor del polinomio <code>P(2) = 13</code></p>
+                  </li>
+                </ol>
+
+                <h4>Ventajas del método:</h4>
+                <ul>
+                  <li>Menor cantidad de operaciones.</li>
+                  <li>Ideal para calcular rápidamente el valor de un polinomio.</li>
+                  <li>Se puede usar en programación para optimizar evaluaciones de polinomios.</li>
+                </ul>
+
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="metodo resumen">
+              <h3>➤ Identidades Notables: <span class="flecha" onclick="toggleMetodo(this)">🔽</span></h3>
+              <div class="contenido-metodo">
+
+                <p>
+                  Las <strong>identidades notables</strong> son fórmulas algebraicas que nos permiten factorizar o
+                  desarrollar expresiones rápidamente sin necesidad de aplicar el producto completo. A continuación se
+                  explican paso a paso las más comunes:
+                </p>
+
+                <h4>1. Binomio al cuadrado (positivo):</h4>
+                <p><strong>Fórmula:</strong> (a + b)² = a² + 2ab + b²</p>
+                <p><strong>Ejemplo:</strong> (x + 4)²</p>
+                <ol>
+                  <li>Eleva el primer término: x²</li>
+                  <li>Multiplica el doble del producto: 2·x·4 = 8x</li>
+                  <li>Eleva el segundo término: 4² = 16</li>
+                </ol>
+                <p><strong>Resultado:</strong> x² + 8x + 16</p>
+
+                <h4>2. Binomio al cuadrado (negativo):</h4>
+                <p><strong>Fórmula:</strong> (a - b)² = a² - 2ab + b²</p>
+                <p><strong>Ejemplo:</strong> (x - 5)²</p>
+                <ol>
+                  <li>Eleva el primer término: x²</li>
+                  <li>Multiplica el doble del producto: 2·x·5 = 10x, cambia el signo → -10x</li>
+                  <li>Eleva el segundo término: 5² = 25</li>
+                </ol>
+                <p><strong>Resultado:</strong> x² - 10x + 25</p>
+
+                <h4>3. Diferencia de cuadrados:</h4>
+                <p><strong>Fórmula:</strong> (a + b)(a - b) = a² - b²</p>
+                <p><strong>Ejemplo:</strong> (x + 3)(x - 3)</p>
+                <ol>
+                  <li>Eleva el primer término: x²</li>
+                  <li>Eleva el segundo término: 3² = 9</li>
+                </ol>
+                <p><strong>Resultado:</strong> x² - 9</p>
+
+                <h4>4. Suma de cubos:</h4>
+                <p><strong>Fórmula:</strong> a³ + b³ = (a + b)(a² - ab + b²)</p>
+                <p><strong>Ejemplo:</strong> x³ + 8</p>
+                <ol>
+                  <li>Reconoce que 8 = 2³, entonces a = x, b = 2</li>
+                  <li>Aplica la fórmula:
+                    <ul>
+                      <li>(x + 2)(x² - 2x + 4)</li>
+                    </ul>
+                  </li>
+                </ol>
+                <p><strong>Resultado:</strong> (x + 2)(x² - 2x + 4)</p>
+
+                <h4>5. Diferencia de cubos:</h4>
+                <p><strong>Fórmula:</strong> a³ - b³ = (a - b)(a² + ab + b²)</p>
+                <p><strong>Ejemplo:</strong> x³ - 27</p>
+                <ol>
+                  <li>Reconoce que 27 = 3³, entonces a = x, b = 3</li>
+                  <li>Aplica la fórmula:
+                    <ul>
+                      <li>(x - 3)(x² + 3x + 9)</li>
+                    </ul>
+                  </li>
+                </ol>
+                <p><strong>Resultado:</strong> (x - 3)(x² + 3x + 9)</p>
+
+                <p><strong>Consejo:</strong> Memorizar estas identidades facilita mucho la factorización y el desarrollo
+                  de expresiones algebraicas.</p>
+
+              </div>
+            </div>
+
+
+
+
+            <div class="metodo resumen">
+              <h3>➤ Factorización por el Teorema del Resto: <span class="flecha" onclick="toggleMetodo(this)">🔽</span>
+              </h3>
+              <div class="contenido-metodo">
+                <p>
+                  El <strong>Teorema del Resto</strong> establece que: <em>Si al evaluar un polinomio P(x) en un número
+                    r se obtiene P(r) = 0, entonces (x - r) es un factor de P(x)</em>.
+                </p>
+                <p>
+                  Es decir, si sustituimos x por un número r y el resultado es 0, entonces hemos encontrado una raíz del
+                  polinomio, y por lo tanto un factor lineal (x - r).
+                </p>
+
+                <p><strong>Veamos un ejemplo paso a paso:</strong></p>
+                <p><code>¿Es (x - 3) un factor del polinomio P(x) = x² - 2x - 3?</code></p>
+
+                <ol>
+                  <li>
+                    <strong>Paso 1: Identificar r en el binomio (x - r)</strong><br>
+                    El binomio (x - 3) nos da r = 3.
+                  </li>
+
+                  <li>
+                    <strong>Paso 2: Evaluar el polinomio en x = r</strong><br>
+                    Sustituimos x = 3 en P(x):<br>
+                    <code>P(3) = (3)² - 2·(3) - 3</code><br>
+                    <code>= 9 - 6 - 3 = 0</code>
+                  </li>
+
+                  <li>
+                    <strong>Paso 3: Interpretar el resultado</strong><br>
+                    Como P(3) = 0, según el Teorema del Resto, concluimos que:<br>
+                    <strong>(x - 3) es un factor del polinomio</strong>.
+                  </li>
+
+                  <li>
+                    <strong>Paso 4: Encontrar el otro factor</strong><br>
+                    Ya que (x - 3) es un factor, debemos encontrar otro binomio tal que:<br>
+                    <code>P(x) = (x - 3)(?)</code><br><br>
+
+                    Podemos hacerlo de dos formas:
+                    <ul>
+                      <li><strong>Opción A: División sintética o método de Ruffini</strong></li>
+                      <li><strong>Opción B: Factorización directa</strong></li>
+                    </ul>
+
+                    Usaremos la factorización directa:
+                    <p>Recordamos el trinomio original:</p>
+                    <code>x² - 2x - 3</code><br>
+                    <p>Buscamos dos números que multiplicados den -3 y sumados den -2:</p>
+                    <ul>
+                      <li>-3 y 1 → (-3) × 1 = -3 y (-3) + 1 = -2 ✅</li>
+                    </ul>
+                    Entonces, el trinomio se factoriza como:<br>
+                    <code>P(x) = (x - 3)(x + 1)</code>
+                  </li>
+                </ol>
+
+                <p><strong>Resultado final:</strong></p>
+                <code>P(x) = (x - 3)(x + 1)</code>
+
+                <hr>
+
+                <h4>🔎 ¿Qué aprendimos?</h4>
+                <ul>
+                  <li>Si al evaluar un número en el polinomio obtenemos 0, ese número es una raíz.</li>
+                  <li>Entonces, el binomio (x - r) será un factor del polinomio.</li>
+                  <li>Este método permite encontrar factores sin hacer divisiones largas.</li>
+                </ul>
+
+                <h4>📌 ¿Cuándo usar este método?</h4>
+                <ul>
+                  <li>Cuando sospechamos que un número puede ser raíz del polinomio.</li>
+                  <li>Para verificar si un binomio (x - r) divide exactamente al polinomio.</li>
+                  <li>Como paso previo antes de usar Ruffini o factorización completa.</li>
+                </ul>
+
+                <h4>⚠️ Recomendaciones:</h4>
+                <ul>
+                  <li>Verifica bien la sustitución para evitar errores de signo.</li>
+                  <li>Siempre simplifica si es posible después de factorizar.</li>
+                  <li>Si P(r) ≠ 0, entonces (x - r) no es un factor.</li>
+                </ul>
+
+                <h4>🧠 Ampliando el conocimiento:</h4>
+                <p>
+                  Si encontramos una raíz racional usando el Teorema del Resto, podemos aplicar Ruffini para dividir el
+                  polinomio y seguir factorizando hasta que el polinomio quede completamente descompuesto.
+                </p>
+
+                <p>Este método es muy útil junto con la <strong>Regla de signos de Descartes</strong> y el
+                  <strong>Teorema del Racional</strong> para encontrar todas las raíces posibles.
+                </p>
+
+                <h4>✔️ Otro ejemplo:</h4>
+                <p><strong>¿Es (x + 2) un factor de Q(x) = x² + 3x + 2?</strong></p>
+                <ol>
+                  <li>(x + 2) ⇒ r = -2</li>
+                  <li>Evaluamos Q(-2):<br>Q(-2) = (-2)² + 3·(-2) + 2 = 4 - 6 + 2 = 0</li>
+                  <li>Como Q(-2) = 0, entonces (x + 2) es un factor</li>
+                  <li>Factorización completa: <code>Q(x) = (x + 2)(x + 1)</code></li>
+                </ol>
+
+                <p><strong>Resultado:</strong> Factorización validada mediante el Teorema del Resto.</p>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="metodo resumen">
+              <h3>Factorización de expresiones racionales: <span class="flecha" onclick="toggleMetodo(this)">🔽</span>
+              </h3>
+              <div class="contenido-metodo">
+                <p>
+                  Este método se basa en <strong>factorizar tanto el numerador como el denominador</strong> de una
+                  fracción algebraica para <strong>simplificarla</strong>, es decir, cancelar factores comunes.
+                </p>
+
+                <p><strong>Ejemplo:</strong></p>
+                <code>(x² - 9) / (x² - x - 6)</code>
+
+                <ol>
+                  <li>
+                    <strong>Paso 1: Analizar la fracción algebraica</strong><br>
+                    Se nos presenta la fracción:
+                    <br>
+                    <code>(x² - 9) / (x² - x - 6)</code><br>
+                    El objetivo es factorizar el numerador y el denominador para luego simplificar.
+                  </li>
+
+                  <li>
+                    <strong>Paso 2: Factorizar el numerador</strong><br>
+                    El numerador es <code>x² - 9</code>, una diferencia de cuadrados.<br>
+                    Recordamos la identidad notable: <code>a² - b² = (a - b)(a + b)</code>.<br>
+                    En este caso:
+                    <ul>
+                      <li>a = x</li>
+                      <li>b = 3</li>
+                    </ul>
+                    Por lo tanto:
+                    <code>x² - 9 = (x - 3)(x + 3)</code>
+                  </li>
+
+                  <li>
+                    <strong>Paso 3: Factorizar el denominador</strong><br>
+                    El denominador es un trinomio: <code>x² - x - 6</code><br>
+                    Buscamos dos números que multiplicados den <strong>-6</strong> y sumados den <strong>-1</strong>
+                    (coeficiente del término lineal):
+                    <ul>
+                      <li>Probamos con: -3 × 2 = -6 y -3 + 2 = -1 ✅</li>
+                    </ul>
+                    Entonces:
+                    <code>x² - x - 6 = (x - 3)(x + 2)</code>
+                  </li>
+
+                  <li>
+                    <strong>Paso 4: Sustituir las factorizaciones en la fracción</strong><br>
+                    Reescribimos la fracción usando las factorizaciones anteriores:
+                    <br>
+                    <code>[(x - 3)(x + 3)] / [(x - 3)(x + 2)]</code>
+                  </li>
+
+                  <li>
+                    <strong>Paso 5: Cancelar factores comunes</strong><br>
+                    Observamos que <code>(x - 3)</code> está tanto en el numerador como en el denominador, por lo que se
+                    puede simplificar:
+                    <br>
+                    Resultado simplificado: <code>(x + 3)/(x + 2)</code>
+                  </li>
+
+                  <li>
+                    <strong>Paso 6: Establecer restricciones del dominio</strong><br>
+                    Recordamos que en fracciones algebraicas, no se pueden anular los denominadores originales.<br>
+                    El denominador original era: <code>(x - 3)(x + 2)</code>
+                    <br>
+                    Por lo tanto:
+                    <ul>
+                      <li>x ≠ 3 → anula (x - 3)</li>
+                      <li>x ≠ -2 → anula (x + 2)</li>
+                    </ul>
+                    Estas restricciones deben acompañar al resultado final.
+                  </li>
+
+                  <li>
+                    <strong>Paso 7: Escribir la respuesta final completa</strong><br>
+                    <code>(x + 3)/(x + 2), con x ≠ 3 y x ≠ -2</code>
+                  </li>
+
+                  <li>
+                    <strong>Ejemplo adicional:</strong><br>
+                    Factorizar y simplificar: <code>(x² + 5x + 6)/(x² + 4x + 3)</code>
+                    <br><br>
+                    <strong>Numerador:</strong><br>
+                    x² + 5x + 6 → buscamos dos números que sumen 5 y multipliquen 6 → 2 y 3:<br>
+                    <code>x² + 5x + 6 = (x + 2)(x + 3)</code>
+                    <br><br>
+                    <strong>Denominador:</strong><br>
+                    x² + 4x + 3 → 1 y 3:<br>
+                    <code>x² + 4x + 3 = (x + 1)(x + 3)</code>
+                    <br><br>
+                    Entonces:
+                    <code>[(x + 2)(x + 3)] / [(x + 1)(x + 3)]</code>
+                    <br>
+                    Se simplifica (x + 3):
+                    <code>(x + 2)/(x + 1)</code>
+                    <br>
+                    <strong>Restricciones:</strong> x ≠ -3, x ≠ -1
+                  </li>
+
+                  <li>
+                    <strong>Recomendaciones generales:</strong>
+                    <ul>
+                      <li>Siempre factoriza completamente antes de simplificar.</li>
+                      <li>Identifica identidades notables como diferencia de cuadrados, trinomios, suma y resta de
+                        cubos.</li>
+                      <li>No olvides escribir las restricciones del dominio.</li>
+                      <li>Evita cancelar términos que no son factores (por ejemplo, nunca canceles términos separados
+                        por suma o resta).</li>
+                    </ul>
+                  </li>
+                </ol>
+
+                <p><strong>Resultado final del ejemplo principal:</strong></p>
+                <code>(x + 3)/(x + 2), con x ≠ 3 y x ≠ -2</code>
+
+                <hr>
+
+                <p><strong>🔎 Recuerda:</strong></p>
+                <ul>
+                  <li><code>x² - a²</code> → diferencia de cuadrados → <code>(x - a)(x + a)</code></li>
+                  <li><code>x² + bx + c</code> → trinomio → buscar dos números que sumen b y multipliquen c</li>
+                  <li>Verifica siempre las condiciones de existencia (los valores que anulan el denominador original)
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="metodo resumen">
+              <h3>➤ Factorización de polinomios con coeficientes fraccionarios o irracionales:
+                <span class="flecha" onclick="toggleMetodo(this)">🔽</span>
+              </h3>
+              <div class="contenido-metodo">
+                <p>
+                  Este tipo de factorización requiere, en primer lugar, <strong>eliminar las fracciones</strong> o
+                  <strong>racionalizar</strong> los coeficientes irracionales para poder aplicar los métodos de
+                  factorización habituales.
+                </p>
+
+                <p><strong>Ejemplo:</strong></p>
+                <code>(1/2)x² + x + (1/2)</code>
+
+                <ol>
+                  <li>
+                    <strong>Paso 1: Identificar el coeficiente fraccionario</strong><br>
+                    Observamos que los términos <code>(1/2)x²</code> y <code>(1/2)</code> tienen fracciones.<br>
+                    Es conveniente multiplicar toda la expresión por el mínimo común denominador (m.c.d.) de los
+                    denominadores para eliminarlas.
+                  </li>
+
+                  <li>
+                    <strong>Paso 2: Calcular el mínimo común denominador</strong><br>
+                    Los denominadores en este caso son 2 (en <code>(1/2)x²</code> y en <code>(1/2)</code>).<br>
+                    El m.c.d. es 2.
+                  </li>
+
+                  <li>
+                    <strong>Paso 3: Multiplicar todo el polinomio por el m.c.d.</strong><br>
+                    Multiplicamos cada término del polinomio original por 2:
+                    <br><br>
+                    2 · [(1/2)x² + x + (1/2)] = 2 · (1/2)x² + 2 · x + 2 · (1/2)
+                    <br><br>
+                    Esto da:
+                    <br>
+                    x² + 2x + 1
+                  </li>
+
+                  <li>
+                    <strong>Paso 4: Factorizar el trinomio resultante</strong><br>
+                    Ahora tenemos un trinomio cuadrado perfecto:
+                    <br>
+                    x² + 2x + 1
+                    <br>
+                    Identificamos:
+                    <ul>
+                      <li>Primer término: x² → raíz: x</li>
+                      <li>Tercer término: 1 → raíz: 1</li>
+                      <li>Término medio: 2x = 2 · x · 1</li>
+                    </ul>
+                    Por lo tanto:
+                    <br>
+                    x² + 2x + 1 = (x + 1)²
+                  </li>
+
+                  <li>
+                    <strong>Paso 5: Volver a escribir la expresión original factorizada</strong><br>
+                    Recordamos que multiplicamos por 2 al principio, así que debemos equilibrar eso.<br>
+                    Lo hacemos dividiendo entre 2 para compensar, es decir:
+                    <br><br>
+                    (1/2)x² + x + (1/2) = (1/2) · (x² + 2x + 1) = (1/2)(x + 1)²
+                  </li>
+
+                  <li>
+                    <strong>Resultado final:</strong>
+                    <br>
+                    <code>(1/2)(x + 1)²</code>
+                  </li>
+
+                  <li>
+                    <strong>Conclusión:</strong><br>
+                    Al factorizar polinomios con coeficientes fraccionarios:
+                    <ul>
+                      <li>Multiplica por el m.c.d. para eliminar fracciones.</li>
+                      <li>Factoriza el nuevo polinomio con coeficientes enteros.</li>
+                      <li>Vuelve a incluir el factor constante (como 1/2 en este caso) si fue removido.</li>
+                    </ul>
+                  </li>
+                </ol>
+
+                <hr>
+
+                <p><strong>🔎 Segundo ejemplo (con irracionales):</strong></p>
+                <code>x² - 2√3x + 3</code>
+
+                <ol start="8">
+                  <li>
+                    <strong>Paso 1: Verificar si se trata de un trinomio cuadrado perfecto</strong><br>
+                    Revisamos si cumple la forma a² - 2ab + b² = (a - b)²
+                  </li>
+
+                  <li>
+                    <strong>Paso 2: Identificamos los términos</strong><br>
+                    <ul>
+                      <li>Primer término: x² → raíz: x</li>
+                      <li>Último término: 3 → raíz: √3</li>
+                      <li>Término medio: -2√3x = -2 · x · √3 ✅</li>
+                    </ul>
+                    Sí cumple con la estructura de un trinomio cuadrado perfecto.
+                  </li>
+
+                  <li>
+                    <strong>Paso 3: Factorizar</strong><br>
+                    x² - 2√3x + 3 = (x - √3)²
+                  </li>
+
+                  <li>
+                    <strong>Resultado:</strong><br>
+                    <code>(x - √3)²</code>
+                  </li>
+
+                  <li>
+                    <strong>Conclusión con irracionales:</strong><br>
+                    <ul>
+                      <li>Se puede aplicar la misma lógica que con números racionales.</li>
+                      <li>Verifica si se ajusta a una identidad notable.</li>
+                      <li>No se necesita eliminar radicales si se acomodan bien en la factorización.</li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+
+            <div class="metodo resumen">
+              <h3>➤ Factorización de polinomios por sustitución: <span class="flecha"
+                  onclick="toggleMetodo(this)">🔽</span></h3>
+              <div class="contenido-metodo">
+                <p>
+                  Este método consiste en <strong>realizar un cambio de variable</strong> para transformar un polinomio
+                  complejo, generalmente con potencias elevadas o simétricas, en un polinomio más sencillo que sea fácil
+                  de factorizar.
+                </p>
+
+                <p>
+                  Una vez factorizado el nuevo polinomio, <strong>se revierte la sustitución</strong> para expresar la
+                  factorización original en función de la variable inicial.
+                </p>
+
+                <hr>
+
+                <h4>🔍 Ejemplo: Factorizar x⁴ + 2x² + 1</h4>
+
+                <ol>
+                  <li>
+                    <strong>Paso 1: Observar la estructura del polinomio</strong><br>
+                    Tenemos:<br>
+                    <code>P(x) = x⁴ + 2x² + 1</code><br><br>
+                    Notamos que:
+                    <ul>
+                      <li>x⁴ es el cuadrado de x²: (x²)² = x⁴</li>
+                      <li>También tenemos un término lineal en x²</li>
+                    </ul>
+                    Esto sugiere que podemos agrupar usando una sustitución.
+                  </li>
+
+                  <li>
+                    <strong>Paso 2: Sustituir una nueva variable</strong><br>
+                    Hacemos el cambio de variable:<br>
+                    <code>Sea y = x²</code><br>
+                    Entonces:<br>
+                    <code>x⁴ = (x²)² = y²</code><br><br>
+                    Reescribimos el polinomio usando y:<br>
+                    <code>P(x) = x⁴ + 2x² + 1 = y² + 2y + 1</code>
+                  </li>
+
+                  <li>
+                    <strong>Paso 3: Factorizar el nuevo polinomio</strong><br>
+                    Ahora trabajamos con:<br>
+                    <code>y² + 2y + 1</code><br><br>
+                    Este es un trinomio cuadrado perfecto porque:<br>
+                    <ul>
+                      <li>El primer término es y² = (y)²</li>
+                      <li>El último término es 1 = (1)²</li>
+                      <li>El doble producto es 2y = 2·y·1 ✅</li>
+                    </ul>
+                    Por lo tanto:<br>
+                    <code>y² + 2y + 1 = (y + 1)²</code>
+                  </li>
+
+                  <li>
+                    <strong>Paso 4: Volver a la variable original</strong><br>
+                    Recordamos que hicimos:<br>
+                    <code>y = x²</code><br><br>
+                    Sustituimos nuevamente:<br>
+                    <code>(y + 1)² = (x² + 1)²</code>
+                  </li>
+
+                  <li>
+                    <strong>Resultado final:</strong><br>
+                    <code>x⁴ + 2x² + 1 = (x² + 1)²</code>
+                  </li>
+                </ol>
+
+                <hr>
+
+                <h4>📌 ¿Cuándo usar este método?</h4>
+                <ul>
+                  <li>Cuando el polinomio tiene términos con potencias dobles (ej. x⁶, x³ o x⁴, x²).</li>
+                  <li>Cuando la expresión se puede ver como un trinomio en otra variable (ej. x⁴ + 3x² + 2 → y² + 3y +
+                    2).</li>
+                  <li>Ideal para expresiones simétricas con términos de potencias pares o múltiplos.</li>
+                </ul>
+
+                <h4>⚠️ Recomendaciones:</h4>
+                <ul>
+                  <li>Revisa cuidadosamente que la sustitución sea coherente con todos los términos del polinomio.</li>
+                  <li>Siempre regresa a la variable original al final del proceso.</li>
+                  <li>Comprueba que la factorización sea correcta expandiéndola nuevamente si es necesario.</li>
+                </ul>
+
+                <h4>🧠 Segundo ejemplo:</h4>
+                <p><strong>Factorizar:</strong> <code>x⁶ - 5x³ + 6</code></p>
+
+                <ol>
+                  <li>
+                    Observamos que x⁶ = (x³)², y también hay x³ → hacemos: <code>y = x³</code>
+                  </li>
+                  <li>
+                    Sustituimos:<br>
+                    <code>x⁶ - 5x³ + 6 = y² - 5y + 6</code>
+                  </li>
+                  <li>
+                    Factorizamos el nuevo polinomio:<br>
+                    <code>y² - 5y + 6 = (y - 2)(y - 3)</code>
+                  </li>
+                  <li>
+                    Regresamos a x:<br>
+                    <code>(x³ - 2)(x³ - 3)</code>
+                  </li>
+                  <li>
+                    Resultado final: <code>x⁶ - 5x³ + 6 = (x³ - 2)(x³ - 3)</code>
+                  </li>
+                </ol>
+
+                <hr>
+
+                <h4>💡 Consejos adicionales:</h4>
+                <ul>
+                  <li>Este método es similar a una "transformación temporal" del polinomio para facilitar su trabajo.
+                  </li>
+                  <li>Útil especialmente cuando aparecen términos como x⁴, x² o x⁶, x³.</li>
+                  <li>También se puede aplicar a expresiones racionales si se observa una estructura factorizable
+                    mediante cambio de variable.</li>
+                </ul>
+
+                <p><strong>Resumen:</strong> El cambio de variable simplifica la estructura del polinomio, se factoriza
+                  con métodos básicos y luego se vuelve a la variable original.</p>
+
+                <p><strong>Resultado general del ejemplo:</strong></p>
+                <code>x⁴ + 2x² + 1 = (x² + 1)²</code>
+              </div>
+            </div>
+
+
+
+            <div class="metodo resumen">
+              <h3>➤ Factorización en ℚ[x], ℝ[x] y ℂ[x]: <span class="flecha" onclick="toggleMetodo(this)">🔽</span></h3>
+              <div class="contenido-metodo">
+                <p>
+                  La <strong>factorización de polinomios</strong> depende del conjunto numérico en el cual estamos
+                  trabajando.
+                  Estos conjuntos determinan qué tipo de raíces y factores pueden aparecer, y qué tan completa puede ser
+                  la factorización.
+                </p>
+
+                <h4>1. Factorización en ℚ[x] (polinomios con coeficientes racionales)</h4>
+                <p>
+                  - En ℚ[x], los coeficientes del polinomio son números racionales (fracciones o enteros).<br>
+                  - La factorización se busca solo en polinomios con coeficientes racionales.<br>
+                  - Las raíces que se consideran para factorizar deben ser racionales o ser combinaciones que mantengan
+                  la racionalidad en los factores.<br>
+                  - Es común usar el <strong>Teorema del Factor Racional</strong> para encontrar posibles raíces
+                  racionales.
+                </p>
+
+                <p><strong>Ejemplo en ℚ[x]:</strong></p>
+                <code>P(x) = 2x² - 3x + 1</code>
+                <ol>
+                  <li>Buscamos raíces racionales posibles con el teorema del factor racional.</li>
+                  <li>Los candidatos son ±(divisores de término independiente) / (divisores del coeficiente principal) →
+                    ±1, ±1/2</li>
+                  <li>Probamos en P(x):<br>
+                    P(1) = 2 - 3 + 1 = 0 → raíz racional encontrada.</li>
+                  <li>Entonces (x - 1) es factor.</li>
+                  <li>Dividimos P(x) entre (x - 1) para obtener el otro factor:<br>
+                    Cociente: 2x - 1</li>
+                  <li>Factorización final: <code>P(x) = (x - 1)(2x - 1)</code></li>
+                </ol>
+
+                <hr>
+
+                <h4>2. Factorización en ℝ[x] (polinomios con coeficientes reales)</h4>
+                <p>
+                  - En ℝ[x], los coeficientes son números reales.<br>
+                  - Se permite factorizar en factores lineales y cuadráticos irreducibles.<br>
+                  - Las raíces pueden ser reales o complejas, pero los factores deben tener coeficientes reales.<br>
+                  - No siempre se puede factorizar totalmente en factores lineales reales (cuando hay raíces complejas).
+                </p>
+
+                <p><strong>Ejemplo en ℝ[x]:</strong></p>
+                <code>P(x) = x² + 1</code>
+                <ol>
+                  <li>Este polinomio no tiene raíces reales porque <code>x² = -1</code> no tiene solución en ℝ.</li>
+                  <li>Por eso, no se puede factorizar en factores lineales reales.</li>
+                  <li>El polinomio es irreducible en ℝ[x], pero sí puede representarse como es:
+                    <code>P(x) = x² + 1</code>.
+                  </li>
+                  <li>Sin embargo, es un factor cuadrático irreducible que puede usarse en factorizaciones mayores.</li>
+                </ol>
+
+                <p><strong>Ejemplo más complejo en ℝ[x]:</strong></p>
+                <code>P(x) = x³ - x² + x - 1</code>
+                <ol>
+                  <li>Probamos raíces reales usando el teorema del factor racional: ±1 son candidatos.</li>
+                  <li>P(1) = 1 - 1 + 1 - 1 = 0, raíz real en x=1.</li>
+                  <li>Dividimos entre (x - 1), resultado: <code>x² + 1</code></li>
+                  <li>Factorización: <code>P(x) = (x - 1)(x² + 1)</code></li>
+                  <li>El factor cuadrático <code>x² + 1</code> es irreducible en ℝ[x].</li>
+                </ol>
+
+                <hr>
+
+                <h4>3. Factorización en ℂ[x] (polinomios con coeficientes complejos)</h4>
+                <p>
+                  - ℂ[x] es el conjunto de polinomios con coeficientes complejos.<br>
+                  - El <strong>Teorema Fundamental del Álgebra</strong> garantiza que todo polinomio de grado n tiene
+                  exactamente n raíces complejas (contando multiplicidades).<br>
+                  - Por eso, en ℂ[x>, todo polinomio se puede factorizar en factores lineales (x - α), donde α es una
+                  raíz compleja.<br>
+                  - Esto permite una factorización completa, aunque los factores pueden tener coeficientes complejos.
+                </p>
+
+                <p><strong>Ejemplo en ℂ[x]:</strong></p>
+                <code>P(x) = x² + 1</code>
+                <ol>
+                  <li>El polinomio no tiene raíces reales, pero sí complejas:<br>
+                    <code>x² + 1 = 0 → x = ±i</code>, donde <code>i² = -1</code>.
+                  </li>
+                  <li>Factorización completa en ℂ[x]:<br>
+                    <code>P(x) = (x - i)(x + i)</code>
+                  </li>
+                </ol>
+
+                <p><strong>Ejemplo con polinomio de grado 3 en ℂ[x]:</strong></p>
+                <code>P(x) = x³ - 1</code>
+                <ol>
+                  <li>Encontramos la raíz real <code>x = 1</code>.</li>
+                  <li>Dividimos entre (x - 1) para obtener:<br>
+                    <code>x² + x + 1</code>
+                  </li>
+                  <li>Las otras dos raíces son complejas:<br>
+                    <code>x = (-1 ± i√3)/2</code>
+                  </li>
+                  <li>Por tanto, factorización completa:<br>
+                    <code>P(x) = (x - 1)(x - (-1 + i√3/2))(x - (-1 - i√3/2))</code>
+                  </li>
+                </ol>
+
+                <hr>
+
+                <h4>Resumen de diferencias entre ℚ[x], ℝ[x] y ℂ[x]</h4>
+                <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+                  <thead>
+                    <tr>
+                      <th>Conjunto</th>
+                      <th>Coeficientes</th>
+                      <th>Raíces permitidas</th>
+                      <th>Tipos de factores</th>
+                      <th>Factores irreducibles</th>
+                      <th>¿Factorización completa?</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>ℚ[x]</td>
+                      <td>Racionales</td>
+                      <td>Racionales</td>
+                      <td>Lineales y cuadráticos con coeficientes racionales</td>
+                      <td>Cuadráticos irreducibles</td>
+                      <td>No siempre</td>
+                    </tr>
+                    <tr>
+                      <td>ℝ[x]</td>
+                      <td>Reales</td>
+                      <td>Reales y complejas (pares conjugados)</td>
+                      <td>Lineales reales y cuadráticos irreducibles reales</td>
+                      <td>Cuadráticos irreducibles</td>
+                      <td>No siempre</td>
+                    </tr>
+                    <tr>
+                      <td>ℂ[x]</td>
+                      <td>Complejos</td>
+                      <td>Complejas</td>
+                      <td>Solo lineales (x - α)</td>
+                      <td>Ninguno (todos reducibles)</td>
+                      <td>Sí (total)</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <hr>
+
+                <h4>Aplicaciones prácticas</h4>
+                <ul>
+                  <li>
+                    La factorización en ℚ[x] es útil para problemas con coeficientes racionales y se usa mucho en
+                    álgebra elemental.
+                  </li>
+                  <li>
+                    ℝ[x] se usa en análisis real, física e ingeniería, donde los coeficientes suelen ser números reales.
+                  </li>
+                  <li>
+                    ℂ[x] es fundamental en análisis complejo, teoría de control, y otras áreas avanzadas donde se
+                    necesitan raíces complejas.
+                  </li>
+                </ul>
+
+                <h4>Conclusión</h4>
+                <p>
+                  La elección del conjunto numérico donde se trabaja determina cómo y qué tan completa será la
+                  factorización de un polinomio. Conocer las diferencias y propiedades de ℚ[x], ℝ[x] y ℂ[x] es
+                  fundamental para comprender la naturaleza de los polinomios y sus raíces.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="metodo resumen">
+              <h3>➤ Método de factorización de Eisenstein (criterio de irreductibilidad): <span class="flecha"
+                  onclick="toggleMetodo(this)">🔽</span></h3>
+              <div class="contenido-metodo">
+                <p>
+                  El <strong>criterio de Eisenstein</strong> es una herramienta poderosa en álgebra que permite
+                  determinar si un polinomio con coeficientes enteros es irreductible en <em>ℤ[x]</em>, es decir, si no
+                  puede factorizarse como producto de polinomios de grado menor con coeficientes enteros.
+                </p>
+
+                <h4>¿Qué significa irreductibilidad?</h4>
+                <p>
+                  Un polinomio es <strong>irreductible</strong> en ℤ[x] si no puede descomponerse en factores de grado
+                  menor con coeficientes enteros, excepto los triviales (producto por una unidad ±1).
+                  Esto es equivalente a decir que el polinomio no se puede factorizar sin salir de los enteros.
+                </p>
+
+                <h4>Enunciado del criterio de Eisenstein</h4>
+                <p>
+                  Sea un polinomio con coeficientes enteros:
+                </p>
+                <p style="text-align:center;"><code>P(x) = a_n x^n + a_{n-1} x^{n-1} + ... + a_1 x + a_0</code></p>
+                <p>
+                  Si existe un número primo <strong>p</strong> tal que:
+                </p>
+                <ol>
+                  <li><code>p</code> divide a todos los coeficientes excepto al <code>a_n</code> (el coeficiente líder),
+                    es decir, <code>p | a_i</code> para todo <code>i = 0, 1, ..., n-1</code>.</li>
+                  <li><code>p</code> no divide a <code>a_n</code>, es decir, <code>p ∤ a_n</code>.</li>
+                  <li><code>p²</code> no divide a <code>a_0</code> (el término independiente), es decir,
+                    <code>p² ∤ a_0</code>.
+                  </li>
+                </ol>
+                <p>
+                  Entonces el polinomio <code>P(x)</code> es irreductible en ℤ[x].
+                </p>
+
+                <hr>
+
+                <h4>¿Cómo se usa el criterio de Eisenstein?</h4>
+                <p>Veamos el procedimiento paso a paso:</p>
+
+                <ol>
+                  <li><strong>Identificar el polinomio</strong> con coeficientes enteros que deseas analizar.</li>
+                  <li><strong>Buscar un primo</strong> <code>p</code> que cumpla las condiciones del criterio.</li>
+                  <li><strong>Verificar las condiciones</strong> para ese primo:</li>
+                  <ul>
+                    <li>¿Divide todos los coeficientes excepto el líder?</li>
+                    <li>¿No divide el coeficiente líder?</li>
+                    <li>¿El cuadrado del primo no divide el término independiente?</li>
+                  </ul>
+                  <li><strong>Concluir</strong> que el polinomio es irreductible si se cumplen todas las condiciones.
+                  </li>
+                </ol>
+
+                <hr>
+
+                <h4>Ejemplo 1: Aplicación directa del criterio</h4>
+                <p>Consideremos el polinomio:</p>
+                <p style="text-align:center;"><code>P(x) = x^3 + 6x^2 + 12x + 8</code></p>
+
+                <ol>
+                  <li>Escogemos el primo <code>p = 2</code>.</li>
+                  <li>Verificamos si <code>2</code> divide a todos los coeficientes menos el líder:</li>
+                  <ul>
+                    <li><code>a_2 = 6</code>, divisible por 2.</li>
+                    <li><code>a_1 = 12</code>, divisible por 2.</li>
+                    <li><code>a_0 = 8</code>, divisible por 2.</li>
+                  </ul>
+                  <li>¿Divide <code>2</code> al coeficiente líder <code>a_3 = 1</code>? No, ya que 2 no divide 1.</li>
+                  <li>¿Divide <code>2^2 = 4</code> al término independiente <code>8</code>? Sí, porque 8 es divisible
+                    por 4.</li>
+                  <li>La tercera condición falla porque el cuadrado del primo divide al término independiente.</li>
+                  <li>Por lo tanto, el criterio no se cumple y no podemos concluir irreductibilidad con este primo.</li>
+                </ol>
+
+                <hr>
+
+                <h4>Ejemplo 2: Otro polinomio</h4>
+                <p>Ahora analicemos:</p>
+                <p style="text-align:center;"><code>Q(x) = x^4 + 10x^3 + 35x^2 + 50x + 24</code></p>
+
+                <ol>
+                  <li>Intentamos con <code>p = 5</code>.</li>
+                  <li>¿Divide 5 a todos los coeficientes menos el líder?</li>
+                  <ul>
+                    <li><code>10, 35, 50, 24</code>, ¿divisibles por 5?</li>
+                    <li>10 es divisible por 5 → sí.</li>
+                    <li>35 es divisible por 5 → sí.</li>
+                    <li>50 es divisible por 5 → sí.</li>
+                    <li>24 no es divisible por 5 → no.</li>
+                  </ul>
+                  <li>No se cumple la condición para el término independiente, por lo que el criterio no se aplica con
+                    este primo.</li>
+                </ol>
+
+                <hr>
+
+                <h4>Ejemplo 3: Uso correcto del criterio</h4>
+                <p>Consideremos:</p>
+                <p style="text-align:center;"><code>R(x) = x^5 + 15x^4 + 75x^3 + 125x^2 + 100x + 30</code></p>
+
+                <ol>
+                  <li>Probamos con <code>p = 5</code>.</li>
+                  <li>¿Divide 5 a todos los coeficientes menos el líder?</li>
+                  <ul>
+                    <li>15, 75, 125, 100, 30 → todos divisibles por 5.</li>
+                  </ul>
+                  <li>¿Divide 5 al coeficiente líder 1? No.</li>
+                  <li>¿Divide 25 (5²) al término independiente 30? No, ya que 30 no es divisible por 25.</li>
+                  <li>Por lo tanto, el criterio de Eisenstein se cumple y <code>R(x)</code> es irreductible en ℤ[x].
+                  </li>
+                </ol>
+
+                <hr>
+
+                <h4>Casos especiales y variantes</h4>
+                <p>Algunas veces el polinomio no cumple directamente el criterio, pero mediante un cambio de variable se
+                  puede aplicar:</p>
+                <ul>
+                  <li><strong>Ejemplo:</strong> Para el polinomio <code>x^4 + 4x^3 + 6x^2 + 4x + 1</code>, que no cumple
+                    el criterio directamente.</li>
+                  <li>Si hacemos el cambio de variable <code>y = x + 1</code>, y expresamos el polinomio en función de
+                    <code>y</code>, podemos intentar aplicar el criterio de Eisenstein.
+                  </li>
+                </ul>
+
+                <hr>
+
+                <h4>Importancia y aplicaciones</h4>
+                <p>
+                  El criterio de Eisenstein es fundamental en teoría algebraica y en la construcción de polinomios
+                  irreductibles, usados para construir cuerpos de extensión y anillos en álgebra abstracta.
+                </p>
+
+                <ul>
+                  <li>Permite asegurar la irreductibilidad sin hacer divisiones o factorizaciones completas.</li>
+                  <li>Es una herramienta teórica para demostrar que ciertos polinomios no se pueden simplificar más.
+                  </li>
+                  <li>Se utiliza para construir cuerpos finitos y extensiones algebraicas.</li>
+                </ul>
+
+                <hr>
+
+                <h4>Resumen de pasos para aplicar el criterio de Eisenstein</h4>
+                <ol>
+                  <li>Identificar el polinomio con coeficientes enteros.</li>
+                  <li>Buscar un primo <code>p</code> candidato.</li>
+                  <li>Comprobar que <code>p</code> divide a todos los coeficientes excepto al líder.</li>
+                  <li>Verificar que <code>p</code> no divide al coeficiente líder.</li>
+                  <li>Confirmar que <code>p^2</code> no divide al término independiente.</li>
+                  <li>Concluir que el polinomio es irreductible si todas las condiciones se cumplen.</li>
+                </ol>
+
+                <h4>Limitaciones</h4>
+                <p>
+                  - El criterio no es necesario ni suficiente para todos los polinomios.<br>
+                  - Existen polinomios irreductibles que no cumplen el criterio.<br>
+                  - Es una herramienta principalmente para polinomios con coeficientes enteros.
+                </p>
+
+                <h4>Conclusión</h4>
+                <p>
+                  El <strong>criterio de Eisenstein</strong> es un método teórico útil para probar la irreductibilidad
+                  de ciertos polinomios con coeficientes enteros, basado en propiedades de divisibilidad con un número
+                  primo.
+                  Aunque no siempre aplicable, es una técnica elegante y efectiva para muchos casos en álgebra.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="metodo resumen">
+              <h3>➤ Factorización de polinomios homogéneos: <span class="flecha" onclick="toggleMetodo(this)">🔽</span>
+              </h3>
+              <div class="contenido-metodo">
+                <p>
+                  Un polinomio es <strong>homogéneo</strong> cuando todos sus términos tienen el mismo grado o grado
+                  total. Es decir, la suma de los exponentes de las variables en cada término es igual para todos los
+                  términos.
+                </p>
+
+                <h4>¿Qué significa que un polinomio sea homogéneo?</h4>
+                <p>
+                  Por ejemplo, en el polinomio:
+                </p>
+                <p style="text-align:center;"><code>P(x,y) = x^3 + 3x^2 y + 3xy^2 + y^3</code></p>
+                <p>
+                  Cada término es de grado 3:
+                </p>
+                <ul>
+                  <li><code>x^3</code> tiene grado 3 (exponente 3 en x, 0 en y)</li>
+                  <li><code>3x^2 y</code> tiene grado 3 (2 en x + 1 en y)</li>
+                  <li><code>3xy^2</code> tiene grado 3 (1 en x + 2 en y)</li>
+                  <li><code>y^3</code> tiene grado 3 (0 en x + 3 en y)</li>
+                </ul>
+
+                <h4>¿Por qué es importante esta propiedad?</h4>
+                <p>
+                  Esta característica permite usar técnicas especiales para factorizar, ya que la estructura uniforme
+                  facilita ciertos cambios de variable o agrupamientos que no serían tan evidentes en polinomios no
+                  homogéneos.
+                </p>
+
+                <hr>
+
+                <h4>Métodos comunes para factorizar polinomios homogéneos</h4>
+
+                <ol>
+                  <li><strong>Cambio de variable:</strong> Se usa para transformar el polinomio homogéneo en otro más
+                    simple o con una forma conocida, como un polinomio en una sola variable o un polinomio cuadrático.
+                  </li>
+                  <li><strong>Factorización por agrupación especial:</strong> Se agrupan términos de manera estratégica
+                    para extraer factores comunes y simplificar la expresión.</li>
+                  <li><strong>Uso de identidades notables:</strong> Muchas veces los polinomios homogéneos pueden
+                    expresarse como sumas o diferencias de potencias, productos notables, o formas reconocibles como
+                    binomios al cubo, trinomios cuadrados perfectos, etc.</li>
+                </ol>
+
+                <hr>
+
+                <h4>Ejemplo 1: Factorización de un polinomio homogéneo de grado 2</h4>
+                <p>Sea el polinomio:</p>
+                <p style="text-align:center;"><code>P(x,y) = x^2 + 2xy + y^2</code></p>
+                <p>Todos los términos tienen grado 2.</p>
+
+                <ol>
+                  <li>Reconocemos que es un trinomio cuadrado perfecto:</li>
+                  <li>Usamos la identidad notable <code>(a + b)^2 = a^2 + 2ab + b^2</code>:</li>
+                  <li>Por lo tanto:</li>
+                  <p style="text-align:center;"><code>P(x,y) = (x + y)^2</code></p>
+                </ol>
+
+                <hr>
+
+                <h4>Ejemplo 2: Factorización usando cambio de variable</h4>
+                <p>Consideremos el polinomio homogéneo:</p>
+                <p style="text-align:center;"><code>Q(x,y) = x^4 + 2x^2 y^2 + y^4</code></p>
+                <p>Todos los términos tienen grado 4.</p>
+
+                <ol>
+                  <li>Notamos que este polinomio tiene forma similar a un cuadrado perfecto de binomio.</li>
+                  <li>Hacemos el cambio de variable <code>z = x^2</code> y <code>w = y^2</code>.</li>
+                  <li>Entonces <code>Q(x,y)</code> puede escribirse como:</li>
+                  <p style="text-align:center;"><code>Q(z,w) = z^2 + 2zw + w^2</code></p>
+                  <li>Que es un trinomio cuadrado perfecto.</li>
+                  <li>Por identidad, factorizamos:</li>
+                  <p style="text-align:center;"><code>Q(z,w) = (z + w)^2</code></p>
+                  <li>Deshaciendo el cambio de variable:</li>
+                  <p style="text-align:center;"><code>Q(x,y) = (x^2 + y^2)^2</code></p>
+                </ol>
+
+                <hr>
+
+                <h4>Ejemplo 3: Factorización por agrupación especial</h4>
+                <p>Sea el polinomio homogéneo:</p>
+                <p style="text-align:center;"><code>R(x,y,z) = x^3 y + x^2 y^2 + xy^3 + y^4</code></p>
+                <p>Todos los términos tienen grado 4.</p>
+
+                <ol>
+                  <li>Agrupamos los términos:</li>
+                  <p style="text-align:center;"><code>(x^3 y + x^2 y^2) + (xy^3 + y^4)</code></p>
+                  <li>Extraemos factores comunes en cada grupo:</li>
+                  <ul>
+                    <li>Del primer grupo: <code>x^2 y</code> → <code>x^2 y (x + y)</code></li>
+                    <li>Del segundo grupo: <code>y^3</code> → <code>y^3 (x + y)</code></li>
+                  </ul>
+                  <li>Ahora factor común <code>(x + y)</code>:</li>
+                  <p style="text-align:center;"><code>R(x,y,z) = (x + y)(x^2 y + y^3)</code></p>
+                  <li>El segundo factor puede factorizarse más si es posible.</li>
+                </ol>
+
+                <hr>
+
+                <h4>Notas adicionales</h4>
+                <ul>
+                  <li>Los polinomios homogéneos también aparecen en geometría y física, relacionados con formas
+                    homogéneas, ecuaciones diferenciales y análisis dimensional.</li>
+                  <li>Este tipo de factorización puede extenderse a polinomios con más variables y grados mayores.</li>
+                  <li>Es muy útil en la simplificación y estudio de propiedades de funciones polinómicas.</li>
+                </ul>
+
+                <h4>Resumen de pasos para factorizar polinomios homogéneos</h4>
+                <ol>
+                  <li>Verifica que todos los términos tengan el mismo grado.</li>
+                  <li>Intenta identificar si el polinomio corresponde a alguna identidad notable.</li>
+                  <li>Si no es inmediato, intenta hacer un cambio de variable para simplificar la forma.</li>
+                  <li>Si hay varios términos, intenta factorizar por agrupación.</li>
+                  <li>Extrae factores comunes y simplifica lo que sea posible.</li>
+                </ol>
+
+                <h4>Conclusión</h4>
+                <p>
+                  La factorización de polinomios homogéneos es un proceso muy valioso que permite aprovechar la
+                  uniformidad en el grado de los términos para aplicar técnicas especiales, como cambios de variable o
+                  agrupaciones, facilitando la simplificación y análisis de polinomios complejos.
+                </p>
+              </div>
+            </div>
+
+
+            <p>
+              <strong>Consejo:</strong> A menudo se combinan múltiples técnicas
+              avanzadas para factorizar polinomios de alto grado o expresiones
+              que mezclan varias estructuras.
+            </p>
         </section>
 
         <section class="card fade-in aplicaciones">
@@ -1143,6 +2280,7 @@
           <p id="solucion2" class="respuesta"></p>
         </section>
       </div>
+
       <div class="group-content" id="grupo3">
         <section class="card fade-in errores-comunes">
           <h2>🔷 Errores Comunes en la Factorización</h2>
@@ -1303,7 +2441,6 @@
         </section>
       </div>
 
-
       <div class="group-content" id="grupo5">
         <section class="card fade-in">
           <h2>📘 Teoría de Trinomios</h2>
@@ -1423,83 +2560,502 @@
         </section>
       </div>
 
-
       <div class="group-content" id="grupo6">
         <section class="card fade-in">
           <h2>📘 Casos Clásicos de Trinomios</h2>
 
-          <div class="container-section">
-            <h3>✅ Trinomio Cuadrado Perfecto</h3>
-            <p>
-              Un trinomio cuadrado perfecto es aquel que proviene del cuadrado de un binomio. Se expresa con la fórmula
-              general:
-            </p>
-            <code>a² ± 2ab + b² = (a ± b)²</code>
-            <p>
-              Esta identidad permite factorizar rápidamente ciertos trinomios reconociendo patrones.
-            </p>
-            <p><strong>Ejemplo:</strong></p>
-            <code>x² + 6x + 9 = (x + 3)²</code>
-            <p>
-              Aquí, <code>x²</code> es el cuadrado de <code>x</code>, <code>9</code> es el cuadrado de <code>3</code> y
-              el término del medio <code>6x</code> es igual a <code>2·x·3</code>, cumpliendo la fórmula.
-            </p>
+          <div class="metodo trinomio">
+            <h3>
+              Trinomio Cuadrado Perfecto
+              <span class="flecha" onclick="toggleMetodotrinomio(this)">🔽</span>
+            </h3>
+            <div class="contenido-metodotrinomio">
+              <p>
+                Un <strong>trinomio cuadrado perfecto</strong> es un polinomio de grado dos que resulta del cuadrado de
+                un binomio.
+                Esto quiere decir que al elevar al cuadrado una expresión con dos términos, obtenemos un trinomio que
+                sigue una forma
+                muy particular.
+              </p>
 
-            <h4>Características:</h4>
-            <ul>
-              <li>Los términos primero y último son cuadrados perfectos.</li>
-              <li>El término del medio es el doble del producto de las raíces cuadradas de los términos extremos.</li>
-              <li>La factorización es única y no se pueden descomponer más.</li>
-            </ul>
+              <p>La fórmula general para un trinomio cuadrado perfecto es:</p>
+              <code>a² ± 2ab + b² = (a ± b)²</code>
+
+              <p>
+                Aquí, <code>a</code> y <code>b</code> pueden ser números, variables o expresiones algebraicas. La clave
+                está en que el término central debe ser el doble del producto de las raíces cuadradas del primer y
+                tercer término.
+              </p>
+
+              <h4>¿Por qué es importante?</h4>
+              <p>
+                Reconocer trinomios cuadrados perfectos permite factorizar rápidamente, resolver ecuaciones cuadráticas,
+                simplificar expresiones y entender mejor la estructura algebraica.
+              </p>
+
+              <p><strong>Ejemplo paso a paso:</strong></p>
+              <code>x² + 6x + 9 = ?</code>
+
+              <ol>
+                <li>
+                  <strong>Paso 1: Identificar los términos cuadrados</strong><br />
+                  Observamos el primer término: <code>x²</code>, que es el cuadrado de <code>x</code>.<br />
+                  El último término: <code>9</code>, que es el cuadrado de <code>3</code>.
+                </li>
+
+                <li>
+                  <strong>Paso 2: Verificar el término del medio</strong><br />
+                  El término central es <code>6x</code>. Debemos comprobar si es igual a <code>2ab</code>, es
+                  decir:<br />
+                  <code>2 × x × 3 = 6x</code>, que coincide perfectamente. Esto confirma que la expresión puede ser un
+                  trinomio cuadrado perfecto.
+                </li>
+
+                <li>
+                  <strong>Paso 3: Aplicar la fórmula</strong><br />
+                  Como la condición se cumple, aplicamos la identidad:<br />
+                  <code>x² + 6x + 9 = (x + 3)²</code>
+                </li>
+
+                <li>
+                  <strong>Paso 4: Interpretar el resultado</strong><br />
+                  El trinomio es el cuadrado del binomio <code>(x + 3)</code>. Si expandimos <code>(x + 3)²</code>
+                  usando la fórmula del binomio, volveremos a obtener el trinomio original.
+                </li>
+              </ol>
+
+              <h4>Expansión para verificar</h4>
+              <p>Para estar seguros, podemos comprobar:</p>
+              <code>(x + 3)² = (x + 3)(x + 3) = x² + 3x + 3x + 9 = x² + 6x + 9</code>
+
+              <h4>Características importantes:</h4>
+              <ul>
+                <li>
+                  <strong>Cuadrados perfectos:</strong> El primer y último término siempre deben ser cuadrados
+                  perfectos, es decir, números o expresiones que son el cuadrado exacto de otro.
+                </li>
+                <li>
+                  <strong>Término del medio:</strong> Debe ser el doble del producto de las raíces cuadradas del primer
+                  y tercer término.
+                </li>
+                <li>
+                  <strong>Factorización única:</strong> Esta forma solo puede factorizarse como el cuadrado de un
+                  binomio, no puede descomponerse más en factores lineales.
+                </li>
+                <li>
+                  <strong>Aplicación en ecuaciones:</strong> Muchas ecuaciones cuadráticas se resuelven fácilmente al
+                  reconocer este patrón y usar la raíz cuadrada.
+                </li>
+              </ul>
+
+              <h4>Casos con signo negativo</h4>
+              <p>
+                La fórmula también funciona con signos negativos. Por ejemplo:
+              </p>
+              <code>a² - 2ab + b² = (a - b)²</code>
+
+              <p>
+                Ejemplo práctico:
+              </p>
+              <code>x² - 10x + 25 = (x - 5)²</code>
+
+              <p>
+                Aquí, <code>x²</code> es el cuadrado de <code>x</code>, <code>25</code> es el cuadrado de
+                <code>5</code>, y el término central <code>-10x</code> es igual a <code>-2 × x × 5</code>.
+              </p>
+
+              <h4>Ejercicio adicional con variables</h4>
+              <p>
+                Considera la expresión:
+              </p>
+              <code>4x² + 12xy + 9y² = ?</code>
+
+              <ol>
+                <li>
+                  El primer término es <code>4x²</code>, que es el cuadrado de <code>2x</code>.
+                </li>
+                <li>
+                  El tercer término es <code>9y²</code>, que es el cuadrado de <code>3y</code>.
+                </li>
+                <li>
+                  El término del medio es <code>12xy</code>, y verificamos si es el doble del producto de las raíces
+                  cuadradas:<br />
+                  <code>2 × (2x) × (3y) = 12xy</code> ✔️
+                </li>
+                <li>
+                  Aplicando la fórmula:
+                  <br />
+                  <code>4x² + 12xy + 9y² = (2x + 3y)²</code>
+                </li>
+              </ol>
+
+              <h4>Importancia del reconocimiento de patrones</h4>
+              <p>
+                La habilidad para identificar trinomios cuadrados perfectos es fundamental para simplificar expresiones,
+                resolver ecuaciones, y realizar cálculos más rápidos sin la necesidad de usar métodos más complejos.
+              </p>
+
+              <h4>Errores comunes a evitar</h4>
+              <ul>
+                <li>No verificar que el término central sea exactamente el doble del producto de las raíces cuadradas.
+                </li>
+                <li>Confundir términos que no son cuadrados perfectos.</li>
+                <li>Intentar factorizar trinomios que no cumplen con esta estructura usando esta fórmula.</li>
+              </ul>
+
+              <h4>Ejemplo para practicar</h4>
+              <p>
+                ¿Cuál es la factorización de <code>9x² + 24x + 16</code>?
+              </p>
+
+              <ol>
+                <li>Identificamos que <code>9x² = (3x)²</code> y <code>16 = 4²</code>.</li>
+                <li>Verificamos el término del medio: <code>24x</code> y calculamos <code>2 × 3x × 4 = 24x</code>.</li>
+                <li>Por lo tanto, <code>9x² + 24x + 16 = (3x + 4)²</code>.</li>
+              </ol>
+
+              <h4>Resumen</h4>
+              <p>
+                En resumen, un trinomio cuadrado perfecto tiene una estructura muy particular y su factorización es
+                simple si sabemos identificar los términos adecuados. Esto simplifica mucho el trabajo con polinomios y
+                facilita la resolución de problemas algebraicos.
+              </p>
+            </div>
           </div>
 
-          <div class="container-section">
-            <h3>✅ Trinomio Simple</h3>
-            <p>
-              El trinomio simple es aquel en que el coeficiente del término cuadrático es 1, o sea:
-            </p>
-            <code>x² + bx + c</code>
-            <p>
-              Para factorizarlo, se buscan dos números que multiplicados den <code>c</code> y sumados den
-              <code>b</code>.
-            </p>
-            <p><strong>Ejemplo:</strong></p>
-            <code>x² + 5x + 6 = (x + 2)(x + 3)</code>
-            <p>
-              Los números 2 y 3 cumplen porque 2 × 3 = 6 y 2 + 3 = 5.
-            </p>
+          <div class="metodo trinomio">
+            <h3>
+              ✅ Trinomio Simple
+              <span class="flecha" onclick="toggleMetodotrinomio(this)">🔽</span>
+            </h3>
+            <div class="contenido-metodotrinomio">
+              <p>
+                El <strong>trinomio simple</strong> es un polinomio cuadrático donde el coeficiente principal (del
+                término cuadrático) es 1. Esto significa que el término con la variable al cuadrado tiene coeficiente 1,
+                y la forma general es:
+              </p>
+              <code>x² + bx + c</code>
 
-            <h4>Método paso a paso:</h4>
-            <ol>
-              <li>Encuentra dos números que multiplicados den el término independiente <code>c</code>.</li>
-              <li>Estos números deben sumar el coeficiente lineal <code>b</code>.</li>
-              <li>Escribe la factorización como el producto de dos binomios con esos números.</li>
-            </ol>
-            <p>
-              Este método es rápido y efectivo para trinomios simples sin coeficiente principal diferente de 1.
-            </p>
+              <p>
+                Para factorizar un trinomio simple, el objetivo es encontrar dos números que cumplan dos condiciones muy
+                importantes:
+              </p>
+              <ul>
+                <li>Que multiplicados den el término independiente <code>c</code>.</li>
+                <li>Que sumados den el coeficiente del término lineal <code>b</code>.</li>
+              </ul>
+
+              <h4><strong>Ejemplo básico:</strong></h4>
+              <code>x² + 5x + 6 = (x + 2)(x + 3)</code>
+
+              <p>
+                Aquí, los números <code>2</code> y <code>3</code> cumplen porque:
+              </p>
+              <ul>
+                <li><code>2 × 3 = 6</code> (producto = término independiente)</li>
+                <li><code>2 + 3 = 5</code> (suma = coeficiente lineal)</li>
+              </ul>
+
+              <h4>Método paso a paso para factorizar un trinomio simple</h4>
+              <ol>
+                <li>
+                  <strong>Identificar el trinomio simple:</strong> Verifica que el coeficiente de <code>x²</code> sea 1.
+                  Si es diferente, este método no es directamente aplicable.
+                </li>
+
+                <li>
+                  <strong>Determinar los valores de <code>b</code> y <code>c</code>:</strong> Reconoce el coeficiente
+                  lineal y el término independiente.
+                </li>
+
+                <li>
+                  <strong>Buscar dos números que multiplicados den <code>c</code>:</strong> Estos números deben ser
+                  factores del término independiente.
+                </li>
+
+                <li>
+                  <strong>Verificar que esos dos números sumados den <code>b</code>:</strong> De los factores que
+                  encuentres, elige aquellos cuya suma sea igual al coeficiente lineal.
+                </li>
+
+                <li>
+                  <strong>Escribir la factorización:</strong> Expresa el trinomio como el producto de dos binomios
+                  formados por <code>x</code> más cada uno de los números encontrados.
+                </li>
+              </ol>
+
+              <h4>Ejemplo detallado paso a paso</h4>
+              <p>Factoriza el trinomio <code>x² + 7x + 12</code></p>
+
+              <ol>
+                <li>
+                  El coeficiente principal es 1, así que podemos aplicar el método.
+                </li>
+                <li>
+                  El coeficiente lineal es 7 y el término independiente es 12.
+                </li>
+                <li>
+                  Encuentra dos números que multiplicados den 12:
+                  <ul>
+                    <li>1 × 12 = 12</li>
+                    <li>2 × 6 = 12</li>
+                    <li>3 × 4 = 12</li>
+                  </ul>
+                </li>
+                <li>
+                  Ahora verifica cuál de estas parejas suma 7:
+                  <ul>
+                    <li>1 + 12 = 13</li>
+                    <li>2 + 6 = 8</li>
+                    <li><strong>3 + 4 = 7</strong></li>
+                  </ul>
+                </li>
+                <li>
+                  Los números son 3 y 4, porque cumplen ambas condiciones.
+                </li>
+                <li>
+                  Por lo tanto:
+                  <br />
+                  <code>x² + 7x + 12 = (x + 3)(x + 4)</code>
+                </li>
+              </ol>
+
+              <h4>Prueba rápida de la factorización</h4>
+              <p>
+                Multiplicamos los binomios:
+              </p>
+              <code>
+      (x + 3)(x + 4) = x·x + x·4 + 3·x + 3·4 = x² + 4x + 3x + 12 = x² + 7x + 12
+    </code>
+
+              <h4>¿Qué hacer si no hay dos números que cumplan ambas condiciones?</h4>
+              <p>
+                Si no existe tal par de números, el trinomio no es factorable con números enteros y puede ser
+                irreducible en el conjunto de números enteros. En ese caso, se pueden usar métodos como la fórmula
+                cuadrática para encontrar raíces o factorizar en números reales o complejos.
+              </p>
+
+              <h4>Ejemplo de trinomio no factorizable en enteros</h4>
+              <p>
+                Intenta factorizar <code>x² + x + 1</code>:
+              </p>
+              <ul>
+                <li>Producto para buscar: 1</li>
+                <li>Números que multiplican a 1: 1 × 1, (-1) × (-1)</li>
+                <li>Sumas posibles: 1 + 1 = 2, (-1) + (-1) = -2, ninguna suma es 1</li>
+              </ul>
+              <p>Por lo tanto, no es factorizable en números enteros.</p>
+
+              <h4>Casos especiales</h4>
+              <ul>
+                <li>
+                  Cuando <code>c</code> es cero: El trinomio se simplifica a <code>x² + bx</code> que puede factorizarse
+                  sacando factor común:
+                  <br />
+                  <code>x² + 5x = x(x + 5)</code>
+                </li>
+                <li>
+                  Cuando uno de los factores es negativo:
+                  <br />
+                  Por ejemplo, <code>x² - x - 6 = (x - 3)(x + 2)</code>
+                </li>
+              </ul>
+
+              <h4>Ejercicio para practicar</h4>
+              <p>Factoriza:</p>
+              <ul>
+                <li><code>x² + 4x + 3</code></li>
+                <li><code>x² - 5x + 6</code></li>
+                <li><code>x² + 8x + 15</code></li>
+              </ul>
+
+              <p>Soluciones:</p>
+              <ul>
+                <li><code>(x + 1)(x + 3)</code></li>
+                <li><code>(x - 2)(x - 3)</code></li>
+                <li><code>(x + 3)(x + 5)</code></li>
+              </ul>
+
+              <h4>Resumen final</h4>
+              <p>
+                El método del trinomio simple es un proceso rápido y efectivo para factorizar polinomios cuadráticos
+                cuando el coeficiente del término cuadrático es 1. Se basa en encontrar dos números que multiplicados
+                den el término independiente y sumados el coeficiente lineal. Este método es fundamental en álgebra
+                básica y sirve como base para aprender otros tipos de factorización más complejos.
+              </p>
+            </div>
           </div>
 
-          <div class="container-section">
-            <h3>✅ Trinomio General</h3>
-            <p>
-              Cuando el coeficiente principal es diferente de 1, el trinomio tiene la forma:
-            </p>
-            <code>ax² + bx + c</code>
-            <p>
-              La factorización no es inmediata y requiere métodos específicos como la descomposición del término medio o
-              la fórmula cuadrática para encontrar sus raíces.
-            </p>
-            <p><strong>Ejemplo:</strong></p>
-            <code>6x² + 11x + 4 = (3x + 4)(2x + 1)</code>
+          <div class="metodo trinomio">
+            <h3>
+              ✅ Trinomio General
+              <span class="flecha" onclick="toggleMetodotrinomio(this)">🔽</span>
+            </h3>
+            <div class="contenido-metodotrinomio">
+              <p>
+                El <strong>trinomio general</strong> es un polinomio cuadrático donde el coeficiente principal (del
+                término cuadrático) es distinto de 1. La forma general es:
+              </p>
+              <code>ax² + bx + c</code>
+              <p>
+                Donde <code>a</code>, <code>b</code> y <code>c</code> son números reales (generalmente enteros o
+                racionales), y <code>a ≠ 0</code>.
+              </p>
+              <p>
+                La factorización de un trinomio general no es tan directa como la del trinomio simple, y generalmente
+                requiere métodos específicos, entre ellos:
+              </p>
 
-            <h4>Métodos comunes para factorizar:</h4>
-            <ul>
-              <li><strong>Descomposición del término medio:</strong> Multiplicar <code>a</code> y <code>c</code>, buscar
-                dos números que al multiplicar den ese producto y que al sumar den <code>b</code>.</li>
-              <li><strong>Fórmula general:</strong> Utilizar la fórmula cuadrática para encontrar raíces y expresarlas
-                como factores lineales.</li>
-            </ul>
+              <h4>Métodos comunes para factorizar trinomios generales:</h4>
+              <ul>
+                <li>
+                  <strong>1. Descomposición del término medio</strong>: Consiste en multiplicar <code>a</code> por
+                  <code>c</code>, encontrar dos números que multiplicados den ese producto y que sumados den
+                  <code>b</code>. Luego, se reescribe el término <code>bx</code> como la suma de dos términos y se
+                  factoriza por agrupación.
+                </li>
+                <li>
+                  <strong>2. Fórmula general o cuadrática</strong>: Se usan las raíces obtenidas con la fórmula
+                  cuadrática para escribir la factorización en términos lineales.
+                </li>
+              </ul>
+
+              <h4><strong>Ejemplo paso a paso con descomposición del término medio:</strong></h4>
+              <p>Factoriza el polinomio:</p>
+              <code>6x² + 11x + 4</code>
+
+              <ol>
+                <li>
+                  <strong>Paso 1: Multiplicar <code>a</code> y <code>c</code></strong><br />
+                  Multiplicamos <code>6</code> (coeficiente de <code>x²</code>) por <code>4</code> (término
+                  independiente):
+                  <br />
+                  <code>6 × 4 = 24</code>
+                </li>
+                <li>
+                  <strong>Paso 2: Buscar dos números que multiplicados den 24 y sumados den 11</strong><br />
+                  Listamos factores de 24:
+                  <ul>
+                    <li>1 y 24 (suman 25)</li>
+                    <li>2 y 12 (suman 14)</li>
+                    <li>3 y 8 (suman 11) ✔️</li>
+                    <li>4 y 6 (suman 10)</li>
+                  </ul>
+                  Por lo tanto, los números son <code>3</code> y <code>8</code>.
+                </li>
+                <li>
+                  <strong>Paso 3: Reescribir el término del medio usando esos números</strong><br />
+                  Cambiamos <code>11x</code> por <code>3x + 8x</code>:
+                  <br />
+                  <code>6x² + 3x + 8x + 4</code>
+                </li>
+                <li>
+                  <strong>Paso 4: Factorizar por agrupación</strong><br />
+                  Agrupamos términos:
+                  <br />
+                  <code>(6x² + 3x) + (8x + 4)</code>
+                  <br />
+                  Sacamos factor común de cada grupo:
+                  <br />
+                  <code>3x(2x + 1) + 4(2x + 1)</code>
+                </li>
+                <li>
+                  <strong>Paso 5: Sacar factor común común</strong><br />
+                  <code>(3x + 4)(2x + 1)</code>
+                </li>
+              </ol>
+
+              <h4>Verificación rápida:</h4>
+              <p>
+                Multiplicamos los binomios para comprobar:
+              </p>
+              <code>
+      (3x + 4)(2x + 1) = 3x·2x + 3x·1 + 4·2x + 4·1 = 6x² + 3x + 8x + 4 = 6x² + 11x + 4
+    </code>
+
+              <h4><strong>Factorización usando la fórmula general</strong></h4>
+              <p>
+                La fórmula cuadrática para encontrar raíces es:
+              </p>
+              <code>
+      x = (-b ± √(b² - 4ac)) / 2a
+    </code>
+              <p>
+                Las raíces obtenidas permiten escribir la factorización como:
+              </p>
+              <code>
+      a(x - x₁)(x - x₂)
+    </code>
+              <p>
+                Donde <code>x₁</code> y <code>x₂</code> son las raíces.
+              </p>
+
+              <h4>Ejemplo con fórmula general para el mismo trinomio:</h4>
+              <p>
+                Dado el trinomio <code>6x² + 11x + 4</code>, calculamos las raíces:
+              </p>
+              <ol>
+                <li>Calculamos el discriminante:
+                  <br />
+                  <code>Δ = b² - 4ac = 11² - 4·6·4 = 121 - 96 = 25</code>
+                </li>
+                <li>Calculamos las raíces:
+                  <br />
+                  <code>
+          x₁ = (-11 + √25) / (2·6) = (-11 + 5)/12 = -6/12 = -1/2
+        </code>
+                  <br />
+                  <code>
+          x₂ = (-11 - √25) / (2·6) = (-11 - 5)/12 = -16/12 = -4/3
+        </code>
+                </li>
+                <li>Escribimos la factorización:
+                  <br />
+                  <code>6 (x - (-1/2)) (x - (-4/3)) = 6 (x + 1/2)(x + 4/3)</code>
+                  <br />
+                  Para evitar fracciones, multiplicamos dentro de los paréntesis:
+                  <br />
+                  <code>6 (2x + 1)/2 (3x + 4)/3 = (3)(2x + 1)(2)(3x + 4) / (2·3)</code>
+                  <br />
+                  Finalmente obtenemos:
+                  <br />
+                  <code>(3x + 4)(2x + 1)</code>
+                </li>
+              </ol>
+
+              <h4>Observaciones importantes</h4>
+              <ul>
+                <li>El método de descomposición es muy útil cuando <code>a</code>, <code>b</code> y <code>c</code> son
+                  enteros y el trinomio es factorizable en enteros.</li>
+                <li>La fórmula general es más universal y permite factorizar cualquier trinomio cuadrático en los
+                  números reales o complejos.</li>
+                <li>En algunos casos, el trinomio no es factorizable en números racionales, y solo puede escribirse como
+                  producto de factores con coeficientes irracionales o complejos.</li>
+              </ul>
+
+              <h4>Ejercicios para practicar</h4>
+              <p>Factoriza los siguientes trinomios usando el método que prefieras:</p>
+              <ul>
+                <li><code>4x² + 4x + 1</code></li>
+                <li><code>3x² - 5x + 2</code></li>
+                <li><code>2x² + 7x + 3</code></li>
+              </ul>
+
+              <h4>Soluciones:</h4>
+              <ul>
+                <li><code>(2x + 1)²</code></li>
+                <li><code>(3x - 2)(x - 1)</code></li>
+                <li><code>(2x + 1)(x + 3)</code></li>
+              </ul>
+
+              <h4>Resumen final:</h4>
+              <p>
+                La factorización del trinomio general es un tema fundamental en álgebra que permite descomponer
+                polinomios cuadráticos con coeficiente principal distinto de 1. Los métodos principales son la
+                descomposición del término medio y la fórmula cuadrática. Dominar estos métodos es esencial para
+                resolver ecuaciones cuadráticas y simplificar expresiones algebraicas.
+              </p>
+            </div>
           </div>
 
           <div class="container-section">
@@ -1563,92 +3119,457 @@
       <div class="group-content" id="grupo7">
         <section class="card fade-in">
           <h2>📘 Variantes Complejas de Trinomios</h2>
+          🧠
+          <div class="metodo variante">
+            <h3>
+              🧠 Trinomios con coeficientes fraccionarios
+              <span class="flecha" onclick="toggleMetodoVariante(this)">🔽</span>
+            </h3>
 
-          <div class="container-section">
-            <h3>🧠 Trinomios con coeficientes fraccionarios</h3>
-            <p>
-              Cuando uno o más coeficientes son fracciones, la factorización puede complicarse. Una técnica efectiva es
-              multiplicar toda la expresión por el mínimo común denominador (MCD) para eliminar los denominadores y
-              simplificar el trinomio.
-            </p>
-            <p><strong>Ejemplo:</strong></p>
-            <code>(1/2)x² + (3/2)x + 1 → Multiplicamos todo por 2 → x² + 3x + 2 = (x + 1)(x + 2)</code>
-            <p>
-              Así, eliminamos fracciones y procedemos como un trinomio simple para factorizar.
-            </p>
-            <p><strong>Nota:</strong> Al final, si fuera necesario, podemos dividir por el factor común para regresar a
-              la expresión original.</p>
+            <div class="contenido-metodovariante">
+              <p>
+                Cuando uno o más coeficientes del trinomio son fracciones, la factorización se vuelve más compleja. Sin
+                embargo, existe una técnica que facilita el proceso: <strong>multiplicar toda la expresión por el mínimo
+                  común denominador (MCD)</strong> para eliminar las fracciones.
+              </p>
+
+              <p><strong>Objetivo:</strong> Convertir el trinomio con fracciones en uno con coeficientes enteros para
+                aplicar métodos comunes de factorización.</p>
+
+              <h4>Ejemplo paso a paso:</h4>
+              <code>(1/2)x² + (3/2)x + 1</code>
+
+              <ol>
+                <li>
+                  <strong>Paso 1: Identificar los denominadores.</strong><br />
+                  El primer término es <code>(1/2)x²</code> y el segundo <code>(3/2)x</code>, ambos tienen denominador
+                  2.
+                </li>
+
+                <li>
+                  <strong>Paso 2: Calcular el MCD de los denominadores.</strong><br />
+                  En este caso, el MCD es 2.
+                </li>
+
+                <li>
+                  <strong>Paso 3: Multiplicar todo el trinomio por el MCD.</strong><br />
+                  <code>2 · [(1/2)x² + (3/2)x + 1] = x² + 3x + 2</code>
+                </li>
+
+                <li>
+                  <strong>Paso 4: Factorizar el trinomio resultante.</strong><br />
+                  Ahora tenemos un trinomio simple: <code>x² + 3x + 2</code>.<br />
+                  Buscamos dos números que multiplicados den 2 y sumados den 3:<br />
+                  → 1 × 2 = 2, y 1 + 2 = 3 ✔️<br />
+                  Entonces:<br />
+                  <code>x² + 3x + 2 = (x + 1)(x + 2)</code>
+                </li>
+
+                <li>
+                  <strong>Paso 5: Interpretar el resultado.</strong><br />
+                  La expresión original factorizada es: <br />
+                  <code>(1/2)x² + (3/2)x + 1 = (1/2)(x + 1)(x + 2)</code><br />
+                  Multiplicamos por 2 al principio, ahora dividimos el resultado para equilibrar.
+                </li>
+              </ol>
+
+              <h4>Importancia del método:</h4>
+              <ul>
+                <li>Permite aplicar factorización conocida sin trabajar con fracciones.</li>
+                <li>Simplifica cálculos en contextos algebraicos avanzados.</li>
+                <li>Evita errores comunes en manipulación de fracciones.</li>
+              </ul>
+
+              <p><strong>Conclusión:</strong> Este método transforma un problema complicado en uno sencillo al usar el
+                MCD como herramienta estratégica.</p>
+            </div>
           </div>
 
-          <div class="container-section">
-            <h3>🧠 Trinomios con raíces irracionales</h3>
-            <p>
-              Algunos trinomios pueden factorizarse usando números irracionales, como raíces cuadradas. Estos aparecen
-              en factores cuando el discriminante es un número irracional positivo.
-            </p>
-            <p><strong>Ejemplo:</strong></p>
-            <code>x² - 2 = (x + √2)(x - √2)</code>
-            <p>
-              Este tipo de factorización es común en álgebra avanzada y en análisis matemático donde las raíces no
-              racionales forman parte de la solución.
-            </p>
+
+          <div class="metodo irracional">
+            <h3>
+              🧠 Trinomios con raíces irracionales
+              <span class="flecha" onclick="toggleMetodoVariante(this)">🔽</span>
+            </h3>
+
+            <div class="contenido-metodovariante">
+              <p>
+                Algunos trinomios tienen raíces que no son números racionales. En estos casos, la factorización puede
+                involucrar raíces cuadradas no exactas.
+                Esto sucede cuando el <strong>discriminante</strong> del trinomio no es un cuadrado perfecto pero sí es
+                positivo.
+              </p>
+
+              <h4>¿Qué es el discriminante?</h4>
+              <p>
+                El discriminante se calcula como: <code>Δ = b² - 4ac</code>. Si Δ es positivo e irracional, las raíces
+                serán irracionales.
+              </p>
+
+              <h4>Ejemplo paso a paso:</h4>
+              <code>x² - 2 = ?</code>
+
+              <ol>
+                <li>
+                  <strong>Paso 1: Identificar el tipo de trinomio.</strong><br />
+                  Este es un trinomio incompleto de la forma <code>x² - c</code>, donde <code>c = 2</code>.
+                </li>
+
+                <li>
+                  <strong>Paso 2: Aplicar la fórmula general.</strong><br />
+                  Este trinomio también puede verse como <code>x² + 0x - 2</code>, por lo tanto:<br />
+                  a = 1, b = 0, c = -2<br />
+                  Calculamos el discriminante: <code>Δ = 0² - 4(1)(-2) = 8</code>
+                </li>
+
+                <li>
+                  <strong>Paso 3: Calcular las raíces.</strong><br />
+                  Usamos la fórmula general:<br />
+                  <code>x = [-b ± √(b² - 4ac)] / 2a</code><br />
+                  Sustituyendo: <br />
+                  <code>x = [0 ± √8] / 2</code><br />
+                  Simplificamos la raíz: <code>√8 = 2√2</code><br />
+                  <code>x = ±(2√2)/2 = ±√2</code>
+                </li>
+
+                <li>
+                  <strong>Paso 4: Escribir la factorización.</strong><br />
+                  Como las raíces son <code>√2</code> y <code>-√2</code>, la factorización es:<br />
+                  <code>x² - 2 = (x + √2)(x - √2)</code>
+                </li>
+
+                <li>
+                  <strong>Paso 5: Verificación.</strong><br />
+                  Multiplicamos los factores:<br />
+                  <code>(x + √2)(x - √2) = x² - (√2)² = x² - 2</code><br />
+                  Resultado correcto ✔️
+                </li>
+              </ol>
+
+              <h4>Características de este tipo de factorización:</h4>
+              <ul>
+                <li>Ocurre cuando el trinomio tiene raíces reales pero irracionales.</li>
+                <li>Los factores contienen raíces cuadradas.</li>
+                <li>Es común en problemas de álgebra superior o ecuaciones cuadráticas con radicales.</li>
+                <li>Los binomios obtenidos son conjugados (uno con + y otro con -).</li>
+              </ul>
+
+              <p><strong>Conclusión:</strong> Aunque estas raíces no son exactas, permiten una factorización simbólica
+                precisa. Reconocer cuándo aplicar raíces irracionales es clave para una resolución algebraica completa.
+              </p>
+            </div>
           </div>
 
-          <div class="container-section">
-            <h3>🧠 Trinomios con coeficientes negativos</h3>
-            <p>
-              Cuando el coeficiente principal es negativo, es recomendable factorizar extrayendo el signo negativo para
-              facilitar la factorización del trinomio.
-            </p>
-            <p><strong>Ejemplo:</strong></p>
-            <code>-x² + 5x - 6 = -(x² - 5x + 6) = -(x - 2)(x - 3)</code>
-            <p>
-              Esta técnica transforma el trinomio en uno con coeficiente principal positivo, facilitando su
-              factorización.
-            </p>
+
+          <div class="metodo negativo">
+            <h3>
+              🧠 Trinomios con coeficientes negativos
+              <span class="flecha" onclick="toggleMetodoVariante(this)">🔽</span>
+            </h3>
+
+            <div class="contenido-metodovariante">
+              <p>
+                Cuando un trinomio tiene un <strong>coeficiente principal negativo</strong> (es decir, el coeficiente de
+                <code>x²</code> es negativo),
+                puede dificultar la factorización directa. En estos casos, la técnica recomendada es:
+              </p>
+
+              <p>
+                <strong>Extraer el signo negativo</strong> como factor común para convertir el trinomio en una forma con
+                coeficiente positivo,
+                y luego proceder a factorizar normalmente.
+              </p>
+
+              <h4>Ejemplo paso a paso:</h4>
+              <code>-x² + 5x - 6 = ?</code>
+
+              <ol>
+                <li>
+                  <strong>Paso 1: Identificar el coeficiente principal.</strong><br />
+                  Observamos que el primer término es <code>-x²</code>, lo que significa que el coeficiente principal es
+                  <code>-1</code>.
+                </li>
+
+                <li>
+                  <strong>Paso 2: Extraer el signo negativo.</strong><br />
+                  Sacamos el signo negativo como factor común de todos los términos del trinomio:<br />
+                  <code>-x² + 5x - 6 = -(x² - 5x + 6)</code><br />
+                  Ahora tenemos un trinomio más manejable dentro del paréntesis.
+                </li>
+
+                <li>
+                  <strong>Paso 3: Factorizar el trinomio interno.</strong><br />
+                  Nos enfocamos en <code>x² - 5x + 6</code>. Este es un trinomio simple con coeficiente principal 1.
+                </li>
+
+                <li>
+                  <strong>Paso 4: Buscar dos números que multiplicados den 6 y sumados den -5.</strong><br />
+                  Probamos con:<br />
+                  <code>-2 × -3 = 6</code> y <code>-2 + -3 = -5</code> ✔️<br />
+                  Por lo tanto, los factores son: <code>(x - 2)(x - 3)</code>
+                </li>
+
+                <li>
+                  <strong>Paso 5: Escribir la factorización completa.</strong><br />
+                  Reemplazamos el trinomio interno con sus factores:<br />
+                  <code>-(x - 2)(x - 3)</code>
+                </li>
+
+                <li>
+                  <strong>Paso 6: Verificación (opcional).</strong><br />
+                  Expandimos los factores:<br />
+                  <code>(x - 2)(x - 3) = x² - 5x + 6</code><br />
+                  Aplicamos el signo negativo:<br />
+                  <code>-(x² - 5x + 6) = -x² + 5x - 6</code> ✔️
+                </li>
+              </ol>
+
+              <h4>Características clave de este tipo de factorización:</h4>
+              <ul>
+                <li>Se aplica cuando el término <code>x²</code> tiene coeficiente negativo.</li>
+                <li>El signo negativo se saca como factor común para simplificar.</li>
+                <li>Luego, se factoriza normalmente el trinomio positivo resultante.</li>
+                <li>Es una técnica esencial para evitar errores en el signo de los factores.</li>
+                <li>Permite mantener una estructura ordenada en la resolución.</li>
+              </ul>
+
+              <p><strong>Conclusión:</strong> Siempre que veas un trinomio con <code>-x²</code>, considera sacar el
+                negativo como factor común antes de factorizar. Esto facilita el procedimiento y evita confusiones.</p>
+            </div>
           </div>
 
-          <div class="container-section">
-            <h3>🧠 Trinomios incompletos</h3>
-            <p>
-              Los trinomios incompletos son aquellos que carecen del término lineal o del término independiente. Estos
-              requieren técnicas específicas para su factorización.
-            </p>
-            <ul>
-              <li><code>x² - 9 = (x - 3)(x + 3)</code> (Ausencia de término lineal)</li>
-              <li><code>x² + 7x = x(x + 7)</code> (Ausencia de término independiente)</li>
-            </ul>
-            <p>
-              En el primer caso, aplicamos la diferencia de cuadrados. En el segundo, factorizamos el término común.
-            </p>
+
+          <div class="metodo incompleto">
+            <h3>
+              🧠 Trinomios incompletos
+              <span class="flecha" onclick="toggleMetodoVariante(this)">🔽</span>
+            </h3>
+
+            <div class="contenido-metodovariante">
+              <p>
+                Los <strong>trinomios incompletos</strong> son expresiones cuadráticas que no presentan uno de los
+                términos
+                típicos del trinomio estándar <code>ax² + bx + c</code>. Es decir, pueden faltar:
+              </p>
+
+              <ul>
+                <li>El término lineal <code>bx</code></li>
+                <li>O el término independiente <code>c</code></li>
+              </ul>
+
+              <p>Dependiendo del término ausente, se utilizan distintas estrategias para factorizar.</p>
+
+              <h4>🔹 Caso 1: Ausencia del término lineal (<code>bx</code>)</h4>
+
+              <p><strong>Ejemplo:</strong></p>
+              <code>x² - 9 = ?</code>
+
+              <ol>
+                <li>
+                  <strong>Paso 1: Identificar la estructura del trinomio.</strong><br />
+                  La expresión <code>x² - 9</code> tiene dos términos: un cuadrado y un número negativo.
+                </li>
+                <li>
+                  <strong>Paso 2: Reconocer una diferencia de cuadrados.</strong><br />
+                  Recordamos la identidad: <code>a² - b² = (a - b)(a + b)</code><br />
+                  Aquí, <code>x²</code> es <code>a²</code> y <code>9</code> es <code>3²</code>.
+                </li>
+                <li>
+                  <strong>Paso 3: Aplicar la identidad de diferencia de cuadrados.</strong><br />
+                  <code>x² - 9 = (x - 3)(x + 3)</code> ✔️
+                </li>
+                <li>
+                  <strong>Paso 4: Verificación opcional.</strong><br />
+                  Expandimos: <code>(x - 3)(x + 3) = x² - 9</code>
+                </li>
+              </ol>
+
+              <p>Cuando no hay término lineal y el primero y último son cuadrados perfectos, la diferencia de cuadrados
+                es el método ideal.</p>
+
+              <hr />
+
+              <h4>🔹 Caso 2: Ausencia del término independiente (<code>c</code>)</h4>
+
+              <p><strong>Ejemplo:</strong></p>
+              <code>x² + 7x = ?</code>
+
+              <ol>
+                <li>
+                  <strong>Paso 1: Identificar los términos.</strong><br />
+                  El trinomio tiene <code>x²</code> y <code>+7x</code>, pero no tiene término constante.
+                </li>
+                <li>
+                  <strong>Paso 2: Buscar factor común.</strong><br />
+                  Ambos términos contienen <code>x</code> como factor común.
+                </li>
+                <li>
+                  <strong>Paso 3: Extraer el factor común.</strong><br />
+                  <code>x² + 7x = x(x + 7)</code>
+                </li>
+                <li>
+                  <strong>Paso 4: Verificación opcional.</strong><br />
+                  Expandimos: <code>x(x + 7) = x² + 7x</code> ✔️
+                </li>
+              </ol>
+
+              <h4>🔍 Características generales de trinomios incompletos:</h4>
+              <ul>
+                <li>Requieren observación para detectar cuál término falta.</li>
+                <li>Si falta <code>bx</code>, aplicar diferencia de cuadrados si es posible.</li>
+                <li>Si falta <code>c</code>, aplicar factorización por factor común.</li>
+                <li>Son casos comunes en ejercicios de álgebra básica e intermedia.</li>
+              </ul>
+
+              <p><strong>Conclusión:</strong> Antes de aplicar una técnica general, analiza si el trinomio es
+                incompleto. Esto puede permitir usar métodos más rápidos y eficientes.</p>
+            </div>
           </div>
 
-          <div class="container-section">
-            <h3>🧠 Trinomios con variables múltiples</h3>
-            <p>
-              Cuando los trinomios involucran más de una variable, es crucial identificar factores comunes y aplicar
-              técnicas de factorización adecuadas.
-            </p>
-            <p><strong>Ejemplo:</strong></p>
-            <code>4x²y + 8xy + 4y = 4y(x² + 2x + 1) = 4y(x + 1)²</code>
-            <p>
-              Primero se extrae el factor común <code>4y</code>, luego se factoriza el trinomio restante.
-            </p>
+
+          <div class="metodo multivariables">
+            <h3>
+              🧠 Trinomios con variables múltiples
+              <span class="flecha" onclick="toggleMetodoVariante(this)">🔽</span>
+            </h3>
+
+            <div class="contenido-metodovariante">
+              <p>
+                Los <strong>trinomios con variables múltiples</strong> son expresiones algebraicas que incluyen más de
+                una
+                variable (por ejemplo, <code>x</code> y <code>y</code>). En estos casos, el proceso de factorización
+                incluye
+                identificar factores comunes y aplicar técnicas conocidas sobre una parte de la expresión.
+              </p>
+
+              <p><strong>Ejemplo:</strong></p>
+              <code>4x²y + 8xy + 4y = ?</code>
+
+              <ol>
+                <li>
+                  <strong>Paso 1: Observar los términos.</strong><br />
+                  Tenemos tres términos con las variables <code>x</code> y <code>y</code>:<br />
+                  <code>4x²y</code>, <code>8xy</code> y <code>4y</code>.
+                </li>
+
+                <li>
+                  <strong>Paso 2: Buscar el factor común en los tres términos.</strong><br />
+                  Todos contienen el factor <code>4y</code>. Lo extraemos:<br />
+                  <code>4x²y + 8xy + 4y = 4y(x² + 2x + 1)</code>
+                </li>
+
+                <li>
+                  <strong>Paso 3: Analizar el trinomio dentro del paréntesis.</strong><br />
+                  El trinomio <code>x² + 2x + 1</code> es un <em>trinomio cuadrado perfecto</em>, porque:<br />
+                  - <code>x²</code> es el cuadrado de <code>x</code><br />
+                  - <code>1</code> es el cuadrado de <code>1</code><br />
+                  - <code>2x = 2·x·1</code> ✔️
+                </li>
+
+                <li>
+                  <strong>Paso 4: Factorizar el trinomio cuadrado perfecto.</strong><br />
+                  <code>x² + 2x + 1 = (x + 1)²</code><br />
+                  Sustituimos dentro de la expresión:
+                  <code>4y(x² + 2x + 1) = 4y(x + 1)²</code>
+                </li>
+
+                <li>
+                  <strong>Paso 5: Interpretación final.</strong><br />
+                  La expresión original fue factorizada completamente:
+                  <code>4x²y + 8xy + 4y = 4y(x + 1)²</code>
+                </li>
+              </ol>
+
+              <h4>🧩 Recomendaciones para trinomios multivariables:</h4>
+              <ul>
+                <li>Siempre revisa si hay factores comunes entre todos los términos.</li>
+                <li>Asegúrate de reorganizar los términos si es necesario para detectar patrones conocidos.</li>
+                <li>Una vez factorizado el factor común, aplica los métodos clásicos de factorización sobre el trinomio
+                  restante.</li>
+                <li>Recuerda que si hay múltiples variables, el resultado puede contener productos entre binomios y
+                  monomios con varias letras.</li>
+              </ul>
+
+              <p><strong>Conclusión:</strong> La clave en trinomios con múltiples variables es combinar la factorización
+                por factor común con técnicas de trinomios simples o cuadrados perfectos.</p>
+            </div>
           </div>
 
-          <div class="container-section">
-            <h3>🧠 Trinomios con raíces complejas</h3>
-            <p>
-              Si el discriminante <code>b² - 4ac</code> es negativo, las raíces no son reales sino complejas,
-              involucrando números imaginarios.
-            </p>
-            <p><strong>Ejemplo:</strong></p>
-            <code>x² + x + 1 = (x + ½ + (√3/2)i)(x + ½ - (√3/2)i)</code>
-            <p>
-              Aquí, las raíces complejas conjugadas permiten expresar el trinomio como producto de binomios con
-              coeficientes complejos.
-            </p>
+
+          <div class="metodo complejas">
+            <h3>
+              🧠 Trinomios con raíces complejas
+              <span class="flecha" onclick="toggleMetodoVariante(this)">🔽</span>
+            </h3>
+
+            <div class="contenido-metodovariante">
+              <p>
+                Cuando el <strong>discriminante</strong> de un trinomio cuadrático es negativo, es decir,
+                <code>b² - 4ac &lt; 0</code>, las raíces del trinomio no son reales. En lugar de eso, se obtienen
+                <strong>raíces complejas conjugadas</strong>, que incluyen la unidad imaginaria <code>i</code>.
+              </p>
+
+              <p><strong>Ejemplo:</strong></p>
+              <code>x² + x + 1 = ?</code>
+
+              <ol>
+                <li>
+                  <strong>Paso 1: Identificar los coeficientes.</strong><br />
+                  <code>a = 1</code>, <code>b = 1</code>, <code>c = 1</code>
+                </li>
+
+                <li>
+                  <strong>Paso 2: Calcular el discriminante.</strong><br />
+                  <code>D = b² - 4ac = 1² - 4·1·1 = 1 - 4 = -3</code><br />
+                  Como <code>D &lt; 0</code>, las raíces son complejas.
+                </li>
+
+                <li>
+                  <strong>Paso 3: Aplicar la fórmula cuadrática.</strong><br />
+                  <code>x = [-b ± √(b² - 4ac)] / 2a</code><br />
+                  Sustituimos:<br />
+                  <code>x = [-1 ± √(-3)] / 2</code>
+                </li>
+
+                <li>
+                  <strong>Paso 4: Expresar la raíz imaginaria.</strong><br />
+                  <code>√(-3) = √3·i</code><br />
+                  Entonces:<br />
+                  <code>x = [-1 ± √3·i] / 2</code><br />
+                  Simplificamos:<br />
+                  <code>x = -½ ± (√3/2)i</code>
+                </li>
+
+                <li>
+                  <strong>Paso 5: Escribir los binomios conjugados.</strong><br />
+                  Las raíces son <code>-½ + (√3/2)i</code> y <code>-½ - (√3/2)i</code>, por lo tanto:<br />
+                  <code>x² + x + 1 = (x + ½ + (√3/2)i)(x + ½ - (√3/2)i)</code>
+                </li>
+
+                <li>
+                  <strong>Paso 6: Verifica (opcional).</strong><br />
+                  Si multiplicamos ambos binomios complejos, obtendremos nuevamente <code>x² + x + 1</code>.
+                  Esto comprueba la factorización.
+                </li>
+              </ol>
+
+              <h4>🧩 Consideraciones sobre raíces complejas:</h4>
+              <ul>
+                <li>Las raíces complejas siempre aparecen en pares conjugados si los coeficientes del trinomio son
+                  reales.</li>
+                <li>No todos los trinomios se pueden factorizar con números reales, pero sí con complejos.</li>
+                <li>En contextos de álgebra avanzada o análisis, trabajar con números complejos es común y necesario.
+                </li>
+                <li>Este tipo de factorización puede no ser exigida en niveles básicos, pero es importante conocerla.
+                </li>
+              </ul>
+
+              <p><strong>Conclusión:</strong> Cuando el discriminante es negativo, la factorización de un trinomio
+                requiere ingresar al campo de los números complejos. Esto amplía las posibilidades algebraicas y es
+                esencial en ramas como la ingeniería eléctrica, la física cuántica y el análisis complejo.</p>
+            </div>
           </div>
+
 
           <hr />
 
@@ -1676,6 +3597,7 @@
 
         </section>
       </div>
+
       <div class="group-content" id="grupo8">
         <section class="card fade-in">
           <h2>📚 Recursos para Trinomios</h2>
@@ -1702,7 +3624,6 @@
             </ul>
           </div>
 
-          <!-- VIDEOS -->
           <div class="resource-frame">
             <h3>🎬 Videos explicativos</h3>
             <div class="video-buttons">
@@ -1739,20 +3660,9 @@
 
   </main>
 
-
-
-
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
   <df-messenger intent="WELCOME" chat-title="FactorizaciónTrinomios" agent-id="5c72ad3a-b23e-4ebb-a645-c433151941ce"
     language-code="es"></df-messenger>
-
-
-
-
-
-
-
-
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -1793,15 +3703,12 @@
       const sidebar = document.getElementById("sidebar");
       const sendBtn = document.getElementById("sendBtn");
 
-      // Abrir/cerrar chatbot
       toggleButton.addEventListener("click", () => {
         sidebar.classList.toggle("open");
       });
 
-      // Enviar mensaje al presionar botón
       sendBtn.addEventListener("click", sendQuestion);
 
-      // También enviar con Enter
       document.getElementById("chat-input").addEventListener("keydown", (e) => {
         if (e.key === "Enter") sendQuestion();
       });
@@ -1937,7 +3844,57 @@
     function toggleCaso(flecha) {
       const contenedor = flecha.closest('.caso');
       contenedor.classList.toggle('abierto');
+      console.log('clase abierto toggled:', contenedor.classList.contains('abierto'));
     }
+
+
+    function toggleEjemplo(flecha) {
+      const contenedor = flecha.closest('.teorema-ejemplo');
+      contenedor.classList.toggle('activo');
+    }
+
+
+    function toggleMetodo(flecha) {
+      const contenedor = flecha.closest('.metodo.resumen');
+      if (!contenedor) return;
+
+      const contenido = contenedor.querySelector('.contenido-metodo');
+      if (!contenido) return;
+
+      contenido.classList.toggle('activo');
+
+      if (contenido.classList.contains('activo')) {
+        flecha.textContent = '🔼';
+      } else {
+        flecha.textContent = '🔽';
+      }
+    }
+    function toggleMetodotrinomio(flecha) {
+      const contenido = flecha.parentElement.nextElementSibling;
+
+      if (!contenido) return;
+
+      contenido.classList.toggle('activo');
+
+      if (contenido.classList.contains('activo')) {
+        flecha.style.transform = 'rotate(180deg)';
+      } else {
+        flecha.style.transform = 'rotate(0deg)';
+      }
+    }
+    function toggleMetodoVariante(flecha) {
+      const contenido = flecha.parentElement.nextElementSibling;
+
+      if (!contenido) return;
+
+      contenido.classList.toggle('activo');
+
+      flecha.style.transform = contenido.classList.contains('activo')
+        ? 'rotate(180deg)'
+        : 'rotate(0deg)';
+    }
+
+
   </script>
 
 </body>
